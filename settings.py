@@ -102,3 +102,21 @@ INSTALLED_APPS = (
     # 'django.contrib.admindocs',
     
 )
+
+
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.memcached.MemcachedCache',
+        'LOCATION': '127.0.0.1:11211',
+    }
+}
+
+HOME_PAGE_BLOG_URL = "http://blogs.openshine.com/"
+
+
+
+MORE_BLOGS_URL = (
+    "http://blogs.openshine.com/pvieytes",              
+    "http://blogs.openshine.com/cgtapia",              
+    "http://blogs.openshine.com/rmajadas",              
+)
