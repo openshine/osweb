@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>openshine</title>
+	<script src="{{ MEDIA_URL }}js/jquery.dajax.core.js" type="text/javascript" charset="utf-8"></script>
+	<link rel="stylesheet" href="{{ MEDIA_URL }}css/main.css" type="text/css" />
+	
+	{% block extrahead %}{% endblock %}
+</head>
+
+<body>
+<div id="wrapper">
+	<div id="header">	
+		<a href="{% url home_page %}">home</a>
+	</div>
+	<div id="content_title">
+		{% block titlecontent %}{% endblock %}
+	</div>
+	<div id="content">
+		{% block bodycontent %}{% endblock %}
+	</div>
+</div>
+</body>
+</html>
