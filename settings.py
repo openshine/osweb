@@ -111,12 +111,17 @@ CACHES = {
     }
 }
 
-HOME_PAGE_BLOG_URL = "http://blogs.openshine.com/"
-
+HOME_PAGE_BLOG_URL = "http://blogs.openshine.com/feed/"
 
 
 MORE_BLOGS_URL = (
-    "http://blogs.openshine.com/pvieytes",              
-    "http://blogs.openshine.com/cgtapia",              
-    "http://blogs.openshine.com/rmajadas",              
+    "http://blogs.openshine.com/pvieytes/feed/",              
+    "http://blogs.openshine.com/cgtapia/feed/",              
+    "http://blogs.openshine.com/rmajadas/feed/",              
 )
+
+BLOGS_CACHE_TIME = 30000#The timeout, in seconds, to use for the blogs cache
+
+NUM_HOME_NEWS = 3#news number that will be displayed in home page
+
+NUM_LIVE_POSTS = 4#post number that will be displayed in live page

@@ -6,8 +6,24 @@
 	home
 {% endblock %}
 
-{% block titlecontent %}home{% endblock %}
+{% block titlecontent %}
+
+Slides  --  HOME
+
+{% endblock %}
 
 {% block bodycontent %}
-		openshine.com
+		
+		<div id=news_wrapper>
+			<h1>NEWS:</h1>
+			{% for date, title, link, content in news %}
+				<div id="news_element">
+						<h1>{{ title }}</h1>
+						<a href="{{ link }}">link</a>
+						<p>{{ date }}</p>
+						{{ content|safe }}
+				</div>
+			{% endfor %}	
+	</div>		
+		
 {% endblock %}
