@@ -1,4 +1,4 @@
-# Django settings for oswww project.
+# Django settings for osweb project.
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -58,7 +58,7 @@ MEDIA_URL = ''
 ADMIN_MEDIA_PREFIX = '/media/'
 
 # Make this unique, and don't share it with anybody.
-SECRET_KEY = 'l=d+i@p!vfu6vx_ksf!($n%vdi2-qk20l8mxcvt6&uq7f5*-mq'
+SECRET_KEY = 'd1367p85%@qgdx@$aodd5lz6-!m9ku%j*17&%&b&o77a5hh12b'
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
@@ -75,7 +75,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
 )
 
-ROOT_URLCONF = 'oswww.urls'
+ROOT_URLCONF = 'osweb.urls'
 
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
