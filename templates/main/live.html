@@ -15,6 +15,20 @@ live
 {% block bodycontent %}
 
 
+<div id=posts_wrapper>
+	<h1>POSTS:</h1>
+	{% for date_struct, date_str, title, link, content in posts %}
+		<div id="post">
+				<h1>{{ title }}</h1>
+				<a href="{{ link }}">link</a>
+				<p>{{ date_str }}</p>
+				{{ content|safe }}
+		</div>
+	{% endfor %}	
+</div>
+
+
+
 <script src="http://widgets.twimg.com/j/2/widget.js"></script>
 <script>
 new TWTR.Widget({

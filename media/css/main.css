@@ -81,3 +81,33 @@ body{
 	padding:20px;
 	margin:20px;
 }
+
+
+/* END HOME */
+
+
+/* LIVE */
+
+
+#posts_wrapper{
+	border-style:solid;
+	border-width:1px;
+	border-color:#999;
+	background-color:#ebebeb; 
+}
+#posts_wrapper h1 {
+	padding-left:20px;
+}
+
+#post{
+	border-style:solid;
+	border-width:1px;
+	border-color:#999;
+
+
+	background-color:#fff; 
+	padding:20px;
+	margin:20px;
+}
+
+/* END LIVE */

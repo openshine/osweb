@@ -14,16 +14,16 @@ Slides  --  HOME
 
 {% block bodycontent %}
 		
-		<div id=news_wrapper>
-			<h1>NEWS:</h1>
-			{% for date, title, link, content in news %}
-				<div id="news_element">
-						<h1>{{ title }}</h1>
-						<a href="{{ link }}">link</a>
-						<p>{{ date }}</p>
-						{{ content|safe }}
-				</div>
-			{% endfor %}	
+	<div id=news_wrapper>
+		<h1>NEWS:</h1>
+		{% for date_struct, date_str, title, link, content in news %}
+			<div id="news_element">
+					<h1>{{ title }}</h1>
+					<a href="{{ link }}">link</a>
+					<p>{{ date_str }}</p>
+					{{ content|safe }}
+			</div>
+		{% endfor %}	
 	</div>		
 		
 {% endblock %}

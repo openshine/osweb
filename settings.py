@@ -120,7 +120,7 @@ MORE_BLOGS_URL = (
     "http://blogs.openshine.com/rmajadas/feed/",              
 )
 
-BLOGS_CACHE_TIME = 30000#The timeout, in seconds, to use for the blogs cache
+BLOGS_CACHE_TIME = 60*60#The timeout, in seconds, to use for the blogs cache
 
 NUM_HOME_NEWS = 3#news number that will be displayed in home page
 
