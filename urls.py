@@ -1,6 +1,8 @@
 from django.conf.urls.defaults import *
 from osweb import settings
 
+from osweb.main.views import home_view
+from osweb.main.views import live_view
 
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
@@ -8,8 +10,8 @@ from osweb import settings
 
 urlpatterns = patterns('',
                        
-    (r'^$', include('main.urls')),
-
+    url('^$', home_view, name='home_page'),
+    url ('^live/', live_view, name='live_page'),
 )
 
 
