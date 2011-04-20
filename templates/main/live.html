@@ -34,7 +34,7 @@ live
 new TWTR.Widget({
   version: 2,
   type: 'profile',
-  rpp: 4,
+  rpp: {{ num_tweets }},
   interval: 6000,
   width: 250,
   height: 300,
@@ -58,7 +58,7 @@ new TWTR.Widget({
     avatars: true,
     behavior: 'all'
   }
-}).render().setUser('pablito80').start();
+}).render().setUser('{{ twitter_user }}').start();
 </script>
 		
 		
