@@ -126,10 +126,17 @@ NUM_HOME_NEWS = 3#news number that will be displayed in home page
 
 NUM_LIVE_POSTS = 4#post number that will be displayed in live page
 
-PROJECTS_DOAP = (
-    "https://github.com/openshine/osweb/osweb.doap"
-)
+
 
 
 NUM_TWEETS = 5
 TWITTER_USER = "pablito80"
+
+
+
+PROJECTS_INFO = (
+    ("https://github.com/pvieytes/osweb/raw/master/doap_info/openshine.doap",#doap file
+        "https://github.com/pvieytes/osweb/raw/master/doap_info/osweb_screenshot.jpg"),#screenshot
+)
+
+NUM_PROJECTS_HOME = 3
