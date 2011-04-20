@@ -3,15 +3,20 @@ from osweb import settings
 
 from osweb.main.views import home_view
 from osweb.main.views import live_view
+from osweb.main.views import jobs_view
+from osweb.main.views import contact_view
 
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
 # admin.autodiscover()
 
-urlpatterns = patterns('',
-                       
-    url('^$', home_view, name='home_page'),
-    url ('^live/', live_view, name='live_page'),
+urlpatterns = patterns('',          
+    url(r'^$', home_view, name='home_page'),
+    url(r'^live/', live_view, name='live_page'),
+    url(r'^jobs/', jobs_view, name='jobs_page'),
+    url(r'^contact/', contact_view, name='contact_page'),
+    (r'^projects/', include('osweb.projects.urls')),
+
 )
 
 

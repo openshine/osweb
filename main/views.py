@@ -16,4 +16,13 @@ def live_view(request):
     context_dict['twitter_user'] = settings.TWITTER_USER
     return render_to_response('main/live.html', context_dict, context_instance=RequestContext(request))
 
+def jobs_view(request):
+    context_dict = {}
+    return render_to_response('main/jobs.html', context_dict, context_instance=RequestContext(request))
+
+
+def contact_view(request):
+    context_dict = {}
+    return render_to_response('main/contact.html', context_dict, context_instance=RequestContext(request))
+
 
