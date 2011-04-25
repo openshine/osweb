@@ -138,6 +138,8 @@ PROJECTS_CACHE_TIME = 60*60#The timeout, in seconds, to use for the projects cac
 PROJECTS_INFO = (
     ("http://sites.google.com/site/capibara80/blogimages/openshine.doap",#doap file
         "http://sites.google.com/site/capibara80/blogimages/osweb_screenshot.jpg"),#screenshot
-)
+    ("http://sites.google.com/site/capibara80/blogimages/nannycentral.doap",#doap file
+        "https://sites.google.com/site/capibara80/blogimages/screenshot-nannycentral.png"),#screenshot
+)       
 
 NUM_PROJECTS_HOME = 3

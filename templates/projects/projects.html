@@ -14,13 +14,13 @@ projects
 
 {% block bodycontent %}
 
-	<div id="projects_wrapper">
-		<h1>PROJECT:</h1>
+	<div id="projects_wrapper" class="big_image">
+		<h1>PROJECTS:</h1>
 		{% for name, slugname, shortname, shortdesc, description, homepage, downloadpage, languages, url_screenshot in projects %}
-			<div id="project">
-					<h1>{{ name }}</h1>
+			<div id="project"  >
+					<a href="{{ slugname }}"><h1>{{ name }}</h1></a>
 					<p>{{ shortdesc }}</p>
-					<p><img src="{{ url_screenshot }}"></p>
+					<p><img  src="{{ url_screenshot }}"></p>
 					<p><a href="{{ homepage }}">homepage</a></p>
 					<p><a href="{{ downloadpage }}">downloadpage</a></p>
 					<p>languages:</p>

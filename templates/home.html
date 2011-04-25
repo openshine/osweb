@@ -28,21 +28,21 @@ Slides  --  HOME
 	
 	
 	
-	<div id="home_projects_wrapper">
+	<div id="home_projects_wrapper" class="small_image">
 		<h1>PROJECTS:</h1>
 		{% for name, slugname, shortname, shortdesc, description, homepage, downloadpage, languages, url_screenshot in projects %}
 			<div id="home_project">
-					<h1>{{ name }}</h1>
-					<p>{{ shortdesc }}</p>
-					<p><img src="{{ url_screenshot }}"></p>
-					<p><a href="{{ homepage }}">homepage</a></p>
-					<p><a href="{{ downloadpage }}">downloadpage</a></p>
-					<p>languages:</p>
-					<ul>
-						{% for language in languages %}
-							<li>{{ language }}</li>
-						{% endfor%}
-					</ul> 
+				<a href="projects/{{ slugname }}"><h1>{{ name }}</h1></a>
+				<p>{{ shortdesc }}</p>
+				<p><img src="{{ url_screenshot }}"></p>
+				<p><a href="{{ homepage }}">homepage</a></p>
+				<p><a href="{{ downloadpage }}">downloadpage</a></p>
+				<p>languages:</p>
+				<ul>
+					{% for language in languages %}
+						<li>{{ language }}</li>
+					{% endfor%}
+				</ul> 
 			</div>		
 		
 		{% endfor %}	
