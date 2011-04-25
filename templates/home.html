@@ -28,10 +28,10 @@ Slides  --  HOME
 	
 	
 	
-	<div id=projects_wrapper>
+	<div id="home_projects_wrapper">
 		<h1>PROJECTS:</h1>
-		{% for name, shortname, shortdesc, description, homepage, downloadpage, languages, url_screenshot in projects %}
-			<div id="project">
+		{% for name, slugname, shortname, shortdesc, description, homepage, downloadpage, languages, url_screenshot in projects %}
+			<div id="home_project">
 					<h1>{{ name }}</h1>
 					<p>{{ shortdesc }}</p>
 					<p><img src="{{ url_screenshot }}"></p>
