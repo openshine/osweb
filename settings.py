@@ -133,10 +133,11 @@ NUM_TWEETS = 5
 TWITTER_USER = "pablito80"
 
 
+PROJECTS_CACHE_TIME = 60*60#The timeout, in seconds, to use for the projects cache
 
 PROJECTS_INFO = (
-    ("https://github.com/pvieytes/osweb/raw/master/doap_info/openshine.doap",#doap file
-        "https://github.com/pvieytes/osweb/raw/master/doap_info/osweb_screenshot.jpg"),#screenshot
+    ("http://sites.google.com/site/capibara80/blogimages/openshine.doap",#doap file
+        "http://sites.google.com/site/capibara80/blogimages/osweb_screenshot.jpg"),#screenshot
 )
 
 NUM_PROJECTS_HOME = 3

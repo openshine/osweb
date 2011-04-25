@@ -24,6 +24,30 @@ Slides  --  HOME
 					{{ content|safe }}
 			</div>
 		{% endfor %}	
-	</div>		
+	</div>	
+	
+	
+	
+	<div id=projects_wrapper>
+		<h1>PROJECTS:</h1>
+		{% for name, shortname, shortdesc, description, homepage, downloadpage, languages, url_screenshot in projects %}
+			<div id="project">
+					<h1>{{ name }}</h1>
+					<p>{{ shortdesc }}</p>
+					<p><img src="{{ url_screenshot }}"></p>
+					<p><a href="{{ homepage }}">homepage</a></p>
+					<p><a href="{{ downloadpage }}">downloadpage</a></p>
+					<p>languages:</p>
+					<ul>
+						{% for language in languages %}
+							<li>{{ language }}</li>
+						{% endfor%}
+					</ul> 
+			</div>		
+		
+		{% endfor %}	
+	</div>	
+	
+		
 		
 {% endblock %}
