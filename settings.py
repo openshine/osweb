@@ -128,9 +128,12 @@ NUM_LIVE_POSTS = 4#post number that will be displayed in live page
 
 
 
-
+TWEETS_CACHE_TIME = 60*60#The timeout, in seconds, to use for the projects cache
 NUM_TWEETS = 5
 TWITTER_USER = "pablito80"
+
+
+
 
 
 PROJECTS_CACHE_TIME = 60*60#The timeout, in seconds, to use for the projects cache
