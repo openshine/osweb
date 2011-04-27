@@ -42,7 +42,7 @@ live
 	{% for tweet in tweets %}
 		<div id="tweet">
 				<p><a href="{{ tweet.profile_url}}"><img src="{{ tweet.user_avatar_url }}" /></a>{{ tweet.html_text|safe }}</p>
-				<p>date: {{tweet.date}}   <a href="">retweet</a>
+				<p>date: {{tweet.date}}   <a href="http://twitter.com/intent/retweet?tweet_id={{ tweet.id }}">retweet</a>
 		</div>
 	{% endfor %}	
 </div>		
