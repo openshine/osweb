@@ -14,5 +14,5 @@ def projects_view(request):
 def project_detail(request, projectname):
     context_dict = {}
     
-    context_dict['project'] = [ManageProject.get_project(projectname)]
+    context_dict['project'] = ManageProject.get_project(projectname)
     return render_to_response('projects/project_detail.html', context_dict, context_instance=RequestContext(request))

@@ -16,21 +16,18 @@ projects
 
 	<div id="projects_wrapper" class="big_image">
 		<h1>PROJECT:</h1>
-		{% for name, slugname, shortname, shortdesc, description, homepage, downloadpage, languages, url_screenshot in project %}
-			<div id="project">
-					<h1>{{ name }}</h1>
-					<p>{{ shortdesc }}</p>
-					<p><img src="{{ url_screenshot }}"></p>
-					<p><a href="{{ homepage }}">homepage</a></p>
-					<p><a href="{{ downloadpage }}">downloadpage</a></p>
-					<p>languages:</p>
-					<ul>
-						{% for language in languages %}
-							<li>{{ language }}</li>
-						{% endfor%}
-					</ul> 
-			</div>		
-		
-		{% endfor %}	
+		<div id="project">
+				<h1>{{ project.name }}</h1>
+				<p>{{ project.shortdesc }}</p>
+				<p><img src="{{ project.url_screenshot }}"></p>
+				<p><a href="{{ project.homepage }}">homepage</a></p>
+				<p><a href="{{ project.downloadpage }}">downloadpage</a></p>
+				<p>languages:</p>
+				<ul>
+					{% for language in project.languages %}
+						<li>{{ language }}</li>
+					{% endfor%}
+				</ul> 
+		</div>		
 	</div>			
 {% endblock %}

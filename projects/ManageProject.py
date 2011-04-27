@@ -4,22 +4,33 @@ import urllib2
 from xml.dom.minidom import parseString
 from django.template.defaultfilters import slugify
 
-
+class Project():
+    name = None
+    slugname = None
+    shortname = None
+    shortdesc = None
+    description = None
+    homepage = None
+    downloadpage = None
+    languages = None
+    url_screenshot = None
+    
+    
+    
+    
+    
 class ManageProject():
     
     @staticmethod
     def get_projects():
-        """Return a list of projects. 
-        A project is a list of parameters: [name, slugname,
-                    shortname, shortdesc, description, 
-                    homepage, downloadpage, languages, 
-                    url_screenshot]
+        """Return a list of Project's instances.
         """
         project_names = cache.get('project_names')
         if project_names is None:
             ManageProject.update_projects_cache()
-            project_names = cache.get('project_names')
+            project_names = cache.get('project_names')#Array with the names of the cache for each project
         projects = []
+        
         for project_name in project_names:
             project = cache.get(project_name)
             if project is None:
@@ -45,9 +56,8 @@ class ManageProject():
         project_names =[]
         projects = ManageProject.read_projects()
         for project in projects:
-            slug_name = project[1] 
-            project_names.append(slug_name)
-            cache.set(slug_name, project, settings.PROJECTS_CACHE_TIME)
+            project_names.append(project.slugname)
+            cache.set(project.slugname, project, settings.PROJECTS_CACHE_TIME)
         cache.set('project_names', project_names, settings.PROJECTS_CACHE_TIME)
             
             
@@ -55,50 +65,48 @@ class ManageProject():
         
     @staticmethod    
     def read_projects():
-        """Return a list of projects. 
-        A project is a list of parameters: [name, slugname,
-                    shortname, shortdesc, description, 
-                    homepage, downloadpage, languages, 
-                    url_screenshot]""" 
+        """Return a list of Project's instances.""" 
                     
         projects = []
         for prj in settings.PROJECTS_INFO:
-            element = []
-            url_doap = prj[0]
+            #element = []
+            project = Project()
+            url_doap = prj[0]#doap url
             file = urllib2.urlopen(url_doap)
             data = file.read()
             file.close()
             dom = parseString(data)
             
             xmlTag = dom.getElementsByTagName('name')[0]
-            name = xmlTag.childNodes[0].data
-            element.append(name)#name
+            project.name = xmlTag.childNodes[0].data
             
-            element.append(slugify(name))#slugname
+            
+            project.slugname = slugify(project.name)#slugname
             
             xmlTag = dom.getElementsByTagName('shortname')[0]
-            element.append(xmlTag.childNodes[0].data)#shortname
+            project.shortname = xmlTag.childNodes[0].data#shortname
             
             xmlTag = dom.getElementsByTagName('shortdesc')[0]
-            element.append(xmlTag.childNodes[0].data)#shortdesc
+            project.shortdesc = xmlTag.childNodes[0].data#shortdesc
             
             xmlTag = dom.getElementsByTagName('description')[0]
-            element.append(xmlTag.childNodes[0].data)#description
+            project.description = xmlTag.childNodes[0].data#description
             
             xmlTag = dom.getElementsByTagName('homepage')[0]
-            element.append(xmlTag.getAttribute('rdf:resource'))#homepage
+            project.homepage = xmlTag.getAttribute('rdf:resource')#homepage
             
             xmlTag = dom.getElementsByTagName('download-page')[0]
-            element.append(xmlTag.getAttribute('rdf:resource'))#downloadpage
+            project.downloadpage = xmlTag.getAttribute('rdf:resource')#downloadpage
             
             languages = []
             for xmlTag in dom.getElementsByTagName('programming-language'):
                 lang = xmlTag.childNodes[0].data
                 languages.append(lang)
-            element.append(languages)#programming-languages
-            element.append(prj[1])#url_screenshot            
+            project.languages =languages#programming-languages
             
-            projects.append(element)
+            project.url_screenshot = prj[1]#url_screenshot            
+            
+            projects.append(project)
         
         return projects
     
