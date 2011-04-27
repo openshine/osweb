@@ -7,7 +7,7 @@ from osweb import settings
 
 def home_view(request):
     context_dict = {}
-    news = ManageBlog.get_home_page_blog()
+    news = ManageBlog.get_news_blog()
     context_dict['news'] = news
     projects = ManageProject.get_projects()
     context_dict['projects'] = projects

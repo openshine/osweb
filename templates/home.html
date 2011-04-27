@@ -16,12 +16,12 @@ Slides  --  HOME
 		
 	<div id=news_wrapper>
 		<h1>NEWS:</h1>
-		{% for date_struct, date_str, title, link, content in news %}
+		{% for news_element in news %}
 			<div id="news_element">
-					<h1>{{ title }}</h1>
-					<a href="{{ link }}">link</a>
-					<p>{{ date_str }}</p>
-					{{ content|safe }}
+					<h1>{{ news_element.title }}</h1>
+					<a href="{{ news_element.link }}">link</a>
+					<p>{{ news_element.date }}</p>
+					{{ news_element.content|safe }}
 			</div>
 		{% endfor %}	
 	</div>	

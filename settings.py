@@ -111,13 +111,13 @@ CACHES = {
     }
 }
 
-HOME_PAGE_BLOG_URL = "http://blogs.openshine.com/feed/"
+NEWS_BLOG_URL = "http://blogs.openshine.com/feed/"
 
 
 MORE_BLOGS_URL = (
     "http://blogs.openshine.com/pvieytes/feed/",              
     "http://blogs.openshine.com/cgtapia/feed/",              
-    "http://blogs.openshine.com/rmajadas/feed/",              
+    "http://blogs.openshine.com/rmajadas/feed/",     
 )
 
 BLOGS_CACHE_TIME = 60*60#The timeout, in seconds, to use for the blogs cache

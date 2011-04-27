@@ -26,12 +26,12 @@ live
 
 <div id=posts_wrapper class="big_image">
 	<h1>POSTS:</h1>
-	{% for date_struct, date_str, title, link, content in posts %}
+	{% for post in posts %}
 		<div id="post">
-				<h1>{{ title }}</h1>
-				<a href="{{ link }}">link</a>
-				<p>{{ date_str }}</p>
-				{{ content|safe }}
+				<h1>{{ post.title }}</h1>
+				<a href="{{ post.link }}">link</a>
+				<p>{{ post.date }}</p>
+				{{ post.content|safe }}
 		</div>
 	{% endfor %}	
 </div>

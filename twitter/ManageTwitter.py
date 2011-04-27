@@ -4,7 +4,8 @@ import simplejson
 import urllib2
 import re
 import time
-
+from time import mktime
+from datetime import datetime
 
 class Tweet():
     id = None
@@ -19,10 +20,8 @@ class Tweet():
     date = None
 
     def set_date(self, date_str):
-        self.date = time.strptime(date_str, "%a %b %d %H:%M:%S +0000 %Y")#Tue Apr 26 08:57:55 +0000 2011
-        print self.date
-        
-        
+        time_struct = time.strptime(date_str, "%a %b %d %H:%M:%S +0000 %Y")#Tue Apr 26 08:57:55 +0000 2011
+        self.date = datetime.fromtimestamp(mktime(time_struct))
         
     
     def set_text(self, plain_text):
