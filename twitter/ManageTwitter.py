@@ -54,7 +54,10 @@ class Tweet():
                             th.group(0)+'</a>');
                             
     def set_profile_url(self):
-        self.profile_url = "http://www.twitter.com/%s" % self.username
+        if self.retweeted:
+            self.profile_url = "http://www.twitter.com/%s" % self.retweet_user
+        else:
+            self.profile_url = "http://www.twitter.com/%s" % self.username
     
     def set_tweet_url(self):
         self.tweet_url = "http://www.twitter.com/%s/status/%s" % (self.username, self.id)

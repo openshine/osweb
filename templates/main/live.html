@@ -41,7 +41,8 @@ live
 	<h1>TWEETS:</h1>
 	{% for tweet in tweets %}
 		<div id="tweet">
-				<p>{{ tweet.html_text|safe }}</p>
+				<p><a href="{{ tweet.profile_url}}"><img src="{{ tweet.user_avatar_url }}" /></a>{{ tweet.html_text|safe }}</p>
+				<p>date: {{tweet.date}}   <a href="">retweet</a>
 		</div>
 	{% endfor %}	
 </div>		
