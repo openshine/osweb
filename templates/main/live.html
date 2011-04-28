@@ -1,50 +1,67 @@
-{% extends "base2.html" %}
+{% extends "2rows.html" %}
 {% load i18n %}
 
-{% block extrahead%}
 
 
+{% block lemaLogo%}live!{% endblock %}
+
+{% block bottomHead%}
+     <h2 id="claim">OPENSHINE LIVE!</h2>
+     
 {% endblock %}
 
-
-
-
-
-
-{% block title %}
-	live
+{% block mainContent %}
+	<div id="mainContent" class="grid8 f-l big_image">
+			<h2 class="pageTitle">We said</h2>
+			{% for post in posts %}
+			
+			<article>
+				<header>
+					<h3><a href="{{post.link}}">{{ post.title }}</a></h3>
+					<p class="meta">By <a href="#" title="openshine sl"><strong>Openshine</strong></a> | {{ post.date }}</p>
+				</header>
+				
+				<div  class="big_image">{{ post.content|safe }}</div>
+				<footer>
+					<!--  <p class="backTo f-l"><a href="#" title="Volver a noticias"><span></span> Volver a noticias</a></p>-->
+					<p class="socialLinks f-r">
+						<a href="#" class="twitter">Twitter</a>
+						<a href="#" class="linkedin">Linkedin</a>
+						<a href="#" class="identica">Identica</a>					
+					</p>
+				</footer>
+			</article>
+			{% endfor %}
+			
+			
+			
+			<!--   {  % include "demo_content.html" %  } -->
+			<!--   {  % include "demo_comments.html" %  } -->
+			
+	</div><!--grid8-->		
 {% endblock %}
-
-{% block titlecontent %}
-
-live
-
-{% endblock %}
-
-{% block bodycontent %}
-
-
-<div id=posts_wrapper >
-	<h1>POSTS:</h1>
-	{% for post in posts %}
-		<div id="post" class="big_image">
-				<h1>{{ post.title }}</h1>
-				<a href="{{ post.link }}">link</a>
-				<p>{{ post.date }}</p>
-				{{ post.content|safe }}
-		</div>
-	{% endfor %}	
-</div>
-
-
-<div id=twitter_wrapper class="small_image">
-	<h1>TWEETS:</h1>
-	{% for tweet in tweets %}
-		<div id="tweet">
-				<p><a href="{{ tweet.profile_url}}"><img src="{{ tweet.user_avatar_url }}" /></a>{{ tweet.html_text|safe }}</p>
-				<p>date: {{tweet.date}}   <a href="http://twitter.com/intent/retweet?tweet_id={{ tweet.id }}">retweet</a>
-		</div>
-	{% endfor %}	
-</div>		
+					
+		
+		
+		
+		
+			
+{% block aside %}
+		<aside>
+			{% include "main/aside_twitter.html" %}
+			
+			
+			    <!-- { % include "demo_aside.html" % }  -->
+			<h3 class="bb2">BLOG</h3>
+				<a>openshine blog</a>
+			
+		</aside>
+		
+		
+		
 		
 {% endblock %}
+
+
+
+

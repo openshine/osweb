@@ -67,6 +67,7 @@ footer#foot .mail span {background: url(../images/css/css-sprite-sin-sombra.png)
 .grid4 {width: 300px;}
 .grid5 {width: 380px;}
 .grid8 {width: 620px;}
+.grid16 {width: 920px;}
 aside {width: 300px; float: right; background: #fff; border-top: 3px solid #000; padding: 0 0 20px 0;}
 #mainContent {padding: 20px 0;}
 h2.pageTitle {font-family: 'Lato', arial, serif; font-size: 3em; margin-bottom: 15px;}
@@ -159,4 +160,15 @@ aside .post footer .f-l {padding-top: 6px;}
 .small_image img{
 	max-width: 200px; 
 	max-height:auto;
+}
+
+
+.avatar_tweet_image img{
+	max-width: 20px; 
+	max-height:auto;
+}
+
+
+article.float_left{
+	float: left;
 }
