@@ -5,24 +5,26 @@ from osweb.twitter import ManageTwitter
 from osweb.projects import ManageProject
 from osweb import settings
 
+def home2_view(request):
+    context_dict = {}
+    news = ManageBlog.get_news_blog()
+    context_dict['news'] = news
+    projects = ManageProject.get_projects()
+    context_dict['projects'] = projects
+    return render_to_response('home2.html', context_dict, context_instance=RequestContext(request))
+
+
+
 def home_view(request):
     context_dict = {}
     news = ManageBlog.get_news_blog()
+    #news = ManageBlog.get_all_blogs()
     context_dict['news'] = news
     projects = ManageProject.get_projects()
-    context_dict['projects'] = projects
-    return render_to_response('home.html', context_dict, context_instance=RequestContext(request))
-
-
-
-def index_view(request):
-    context_dict = {}
-    news = ManageBlog.get_news_blog()
-    context_dict['news'] = news
-    projects = ManageProject.get_projects()
+    
     context_dict['projects'] = projects
     context_dict['tab_home'] = True
-    return render_to_response('index.html', context_dict, context_instance=RequestContext(request))
+    return render_to_response('home.html', context_dict, context_instance=RequestContext(request))
 
 
 

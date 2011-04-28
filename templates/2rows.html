@@ -7,13 +7,14 @@
 
 {% block content%}
 		
-	
-		<div id="mainContent" class="grid8 f-l">
-			{% block mainContent %}{% endblock %}
-		</div><!--grid8-->
+	<div id="content" class="clearfix interior">
 		
-		<aside>
+			{% block mainContent %}{% endblock %}
+		
+		
+		
 			{% block aside %}{% endblock %}
-		</aside>
+		
+	</div><!--content-->
 		
 {% endblock %}

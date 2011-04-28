@@ -1,52 +1,75 @@
-{% extends "base2.html" %}
+{% extends "2rows.html" %}
 {% load i18n %}
 
 
-{% block title %}
-	home
+
+{% block lemaLogo%}Home{% endblock %}
+
+{% block bottomHead%}
+     <h2 id="claim">WE OPEN THE SOURCE</h2>
 {% endblock %}
 
-{% block titlecontent %}
-
-Slides  --  HOME
-
+{% block mainContent %}
+	<div id="mainContent" class="grid8 f-l big_image">
+			<h2 class="pageTitle">NEWS</h2>
+			{% for news_element in news %}
+			
+			<article>
+				<header>
+					<h3><a href="{{news_element.link}}">{{ news_element.title }}</a></h3>
+					<p class="meta">By <a href="#" title="openshine sl"><strong>Openshine</strong></a> | {{ news_element.date }}</p>
+				</header>
+				
+				<div  class="big_image">{{ news_element.content|safe }}</div>
+				<footer>
+					<!--  <p class="backTo f-l"><a href="#" title="Volver a noticias"><span></span> Volver a noticias</a></p>-->
+					<p class="socialLinks f-r">
+						<a href="#" class="twitter">Twitter</a>
+						<a href="#" class="linkedin">Linkedin</a>
+						<a href="#" class="identica">Identica</a>					
+					</p>
+				</footer>
+			</article>
+			{% endfor %}
+			
+			
+			
+			<!--   {  % include "demo_content.html" %  } -->
+			<!--   {  % include "demo_comments.html" %  } -->
+			
+	</div><!--grid8-->		
 {% endblock %}
-
-{% block bodycontent %}
+					
 		
-	<div id=news_wrapper>
-		<h1>NEWS:</h1>
-		{% for news_element in news %}
-			<div id="news_element">
-					<h1>{{ news_element.title }}</h1>
-					<a href="{{ news_element.link }}">link</a>
-					<p>{{ news_element.date }}</p>
-					{{ news_element.content|safe }}
+		
+		
+		
+			
+{% block aside %}
+		<aside>
+			<h3 class="asideTitle">PROJECTS</h3>
+			
+			<div class="posts">
+				{% for project in projects %}
+				<div class="post small_image" >
+					<h4>{{ project.name }}</h4>
+					<p><img src="{{ project.url_screenshot }}" alt="Descripción de la foto" /></p>
+					<p>{{ project.shortdesc }}</p>
+					
+					<footer>
+						<p class="f-l"><a href="#">Ver noticia</a></p>
+						<p class="socialLinks f-r">
+							<a href="#" class="twitter">Twitter</a>
+							<a href="#" class="linkedin">Linkedin</a>
+							<a href="#" class="identica">Identica</a>					
+						</p>
+					</footer>
+				</div>
+				{% endfor %}
+				
 			</div>
-		{% endfor %}	
-	</div>	
-	
-	
-	
-	<div id="home_projects_wrapper" class="small_image">
-		<h1>PROJECTS:</h1>
-		{% for project in projects %}
-			<div id="home_project">
-				<a href="{% url project_detail_page project.slugname %}"><h1>{{ project.name }}</h1></a>				<p>{{ shortdesc }}</p>
-				<p><img src="{{ project.url_screenshot }}"></p>
-				<p><a href="{{ project.homepage }}">homepage</a></p>
-				<p><a href="{{ project.downloadpage }}">downloadpage</a></p>
-				<p>languages:</p>
-				<ul>
-					{% for language in project.languages %}
-						<li>{{ language }}</li>
-					{% endfor%}
-				</ul> 
-			</div>		
-		
-		{% endfor %}	
-	</div>	
-	
-		
-		
+			
+			
+			    <!-- { % include "demo_aside.html" % }  -->
+		</aside>
 {% endblock %}
