@@ -90,6 +90,12 @@ article h4 {font-weight: bold; margin-bottom: 20px; font-size: 1.1em;}
 article footer {border-bottom: 1px dotted #d9d9d9; margin-bottom: 20px; overflow: hidden; padding-top: 5px;  height: 1%;}
 article footer p {margin-bottom: 10px;}
 article footer .backTo a span {background: url(../images/css/css-sprite-sin-sombra.png) -92px -146px no-repeat; display: block; width: 20px; height: 20px; float: left; margin-right: 5px;}
+article.float { width: 375px; float: left; padding:20px; margin:20px;border: 1px solid #ededed;}
+article.float img {border: 1px solid #ededed; max-width: 350px; max-height:auto;}
+article.all1row { width: 900px; padding:20px; margin:20px;border: 1px solid #ededed;}
+article.all1row img {border: 1px solid #ededed; max-width: 800px; max-height:auto;}
+
+article.post img {border: 1px solid #ededed; max-width: 350px; max-height:auto;}
 footer .socialLinks a {display: block; height: 21px; width: 21px; text-indent: -9999px; background: url(../images/css/css-sprite-sin-sombra.png) -134px -146px no-repeat; float: right; margin: 0 2px;}
 footer .socialLinks a.linkedin {background-position: -157px -146px;}
 footer .socialLinks a.twitter {background-position: -181px -146px;}
@@ -128,7 +134,8 @@ aside .posts {padding: 10px; border: 1px solid #ccc; border-width: 0 1px 1px; ma
 aside .post {border-bottom: 1px dotted #d9d9d9; margin-bottom: 15px;}
 aside .post.last-child {border-bottom: none; margin-bottom: 0;}
 aside .post p {margin-bottom: 10px;}
-aside .post img {border: 1px solid #ededed;}
+aside .post img {border: 1px solid #ededed; max-width: 200px; max-height:auto;}
+aside .tweeter_avatar img {border: 1px solid #ededed; max-width: 20px; max-height:auto;}
 aside .post h4 {margin-bottom: 10px; font-size: 1.65em; font-family: 'Lato', arial, serif;}
 aside .post footer {overflow: hidden; height: 1%;}
 aside .post footer .f-l {padding-top: 6px;}
@@ -152,6 +159,7 @@ aside .post footer .f-l {padding-top: 6px;}
 
 
 /* images */
+/* 
 .big_image img{
 	max-width: 400px; 
 	max-height:auto;
@@ -168,7 +176,4 @@ aside .post footer .f-l {padding-top: 6px;}
 	max-height:auto;
 }
 
-
-article.float_left{
-	float: left;
-}
+*/

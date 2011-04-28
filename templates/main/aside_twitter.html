@@ -4,7 +4,7 @@
 				{% for tweet in tweets %}
 				<div class="post" >
 				
-					<p><a href="{{ tweet.profile_url}}"><img class="avatar_tweet_image" src="{{ tweet.user_avatar_url }}" /></a>{{ tweet.html_text|safe }}</p>
+					<p class="tweeter_avatar"><a href="{{ tweet.profile_url}}"><img class="tweeter_avatar" src="{{ tweet.user_avatar_url }}" /></a>{{ tweet.html_text|safe }}</p>
 					<p>date: {{tweet.date}}   <a href="http://twitter.com/intent/retweet?tweet_id={{ tweet.id }}">retweet</a>
 					
 					<!-- <footer>

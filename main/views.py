@@ -53,14 +53,14 @@ def contact_view(request):
     context_dict['tab_contact'] = True
     return render_to_response('main/contact.html', context_dict, context_instance=RequestContext(request))
 
-
-
-def projects_view(request):
-    context_dict = {}
-    context_dict['tab_projects'] = True
-    projects = ManageProject.get_projects()
-    context_dict['projects'] = projects
-    context_dict['tab_home'] = True
-    return render_to_response('projects/projects.html', context_dict, context_instance=RequestContext(request))
+#
+#
+#def projects_view(request):
+#    context_dict = {}
+#    context_dict['tab_projects'] = True
+#    projects = ManageProject.get_projects()
+#    context_dict['projects'] = projects
+#    context_dict['tab_home'] = True
+#    return render_to_response('projects/projects.html', context_dict, context_instance=RequestContext(request))
 
 

@@ -11,7 +11,7 @@
 {% endblock %}
 
 {% block mainContent %}
-	<div id="mainContent" class="grid8 f-l big_image">
+	<div id="mainContent" class="grid8 f-l">
 			<h2 class="pageTitle">We said</h2>
 			{% for post in posts %}
 			
@@ -21,7 +21,7 @@
 					<p class="meta">By <a href="#" title="openshine sl"><strong>Openshine</strong></a> | {{ post.date }}</p>
 				</header>
 				
-				<div  class="big_image">{{ post.content|safe }}</div>
+				<div  class="post">{{ post.content|safe }}</div>
 				<footer>
 					<!--  <p class="backTo f-l"><a href="#" title="Volver a noticias"><span></span> Volver a noticias</a></p>-->
 					<p class="socialLinks f-r">

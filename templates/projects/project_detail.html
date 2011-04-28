@@ -1,33 +1,49 @@
-{% extends "base2.html" %}
+{% extends "1rows.html" %}
 {% load i18n %}
 
 
-{% block title %}
-	live
+
+{% block lemaLogo%}Projects{% endblock %}
+
+{% block bottomHead%}
+     <h2 id="claim">Projects</h2>
+     
 {% endblock %}
 
-{% block titlecontent %}
+{% block mainContent %}
+	<div id="mainContent" class="grid16 f-l big_image">
+			<h2 class="pageTitle">Projects</h2>
+				<article class="grid16">
+				
+					<header>
+						<h3><a href="{% url project_detail_page project.slugname %}">{{ project.name }}</a></h3>
+					</header>
+					<p><img src="{{ project.url_screenshot }}" alt="project screenshot"/></p>
+					<p>{{ project.shortdesc }}</p>
+					<p><a href="{{ project.homepage }}">homepage</a></p>
+					<p><a href="{{ project.downloadpage }}">downloadpage</a></p>
+					<p>languages:</p>
+					<ul>
+						{% for language in project.languages %}
+							<li>{{ language }}</li>
+						{% endfor%}
+					</ul> 
+					
+					<footer>
+						<p class="socialLinks f-r">
+							<a href="#" class="twitter">Twitter</a>
+							<a href="#" class="linkedin">Linkedin</a>
+							<a href="#" class="identica">Identica</a>					
+						</p>
+					</footer>
+				</article>
 
-projects
-
+			
+			
+			
+			<!--   {  % include "demo_content.html" %  } -->
+			<!--   {  % include "demo_comments.html" %  } -->
+			
+	</div><!--grid8-->		
 {% endblock %}
 
-{% block bodycontent %}
-
-	<div id="projects_wrapper" class="big_image">
-		<h1>PROJECT:</h1>
-		<div id="project">
-				<h1>{{ project.name }}</h1>
-				<p>{{ project.shortdesc }}</p>
-				<p><img src="{{ project.url_screenshot }}"></p>
-				<p><a href="{{ project.homepage }}">homepage</a></p>
-				<p><a href="{{ project.downloadpage }}">downloadpage</a></p>
-				<p>languages:</p>
-				<ul>
-					{% for language in project.languages %}
-						<li>{{ language }}</li>
-					{% endfor%}
-				</ul> 
-		</div>		
-	</div>			
-{% endblock %}
