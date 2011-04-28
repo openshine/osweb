@@ -1,0 +1,3 @@
+footer#foot .localization li {height: 1%;}
+#tabla_mes td, #tabla_mes th {padding:11px;}
+* html #tabla_mes td, #tabla_mes th {padding:12px;}

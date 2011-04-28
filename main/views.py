@@ -14,6 +14,14 @@ def home_view(request):
     return render_to_response('home.html', context_dict, context_instance=RequestContext(request))
 
 
+
+def index_view(request):
+    context_dict = {}
+    return render_to_response('index.html', context_dict, context_instance=RequestContext(request))
+
+
+
+
 def live_view(request):
     context_dict = {}
     

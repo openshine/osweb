@@ -1,0 +1,103 @@
+/*  Reset CSS & CSS Oriented Objetcs
+	Authors: De Sink
+	Authors URI: http://www.desink.com
+	License: Creative Commons Share Alike (http://creativecommons.org/licenses/by-sa/3.0/es/)
+	Based on: extends YUI reset & Nicole Sullivan Object Oriented CSS 
+	Version: 3, january, 2011
+---------------------------------- */
+body 	{font:x-small Arial,Helvetica,sans-serif; /*1em=10px*/}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td 	{margin:0; padding:0;}
+table 	{border-collapse:collapse;	border-spacing:0;}
+fieldset,img 	{border:0;}
+address,caption,cite,code,dfn,em,strong,th,var	 {font-style:normal;	font-weight:normal;}
+ol,ul 		{list-style:none;}
+caption,th 	{text-align:left;}
+h1,h2,h3,h4,h5,h6 	{font-size:100%;	font-weight:normal;}
+q:before,q:after 	{content:'';}
+abbr,acronym 	{border:0;}
+img 	{border:0;}
+h1,h2,h3,h4,h5,h6 	{font-size:1em;	font-size:100%;	font-weight:normal;}
+a	 {outline:none;}
+strong {font-weight: bold;}
+nav, header, footer, section, aside, article {display: block;}
+/* estructura ------------------------- */
+.d-b 		{display: block !important;}
+.d-i 		{display: inline !important;}
+.p-r 		{position: relative;}
+.hidden	{display:none;}
+.t-r 		{text-align:right;}
+.t-l 		{text-align:left;}
+.t-c 		{text-align:center;}
+.f-l 		{float:left;}
+.f-r 		{float:right;}
+.n-f 		{float:none !important;}
+.cl 		{clear: both;}
+.air-s 	{display: block; clear: both; height: 5px;}
+.air-m 	{display: block; clear: both; height: 10px;}
+.air-l 	{display: block; clear: both; height: 20px;}
+.v-m 	{vertical-align: middle;}
+.v-t 	{vertical-align: top;}
+/* spacing ------------------------- */
+.pan		{padding:0 !important}
+.pas		{padding:5px !important}
+.pam		{padding:10px !important}
+.pal		{padding:20px !important}
+.ptn		{padding-top:0 !important}
+.pts		{padding-top:5px !important}
+.ptm		{padding-top:10px !important}
+.ptl		{padding-top:20px !important}
+.prn		{padding-right:0 !important}
+.prs		{padding-right:5px !important}
+.prm		{padding-right:10px !important}
+.prl		{padding-right:20px !important}
+.pbn		{padding-bottom:0 !important}
+.pbs		{padding-bottom:5px !important}
+.pbm		{padding-bottom:10px !important}
+.pbl		{padding-bottom:20px !important}
+.pln		{padding-left:0 !important}
+.pls		{padding-left:5px !important}
+.plm		{padding-left:10px !important}
+.pll		{padding-left:20px !important}
+.phn		{padding-left:0 !important;padding-right:0 !important}
+.phs		{padding-left:5px !important; padding-right:5px !important}
+.phm		{padding-left:10px !important; padding-right:10px !important}
+.phl		{padding-left:20px !important ;padding-right:20px !important}
+.pvn		{padding-top:0 !important; padding-bottom:0 !important}
+.pvs		{padding-top:5px !important; padding-bottom:5px !important}
+.pvm		{padding-top:10px !important; padding-bottom:10px !important}
+.pvl		{padding-top:20px !important; padding-bottom:20px !important}
+.man		{margin:0 !important}
+.mas		{margin:5px !important}
+.mam	{margin:10px !important}
+.mal		{margin:20px !important}
+.mtn		{margin-top:0 !important}
+.mts		{margin-top:5px !important}
+.mtm	{margin-top:10px !important}
+.mtl		{margin-top:20px !important}
+.mrn		{margin-right:0 !important}
+.mrs		{margin-right:5px !important}
+.mrm	{margin-right:10px !important}
+.mrl		{margin-right:20px !important}
+.mbn		{margin-bottom:0 !important}
+.mbs		{margin-bottom:5px !important}
+.mbm	{margin-bottom:10px !important}
+.mbl		{margin-bottom:20px !important}
+.mbxl 	{margin-bottom: 25px;}
+.mln		{margin-left:0 !important}
+.mls		{margin-left:5px !important}
+.mlm		{margin-left:10px !important}
+.mll		{margin-left:20px !important}
+.mhn		{margin-left:0 !important; margin-right:0 !important}
+.mhs		{margin-left:5px !important; margin-right:5px !important}
+.mhm	{margin-left:10px !important; margin-right:10px !important}
+.mhl		{margin-left:20px !important; margin-right:20px !important}
+.mvn		{margin-top:0 !important; margin-bottom:0 !important}
+.mvs		{margin-top:5px !important; margin-bottom:5px !important}
+.mvm	{margin-top:10px !important; margin-bottom:10px !important}
+.mvl		{margin-top:20px !important; margin-bottom:20px !important}
+/* clearfix --------------------------- */
+.clearfix:after {content: "."; display: block; height: 0; 	clear: both; visibility: hidden;}
+.clearfix {	display: inline-block;}
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+/* End hide from IE-mac */

@@ -1,0 +1,149 @@
+/*
+	Authors: De Sink
+	Authors URI: http://www.desink.com
+---------------------------------- */
+
+body {background: #000 url(../images/css/bg_body.jpg) top center no-repeat; color: #282828;}
+a {color:#77aa53; text-decoration: none;}
+a:hover {color:#87ca00;}
+#wrapper {width: 960px; margin: 0 auto;}
+
+/*	header
+--------------- */
+header#head {background: url(../images/css/bg_header.png) 0 0 repeat-x;}
+header#head .topHead {padding: 20px 20px 28px; position: relative;}
+header#head .backTo {float: right; font-size: 1.3em; margin-top: 5px;}
+header#head .backTo a {color:#282828; text-decoration: none; padding: 6px 0 0; display: block;}
+header#head .backTo a:hover {color:#fff;}
+header#head .backTo a span {background: url(../images/css/css-sprite-sin-sombra.png) -92px -147px no-repeat; display: block; width: 18px; height: 18px; float: left; margin-right: 5px;}
+header#head .backTo a:hover span {background-position: -112px -147px;}
+header#head h1 a {background: url(../images/css/css-sprite-sin-sombra.png) 0 0 no-repeat; display: block; text-indent: -99999px; width: 380px; height: 83px;}
+h2#claim {font-family: 'Arvo', arial, serif; font-size: 4.8em; text-shadow: #0d240f 0 0 1px; color:#fff; clear: both; padding: 5px 10px;}
+header#head #lemaLogo {color:#8cd25a; font-size: 1.6em; font-weight: bold; position: absolute; top: 80px; left: 206px;}
+#socialIcons {position: absolute; top: 48px; right: 20px; width: 250px;}
+#socialIcons li {float: right; display: block; height: 30px; width: 30px;  margin: 0 2px;}
+#socialIcons li a {display: block; height: 30px; width: 30px; text-indent: -9999px; background: url(../images/css/css-sprite-sin-sombra.png) 0 0 no-repeat; float: right;}
+#socialIcons .identica {background-position: -197px -84px;}
+#socialIcons .search {background-position: -92px -84px;}
+#socialIcons .user {background-position: -128px -84px;}
+#socialIcons .linkedin {background-position: -163px -84px;}
+#socialIcons .twitter {background-position: -231px -84px;}
+#socialIcons .contact {background-position: -265px -84px;}
+#socialIcons .search:hover {background-position: -92px -115px;}
+#socialIcons .user:hover {background-position: -128px -115px;}
+#socialIcons .linkedin:hover {background-position: -163px -115px;}
+#socialIcons .twitter:hover {background-position: -231px -115px;}
+#socialIcons .contact:hover {background-position: -265px -115px;}
+#socialIcons .identica:hover {background-position: -197px -115px;}
+/*	nav --------- */
+header#head nav { font-family: 'Lato', arial, serif; font-size: 1.2em; text-transform: uppercase; color:#282828; width: 420px; float: left;}
+header#head nav ul {background: url(../images/css/bg_menu_transp.png) 0 0 repeat; padding: 0 5px; overflow: hidden; height: 35px;}
+header#head nav li {float:left; margin: 10px 15px; display: inline;}
+header#head nav li a {text-decoration: none; color:#fff;}
+header#head nav li.active a {color:#282828;}
+header#head nav li a:hover {color:#dfff6e;}
+
+/*	footer#foot
+----------------- */
+footer#foot {color:#a3a3a3; font-size: 1.2em; margin-bottom: 40px}
+footer#foot .copyright {clear: both; color:#686868;}
+footer#foot nav {margin-top: 7px;}
+footer#foot nav ul li {display: inline; margin-left: 30px;}
+footer#foot nav a {color:#a3a3a3; text-decoration: none;}
+footer#foot nav .active a {color:#558135;}
+footer#foot nav a:hover {color:#679844;}
+footer#foot .localization {margin-bottom: 15px;}
+footer#foot .localization li {padding: 7px 0 0; clear: both;}
+footer#foot .localization li span {height: 19px; width: 19px;margin-right: 5px; display: block; float: left;}
+footer#foot .phone span {background: url(../images/css/css-sprite-sin-sombra.png) -3px -119px no-repeat;}
+footer#foot .address span {background: url(../images/css/css-sprite-sin-sombra.png) -3px -145px no-repeat;}
+footer#foot .mail span {background: url(../images/css/css-sprite-sin-sombra.png) -3px -172px no-repeat;}
+
+/*	content
+----------------- */
+#content {margin-bottom: 20px; background:#fff url(../images/css/fondo-sin-columna.png) 0 0 no-repeat; padding: 0 10px 25px; font-size: 1.2em; display: block; width: 940px; border-bottom: 4px solid #8cd25a;} 
+#content.interior {background:#fff url(../images/css/fondo-con-columna.png) 0 0 no-repeat;}
+.grid3 {width: 210px;}
+.grid4 {width: 300px;}
+.grid5 {width: 380px;}
+.grid8 {width: 620px;}
+aside {width: 300px; float: right; background: #fff; border-top: 3px solid #000; padding: 0 0 20px 0;}
+#mainContent {padding: 20px 0;}
+h2.pageTitle {font-family: 'Lato', arial, serif; font-size: 3em; margin-bottom: 15px;}
+aside h3 {font-family: 'Lato', arial, serif; font-size: 1.8em; margin-bottom: 10px;}
+aside .asideTitle {border: 1px solid #ccc; border-width: 0 1px 1px; padding: 10px; margin: 0;}
+
+/*	article ------- */
+article {color:#666; line-height: 1.5em;}
+article header {font-size: x-small;}
+article header h3 {font-family: 'Lato', arial, serif; font-size: 3.2em; color:#282828; margin-bottom: 10px;}
+article header .meta {font-size: 1.1em; margin-bottom: 10px;}
+article p, article ul, article ol {margin-bottom: 20px;}
+article img {border: 1px solid #ccc;}
+article a {text-decoration: none;}
+article img.f-l {margin: 0 15px 10px 0;}
+article img.f-r {margin: 0 0 10px 15px;}
+article ul {list-style: disc; margin: 0 0 20px 15px;}
+article ol {list-style: decimal; margin: 0 0 20px 20px;}
+article h4 {font-weight: bold; margin-bottom: 20px; font-size: 1.1em;}
+article footer {border-bottom: 1px dotted #d9d9d9; margin-bottom: 20px; overflow: hidden; padding-top: 5px;  height: 1%;}
+article footer p {margin-bottom: 10px;}
+article footer .backTo a span {background: url(../images/css/css-sprite-sin-sombra.png) -92px -146px no-repeat; display: block; width: 20px; height: 20px; float: left; margin-right: 5px;}
+footer .socialLinks a {display: block; height: 21px; width: 21px; text-indent: -9999px; background: url(../images/css/css-sprite-sin-sombra.png) -134px -146px no-repeat; float: right; margin: 0 2px;}
+footer .socialLinks a.linkedin {background-position: -157px -146px;}
+footer .socialLinks a.twitter {background-position: -181px -146px;}
+footer .socialLinks a.identica {background-position: -134px -146px;}
+footer .socialLinks a.linkedin:hover {background-position: -157px -168px;}
+footer .socialLinks a.twitter:hover {background-position: -181px -168px;}
+footer .socialLinks a.identica:hover {background-position: -134px -168px;}
+/* comments ------------ */
+#comments {font-size: x-small; margin-top: 30px;}
+#comments header {border-bottom: 2px solid #8cd25a; margin-bottom: 20px; overflow: hidden;  height: 1%;}
+#comments header h3 {font-family: 'Lato', arial, serif; font-size: 2.6em; color:#282828; margin-bottom: 10px; float: left;}
+#comments header .publish {float: right; font-size: 1.3em; margin-top: 6px;}
+#comments header .publish a {line-height: 21px;}
+#comments header .publish span {background: url(../images/css/css-sprite-sin-sombra.png) -268px -146px no-repeat; display: block; width: 22px; height: 21px; float: left; margin-right: 3px;}
+#comments .comment {border-bottom: 1px dotted #d9d9d9; margin-bottom: 20px; font-size: 1.1em; color:#666;}
+#comments .comment .f-l a {font-size: 1.18em;}
+#comments .comment .f-l .avatar {float: left; margin: 0 10px 10px 0;}
+#comments .comment .f-r p {margin-bottom: 15px;}
+
+/*	commentForm -------- */
+#commentForm {margin-bottom: 20px; font-size: x-small;}
+#commentForm header h3 {font-family: 'Lato', arial, serif; font-size: 2.2em; margin-bottom: 10px;}
+#commentForm form {font-size: 1.3em; color:#666;}
+#commentForm form p {margin-bottom: 10px;}
+#commentForm .texto {padding: 4px 2px; font-weight: bold; border: 1px solid #ccc; width: 98%;  color:#666;}
+#commentForm textarea.texto {resize: vertical; height: 82px; font-family: Arial,Helvetica,sans-serif; font-size: .9em;}
+#commentForm form .bt {background: url(../images/css/bt_enviar.png) 0 0 no-repeat; border: none; color:#fff; font-weight: bold; width: 169px; height: 26px; cursor: pointer;}
+
+/*	aside 
+------------------------- */
+aside .bb1 {border-bottom: 1px solid #ccc; margin-bottom: 15px; padding-bottom: 10px;}
+aside .bb2 {border-bottom: 2px solid #8CD25A; margin-bottom: 15px; padding-bottom: 10px;}
+
+/* aside post ----------- */
+aside .posts {padding: 10px; border: 1px solid #ccc; border-width: 0 1px 1px; margin-bottom: 20px;}
+aside .post {border-bottom: 1px dotted #d9d9d9; margin-bottom: 15px;}
+aside .post.last-child {border-bottom: none; margin-bottom: 0;}
+aside .post p {margin-bottom: 10px;}
+aside .post img {border: 1px solid #ededed;}
+aside .post h4 {margin-bottom: 10px; font-size: 1.65em; font-family: 'Lato', arial, serif;}
+aside .post footer {overflow: hidden; height: 1%;}
+aside .post footer .f-l {padding-top: 6px;}
+
+.pseudOl li {margin-bottom: 5px; line-height: 21px;}
+.pseudOl li span {background: url(../images/css/css-sprite-sin-sombra.png) -290px -168px no-repeat; display: block; width: 22px; height: 21px; float: left; margin-right: 5px; color:#fff; text-align: center;}
+
+/*	tabla_mes ------------ */
+#tabla_mes {width: 100%; font-size: x-small; font-family: 'Lato', arial, serif; margin-bottom: 20px; position: relative;}
+#tabla_mes td, #tabla_mes th {border: 1px solid #ccc; padding: 12px; font-size: 1.5em; text-align: center; vertical-align: middle;}
+#tabla_mes td {color:#ccc;}
+#tabla_mes th, #tabla_mes td a {font-weight: bold;}
+#tabla_mes .no_mes {background: #e5e5e5; color: #fff;}
+#tabla_mes caption {border: 1px solid #ccc; border-width: 1px 1px 0; padding: 12px; font-size: 2em; text-align: center;}
+#tabla_mes .paginacion a {position: absolute; top: 15px; left: 5px; background: url(../images/css/css-sprite-sin-sombra.png) 0 0 no-repeat; display: block; width: 22px; height: 21px; text-indent: -999999px;}
+#tabla_mes .paginacion a#mes-anterior {background-position: -224px -147px;}
+#tabla_mes .paginacion a#mes-siguiente {background-position: -246px -147px; left: 270px;}
+#tabla_mes .paginacion a#mes-anterior:hover {background-position: -224px -169px;}
+#tabla_mes .paginacion a#mes-siguiente:hover {background-position: -246px -169px;}
