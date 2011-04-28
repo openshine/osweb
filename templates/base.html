@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>OpenShine</title>
+<link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}css/reset.css" />
+<link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}css/style.css" />
+<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}css/ie_style.css" /><![endif]-->
+<!--[if IE 8]><link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}css/ie8_style.css" /><![endif]-->
+<script type="text/javascript" src="{{ MEDIA_URL }}js/jquery-1.5.1.min.js"></script>
+<script type="text/javascript" src="{{ MEDIA_URL }}js/general.js"></script>
+<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<link href='http://fonts.googleapis.com/css?family=Lato:light' rel='stylesheet' type='text/css' />
+<link href='http://fonts.googleapis.com/css?family=Lato:bold' rel='stylesheet' type='text/css' />
+<link href='http://fonts.googleapis.com/css?family=Lato:900' rel='stylesheet' type='text/css' />
+<link href='http://fonts.googleapis.com/css?family=Lato:light' rel='stylesheet' type='text/css' />
+<link href='http://fonts.googleapis.com/css?family=Lato:regular' rel='stylesheet' type='text/css' />
+<link href='http://fonts.googleapis.com/css?family=Lato:light' rel='stylesheet' type='text/css' />
+<link href='http://fonts.googleapis.com/css?family=Arvo:regular,italic,bold,bolditalic' rel='stylesheet' type='text/css' />
+<!--[if IE 6]>
+	<script type="text/javascript" src="{{ MEDIA_URL }}js/DD_belatedPNG_0.0.8a-min.js"></script>
+	<script type="text/javascript">DD_belatedPNG.fix('header#head h1 a, #socialIcons li a, header#head nav ul, header#head .backTo a span, footer .socialLinks a, article footer .backTo a span, footer .socialLinks a, #comments header .publish span, footer#foot .localization li span, .pseudOl li span, #tabla_mes .paginacion a');</script>
+<![endif]-->
+</head>
+<body>
+<div id="wrapper">
+	<header id="head">
+		<div class="topHead">
+			<h1><a href="#" title="Back to Home">Open Shine</a></h1>
+			<p id="lemaLogo">{% block lemaLogo%}{% endblock %}</p>
+			<div id="socialIcons">
+				<ul class="clearfix d-b">
+					<li><a href="#" title="Contact us" class="contact">Contact us</a></li>
+					<li><a href="#" title="Join our Twitter" class="twitter">Twitter</a></li>
+					<li><a href="#" title="Join our Identica" class="identica">Identica</a></li>
+					<li><a href="#" title="Join our Linkedin" class="linkedin">Linkedin</a></li>
+					<li><a href="#" title="Go to your profile" class="user">Profile</a></li>
+					<li><a href="#" title="Search" class="search">search</a></li>					
+				</ul>
+			</div>
+		</div><!--topHead-->
+		<div class="bottomHead">
+			<nav>
+				<ul>	
+					<li {% if tab_home %}class="active"{% endif %}><a href="{% url home_page %}" title="">Home</a></li>
+					<li {% if tab_company %}class="active"{% endif %}><a href="#" title="">Company</a></li>
+					<li {% if tab_projects %}class="active"{% endif %}><a href="#" title="">Projects</a></li>
+					<li {% if tab_live %}class="active"{% endif %}><a href="#" title="">live!</a></li>
+					<li {% if tab_contact %}class="active"{% endif %}><a href="#" title="">Contact</a></li>
+				</ul>
+			</nav>
+			<!--  <p class="backTo"><a href="#" title="Back to Home"><span></span>Back to news</a></p> -->
+			{% block bottomHead%}{% endblock %}
+		</div><!--bottomHead-->
+		
+	</header>
+	<div id="content" class="clearfix interior">
+		{% block content%}{% endblock%}
+	</div><!--content-->
+	
+	<footer id="foot">
+		<div class="f-l">
+			<ul class="localization">
+				<li class="phone"><span></span> 912 345 345  -  934 765 654</li>
+				<li class="address"><span></span> Calle Montés 123. 2ºC. Madrid (España)</li>
+				<li class="mail"><span></span> info@openshine.com</li>
+			</ul>
+		</div>
+		<div class="f-r">
+			<nav>
+				<ul>
+					<li {% if tab_home %}class="active"{% endif %}><a href="{% url home_page %}" title="">Home</a></li>
+					<li {% if tab_company %}class="active"{% endif %}><a href="#" title="">Company</a></li>
+					<li {% if tab_projects %}class="active"{% endif %}><a href="#" title="">Projects</a></li>
+					<li {% if tab_live %}class="active"{% endif %}><a href="#" title="">live!</a></li>
+					<li {% if tab_contact %}class="active"{% endif %}><a href="#" title="">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+		<p class="copyright">Openshine Ltd © 2011. All rights reserved. Terms and conditions</p>
+	</footer>
+</div><!--wrapper-->
+</body>
+</html>

@@ -134,8 +134,6 @@ TWITTER_USER = "pablito80"
 
 
 
-
-
 PROJECTS_CACHE_TIME = 60*60#The timeout, in seconds, to use for the projects cache
 
 PROJECTS_INFO = (

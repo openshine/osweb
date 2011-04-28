@@ -147,3 +147,16 @@ aside .post footer .f-l {padding-top: 6px;}
 #tabla_mes .paginacion a#mes-siguiente {background-position: -246px -147px; left: 270px;}
 #tabla_mes .paginacion a#mes-anterior:hover {background-position: -224px -169px;}
 #tabla_mes .paginacion a#mes-siguiente:hover {background-position: -246px -169px;}
+
+
+
+/* images */
+.big_image img{
+	max-width: 400px; 
+	max-height:auto;
+}
+
+.small_image img{
+	max-width: 100px; 
+	max-height:auto;
+}
