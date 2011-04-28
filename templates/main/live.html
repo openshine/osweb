@@ -24,10 +24,10 @@ live
 {% block bodycontent %}
 
 
-<div id=posts_wrapper class="big_image">
+<div id=posts_wrapper >
 	<h1>POSTS:</h1>
 	{% for post in posts %}
-		<div id="post">
+		<div id="post" class="big_image">
 				<h1>{{ post.title }}</h1>
 				<a href="{{ post.link }}">link</a>
 				<p>{{ post.date }}</p>

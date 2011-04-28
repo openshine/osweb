@@ -8,15 +8,15 @@ body{
 } 
 
 .big_image img{
-	max-width: 500px; 
-	max-height: auto;
+	max-width: 400px; 
+	max-height:auto;
 }
 
 
 
 .small_image img{
 	max-width: 100px; 
-	max-height: auto;
+	max-height:auto;
 }
 
 #wrapper{
