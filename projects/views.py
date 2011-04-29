@@ -5,6 +5,7 @@ from osweb.projects import ManageProject
 
 def projects_view(request):
     context_dict = {}
+    context_dict['tab_projects'] = True
     projects = ManageProject.get_projects()
     context_dict['projects'] = projects
     return render_to_response('projects/projects.html', context_dict, context_instance=RequestContext(request))

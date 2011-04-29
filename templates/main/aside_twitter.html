@@ -1,0 +1,21 @@
+			<h3 class="asideTitle">TWEETS</h3>
+			
+			<div class="posts">
+				{% for tweet in tweets %}
+				<div class="post" >
+				
+					<p class="tweeter_avatar"><a href="{{ tweet.profile_url}}"><img class="tweeter_avatar" src="{{ tweet.user_avatar_url }}" /></a>{{ tweet.html_text|safe }}</p>
+					<p>date: {{tweet.date}}   <a href="http://twitter.com/intent/retweet?tweet_id={{ tweet.id }}">retweet</a>
+					
+					<!-- <footer>
+						<p class="f-l"><a href="#">Ver noticia</a></p>
+						<p class="socialLinks f-r">
+							<a href="#" class="twitter">Twitter</a>
+							<a href="#" class="linkedin">Linkedin</a>
+							<a href="#" class="identica">Identica</a>					
+						</p>
+					</footer> -->
+				</div>
+				{% endfor %}
+				
+			</div>
