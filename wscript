@@ -18,16 +18,6 @@ def configure(conf):
 
     conf.define('VERSION', VERSION)
     
-    if conf.env['SYSCONFDIR'] == '/usr/etc':
-        conf.define('SYSCONFDIR', '/etc')
-    else:
-        conf.define('SYSCONFDIR', conf.env['SYSCONFDIR'])
-
-    if conf.env['LOCALSTATEDIR'] == '/usr/var':
-        conf.define('LOCALSTATEDIR', '/var')
-    else:
-        conf.define('LOCALSTATEDIR', conf.env['LOCALSTATEDIR'])
-
     conf.define('prefix', conf.env["PREFIX"])
     conf.define('PACKAGE', APPNAME)
 
