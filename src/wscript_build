@@ -26,6 +26,11 @@ bld(rule=subst_rule,
     install_path=os.path.join("${PYTHONDIR}", '${PACKAGE}'),
     )
 
+#install osweb-manage 
+bld.install_as(os.path.join('${BINDIR}',"osweb-manage"),
+               "osweb-manage", 
+               chmod = 0755)
+
 #Store all python modules in ${PYTHONDIR}/${PACKAGE}
 
 app_pymod_files = []
