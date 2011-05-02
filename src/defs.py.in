@@ -2,9 +2,28 @@ import os
 
 SYSCONF_DIR=os.path.join('@sysconfdir@', '@package@')
 
+#DJANGO DEFINITIONS
+#-----------------------------------------------------
+DEBUG = True
+TEMPLATE_DEBUG = DEBUG
+
+TIME_ZONE = 'America/Chicago'
+LANGUAGE_CODE = 'en-us'
+SITE_ID = 1
+
+ADMINS = (
+    ('Pablo Vieytes', 'pvieytes@openshine.com'),
+)
+MANAGERS = ADMINS
+
+USE_I18N = True
+USE_L10N = True
+
+# Make this unique, and don't share it with anybody.
+SECRET_KEY = 'd1367p85%@qgdx@$aodd5lz6-!m9ku%j*17&%&b&o77a5hh12b'
+
 #APP DEFINITIONS
 #-----------------------------------------------------
-
 NEWS_BLOG_URL = "http://blogs.openshine.com/feed/"
 
 MORE_BLOGS_URL = (
@@ -38,3 +57,10 @@ PROJECTS_INFO = (
     )       
 
 NUM_PROJECTS_HOME = 3
+
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.memcached.MemcachedCache',
+        'LOCATION': '127.0.0.1:11211',
+    }
+}

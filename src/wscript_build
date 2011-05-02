@@ -5,16 +5,24 @@ import fnmatch
 
 current_dir = os.path.join('.','src')
 
-# Convert defs.py.in -> defs.py
+# Convert (defs|settings).py.in -> (defs|settings).py
 
 subst_rule  = "sed -e 's#@prefix@#${PREFIX}#' "
 subst_rule += "    -e 's#@sysconfdir@#${SYSCONFDIR}#' "
+subst_rule += "    -e 's#@datadir@#${DATADIR}#' "
+subst_rule += "    -e 's#@localstatedir@#${LOCALSTATEDIR}#' "
 subst_rule += "    -e 's#@package@#${PACKAGE}#' "
 subst_rule += "< ${SRC} > ${TGT}"
 
 bld(rule=subst_rule,
     source='defs.py.in',
     target='defs.py',
+    install_path=os.path.join("${PYTHONDIR}", '${PACKAGE}'),
+    )
+
+bld(rule=subst_rule,
+    source='settings.py.in',
+    target='settings.py',
     install_path=os.path.join("${PYTHONDIR}", '${PACKAGE}'),
     )
 
