@@ -27,6 +27,12 @@ bld(rule=subst_rule,
     )
 
 bld(rule=subst_rule,
+    source='urls.py.in',
+    target='urls.py',
+    install_path=os.path.join("${PYTHONDIR}", '${PACKAGE}'),
+    )
+
+bld(rule=subst_rule,
     source='wsgi.in',
     target='wsgi',
     install_path=os.path.join("${LIBDIR}", '${PACKAGE}'),
