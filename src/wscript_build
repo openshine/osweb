@@ -26,6 +26,12 @@ bld(rule=subst_rule,
     install_path=os.path.join("${PYTHONDIR}", '${PACKAGE}'),
     )
 
+bld(rule=subst_rule,
+    source='wsgi.in',
+    target='wsgi',
+    install_path=os.path.join("${LIBDIR}", '${PACKAGE}'),
+    )
+
 #install osweb-manage 
 bld.install_as(os.path.join('${BINDIR}',"osweb-manage"),
                "osweb-manage", 
