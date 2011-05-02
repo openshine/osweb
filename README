@@ -2,11 +2,11 @@ How to install
 =============
 ./waf configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var
 ./waf build
-./waf install
+sudo ./waf install
 
 to uninstall
 ------------
-./waf uninstall
+sudo ./waf uninstall
 
 How to run
 ==========
