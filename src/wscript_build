@@ -57,5 +57,5 @@ for path, dirs, files in os.walk(os.path.relpath(current_dir)) :
         target = os.path.join(path, filename)[len(str(bld.path))+1:]
         bld.install_files(dest, 
                           target, 
-                          chmod = 0755)
+                          chmod = 0644)
         #print "d: %s t: %s" % (dest, target)

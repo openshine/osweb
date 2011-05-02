@@ -51,6 +51,6 @@ for static_dir in ["media", "templates"] :
                   
          bld.install_files(dest,
                            target,
-                           chmod=0755)
+                           chmod=0644)
          #print "d: %s t: %s" % (dest, target)
 
