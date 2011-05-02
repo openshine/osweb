@@ -1,0 +1,31 @@
+# -*- python -*- 
+
+import os
+
+current_dir = os.path.join('.','data')
+
+#Store media and template files in ${DATADIR}/${PACKAGE}
+for static_dir in ["media", "templates"] :
+   static_files_dir = os.path.join(current_dir, static_dir)
+   if os.path.exists(static_files_dir) :
+      static_files = []
+      
+      for path, dirs, files in os.walk(os.path.relpath(static_files_dir)) :
+         for f in files:
+            static_files.append(os.path.join(path, f))
+            
+      for static_file in static_files :
+         target = static_file[len(str(bld.path))+1:]
+
+         if len(static_file.split(os.sep)) == 1:
+            dest = os.path.join('${DATADIR}', '${PACKAGE}')
+         else:
+            dest = os.path.join('${DATADIR}', 
+                                '${PACKAGE}',
+                                os.path.dirname(target))
+                  
+         bld.install_files(dest,
+                           target,
+                           chmod=0755)
+         #print "d: %s t: %s" % (dest, target)
+

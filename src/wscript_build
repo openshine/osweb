@@ -1,0 +1,22 @@
+# -*- python -*- 
+
+import os
+import fnmatch
+
+current_dir = os.path.join('.','src')
+
+#Store all python modules in ${PYTHONDIR}/${PACKAGE}
+app_pymod_files = []
+for path, dirs, files in os.walk(os.path.relpath(current_dir)) :
+    for filename in fnmatch.filter(files, "*.py"):
+        if len(path.split(os.sep)) == 1 :
+            dest = os.path.join('${PYTHONDIR}', '${PACKAGE}')
+        else:
+            mod_path = "/".join(path.split(os.sep)[1:])
+            dest = os.path.join('${PYTHONDIR}', '${PACKAGE}', mod_path)
+        
+        target = os.path.join(path, filename)[len(str(bld.path))+1:]
+        bld.install_files(dest, 
+                          target, 
+                          chmod = 0755)
+        #print "d: %s t: %s" % (dest, target)
