@@ -1,3 +1,40 @@
 import os
 
 SYSCONF_DIR=os.path.join('@sysconfdir@', '@package@')
+
+#APP DEFINITIONS
+#-----------------------------------------------------
+
+NEWS_BLOG_URL = "http://blogs.openshine.com/feed/"
+
+MORE_BLOGS_URL = (
+    "http://blogs.openshine.com/pvieytes/feed/",              
+    "http://blogs.openshine.com/cgtapia/feed/",              
+    "http://blogs.openshine.com/rmajadas/feed/",     
+)
+#BLOGS_CACHE_TIME : The timeout, in seconds, to use for the blogs cache
+BLOGS_CACHE_TIME = 60*60
+
+#NUM_HOME_NEWS : news number that will be displayed in home page
+NUM_HOME_NEWS = 3
+
+#NUM_LIVE_POSTS : post number that will be displayed in live page
+NUM_LIVE_POSTS = 4
+
+#TWEETS_CACHE_TIME : The timeout, in seconds, to use for the projects cache
+TWEETS_CACHE_TIME = 60*60
+NUM_TWEETS = 5
+TWITTER_USER = "pablito80"
+
+
+#PROJECTS_CACHE_TIME : The timeout, in seconds, to use for the projects cache
+PROJECTS_CACHE_TIME = 60*60
+
+PROJECTS_INFO = (
+    ("http://sites.google.com/site/capibara80/blogimages/openshine.doap",
+     "http://sites.google.com/site/capibara80/blogimages/osweb_screenshot.jpg"),
+    ("http://sites.google.com/site/capibara80/blogimages/nannycentral.doap",
+     "https://sites.google.com/site/capibara80/blogimages/screenshot-nannycentral.png"),
+    )       
+
+NUM_PROJECTS_HOME = 3
