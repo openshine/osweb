@@ -7,7 +7,7 @@ DATABASES = {
         'NAME': os.path.join('@localstatedir@',
                              'lib',
                              '@package@',
-                             'db','%s.db' % '@package@')
+                             'db','%s.db' % '@package@'),
         'USER': '',                  
         'PASSWORD': '',
         'HOST': '',
