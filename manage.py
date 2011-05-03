@@ -4,12 +4,15 @@ import os
 import sys
 import glob
 
-if os.system("./waf devroot > /dev/null 2>&1") != 0:
+root = os.path.dirname(os.path.abspath(__file__))
+waf_cmd = os.path.join(root, "waf")
+
+if os.system("cd %s && %s devroot > /dev/null 2>&1" % (root,waf_cmd)) != 0:
     print "Something wrong while try to install devroot"
     print "  * Check the errors with ./wav devroot"
     sys.exit(1)
 
-for p in glob.glob("%s/DEVROOT/usr/lib/python*/site-packages" % os.getcwd()):
+for p in glob.glob("%s/DEVROOT/usr/lib/python*/site-packages" % root):
     sys.path.insert(0, p)
 
 try:
