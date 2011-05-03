@@ -19,7 +19,7 @@ if APPNAME == '' :
     print "No APPNAME defined in %s" % root_wscript
     sys.exit(1)
 
-if os.system("cd %s && %s devroot > /dev/null 2>&1" % (root,waf_cmd)) != 0:
+if os.system("cd %s && %s devroot" % (root,waf_cmd)) != 0:
     print "Something wrong while try to install devroot"
     print "  * Check the errors with ./wav devroot"
     sys.exit(1)

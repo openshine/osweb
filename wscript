@@ -40,7 +40,12 @@ def devroot(ctx):
 --sysconfdir=%s --localstatedir=%s" % (prefix, etc, var)
 
     if os.system(conf_cmd) != 0 :
-        sys.exit(0)
+        sys.exit(1)
 
-    if os.system("./waf build install") != 0:
-        sys.exit(0)
+    if os.system("./waf build") != 0:
+        sys.exit(1)
+    
+    if os.system("./waf install > /dev/null 2>&1") != 0:
+        sys.exit(1)
+    
+    print "------------------------------"
