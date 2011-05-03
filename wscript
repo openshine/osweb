@@ -4,7 +4,7 @@ import os
 import glob
 import fnmatch
 
-VERSION = '0.1'
+VERSION = '0.0'
 APPNAME = 'osweb'
 
 top = '.'
@@ -29,7 +29,10 @@ def build(bld):
     subdirs_to_add = []
     for f in glob.glob("*/wscript_build"):
         bld.add_subdirs(os.path.dirname(f))
-    
+
+def dist(ctx):
+    ctx.excl = ' **/.waf-1* **/*~ **/*.pyc **/*.swp **/.lock-w* **/debian/* **/.git/* **/.gitignore' 
+
 def devroot(ctx):
     pwd = os.getcwd()
     prefix = os.path.join(os.getcwd(), "DEVROOT", "usr")

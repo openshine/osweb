@@ -11,3 +11,4 @@ build/*
 .waf-*
 .lock*
 DEVROOT/*
+debian/changelog
