@@ -1,7 +1,7 @@
 Source: osweb
 Section: web
 Priority: extra
-Maintainer: Jenkins Downton <jenkins@openshine.com>
+Maintainer: Jenkins Builder <jenkins@openshine.com>
 Build-Depends: cdbs, debhelper (>= 7.0.50~)
 Standards-Version: 3.9.1
 Homepage: http://www.openshine.com
