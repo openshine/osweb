@@ -7,3 +7,7 @@
 */*/*/*/*.pyc
 */*/*/*/*/*.pyc
 */*/*/*/*/*/*.pyc
+build/*
+.waf-*
+.lock*
+DEVROOT/*

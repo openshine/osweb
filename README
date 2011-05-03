@@ -1,0 +1,14 @@
+How to install
+=============
+./waf configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var
+./waf build
+sudo ./waf install
+
+to uninstall
+------------
+sudo ./waf uninstall
+
+How to run
+==========
+osweb-manage runserver
+

@@ -1,0 +1,58 @@
+# Django settings for osweb project.
+import os
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join('@localstatedir@',
+                             'lib',
+                             '@package@',
+                             'db','%s.db' % '@package@'),
+        'USER': '',                  
+        'PASSWORD': '',
+        'HOST': '',
+        'PORT': '',
+    }
+}
+
+MEDIA_ROOT = os.path.join('@datadir@', '@package@', 'media')
+MEDIA_URL = '/m/@package@/'
+ADMIN_MEDIA_PREFIX = '/sm/@package@/admin_media/'
+
+# List of callables that know how to import templates from various sources.
+TEMPLATE_LOADERS = (
+    'django.template.loaders.filesystem.Loader',
+    'django.template.loaders.app_directories.Loader',
+#     'django.template.loaders.eggs.Loader',
+)
+
+MIDDLEWARE_CLASSES = (
+    'django.middleware.common.CommonMiddleware',
+    'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',
+    'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.contrib.messages.middleware.MessageMiddleware',
+)
+
+ROOT_URLCONF = '%s.urls' % '@package@'
+
+TEMPLATE_DIRS = (
+    os.path.join('@datadir@', '@package@', 'templates'),
+)
+
+INSTALLED_APPS = (
+    #'django.contrib.auth',
+    #'django.contrib.contenttypes',
+    #'django.contrib.sessions',
+    #'django.contrib.sites',
+    #'django.contrib.messages',
+    # Uncomment the next line to enable the admin:
+    # 'django.contrib.admin',
+    # Uncomment the next line to enable admin documentation:
+    # 'django.contrib.admindocs',
+    
+)
+
+#Import all application definitions
+from defs import *
+

@@ -1,0 +1,56 @@
+# -*- python -*- 
+
+import os
+
+current_dir = os.path.join('.','data')
+
+# Convert *.in -> *
+subst_rule  = "sed -e 's#@prefix@#${PREFIX}#g' "
+subst_rule += "    -e 's#@sysconfdir@#${SYSCONFDIR}#g' "
+subst_rule += "    -e 's#@datadir@#${DATADIR}#g' "
+subst_rule += "    -e 's#@libdir@#${LIBDIR}#g' "
+subst_rule += "    -e 's#@pythondir@#${PYTHONDIR}#g' "
+subst_rule += "    -e 's#@localstatedir@#${LOCALSTATEDIR}#g' "
+subst_rule += "    -e 's#@package@#${PACKAGE}#g' "
+subst_rule += "< ${SRC} > ${TGT}"
+
+bld(rule=subst_rule,
+    source='conf/apache2.conf.in',
+    target='apache2.conf',
+    install_path=os.path.join('${SYSCONFDIR}', 
+                              '${PACKAGE}'),
+    )
+
+#Store example.conf
+bld.install_as(os.path.join('${SYSCONFDIR}',
+                            '${PACKAGE}',
+                            'example.conf'),
+               'conf/example.conf', 
+               chmod = 0640
+               )
+
+#Store media and template files in ${DATADIR}/${PACKAGE}
+for static_dir in ["media", "templates"] :
+   static_files_dir = os.path.join(current_dir, static_dir)
+   if os.path.exists(static_files_dir) :
+      static_files = []
+      
+      for path, dirs, files in os.walk(os.path.relpath(static_files_dir)) :
+         for f in files:
+            static_files.append(os.path.join(path, f))
+            
+      for static_file in static_files :
+         target = static_file[len(str(bld.path))+1:]
+
+         if len(static_file.split(os.sep)) == 1:
+            dest = os.path.join('${DATADIR}', '${PACKAGE}')
+         else:
+            dest = os.path.join('${DATADIR}', 
+                                '${PACKAGE}',
+                                os.path.dirname(target))
+                  
+         bld.install_files(dest,
+                           target,
+                           chmod=0644)
+         #print "d: %s t: %s" % (dest, target)
+

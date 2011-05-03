@@ -1,0 +1,19 @@
+Alias /sm/@package@/admin_media  @pythondir@/django/contrib/admin/media
+Alias /m/@package@ @datadir@/@package@/media
+Alias /v/@package@ @localstatedir@/lib/@package@/var
+
+<Directory @pythondir@/django/contrib/admin/media>
+    Options -Indexes FollowSymLinks
+    AllowOverride None
+</Directory>
+<Directory @datadir@/@package@/media>
+    Options -Indexes FollowSymLinks
+    AllowOverride None
+</Directory>
+<Directory @localstatedir@/lib/@package@/var>
+    Options -Indexes FollowSymLinks
+    AllowOverride None
+</Directory>
+WSGIScriptAlias /a/@package@ @libdir@/@package@/wsgi
+WSGIDaemonProcess djapps_@package@ threads=15 display-name='djapps_@package@'
+

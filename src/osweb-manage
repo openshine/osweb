@@ -1,20 +1,5 @@
 #!/usr/bin/python
 from django.core.management import execute_manager
-import os
-import sys
-import glob
-
-root = os.path.dirname(os.path.abspath(__file__))
-waf_cmd = os.path.join(root, "waf")
-
-if os.system("cd %s && %s devroot > /dev/null 2>&1" % (root,waf_cmd)) != 0:
-    print "Something wrong while try to install devroot"
-    print "  * Check the errors with ./wav devroot"
-    sys.exit(1)
-
-for p in glob.glob("%s/DEVROOT/usr/lib/python*/site-packages" % root):
-    sys.path.insert(0, p)
-
 try:
     import osweb.settings # Assumed to be in the same directory.
 except ImportError:
