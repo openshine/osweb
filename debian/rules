@@ -1,0 +1,7 @@
+#!/usr/bin/make -f
+
+include /usr/share/cdbs/1/rules/debhelper.mk
+include /usr/share/cdbs/1/class/waf.mk
+
+# Add here any variable or target overrides you need.
+DEB_WAF_CONFIGURE_OPTIONS = --prefix=/usr --sysconfdir=/etc --localstatedir=/var

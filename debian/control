@@ -1,0 +1,13 @@
+Source: osweb
+Section: web
+Priority: extra
+Maintainer: Jenkins Downton <jenkins@openshine.com>
+Build-Depends: cdbs, debhelper (>= 7.0.50~)
+Standards-Version: 3.9.1
+Homepage: http://www.openshine.com
+
+Package: osweb
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: OpenShine webpage package
+ Here is the OpenSine main web
