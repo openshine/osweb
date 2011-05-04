@@ -1,7 +1,41 @@
 #!/usr/bin/make -f
 
 include /usr/share/cdbs/1/rules/debhelper.mk
-include /usr/share/cdbs/1/class/waf.mk
+include /usr/share/cdbs/1/rules/utils.mk
 
-# Add here any variable or target overrides you need.
-DEB_WAF_CONFIGURE_OPTIONS = --prefix=/usr --sysconfdir=/etc --localstatedir=/var
+waf-configure-options = --prefix=/usr --sysconfdir=/etc --localstatedir=/var
+
+DEB_MAKE_CLEAN_TARGET = clean
+DEB_MAKE_CONFIGURE_TARGET = configure
+DEB_MAKE_INSTALL_TARGET = install
+DEB_MAKE_INVOKE = ./waf --destdir=$(CURDIR)/debian/osweb/
+
+clean::
+	rm -f .lock-wscript
+	rm -rf .waf*
+	rm -rf build/
+
+common-configure-arch common-configure-indep:: common-configure-impl
+common-configure-impl:: debian/stamp-waf-configure
+debian/stamp-waf-configure:
+	./waf $(waf-configure-options) $(DEB_MAKE_CONFIGURE_TARGET)
+	touch $@
+clean::
+	rm -f debian/stamp-waf-configure
+
+build/osweb:: debian/stamp-waf-build
+debian/stamp-waf-build: 
+	$(DEB_MAKE_INVOKE)
+	touch $@
+clean::
+	rm -f debian/stamp-waf-build
+
+install/osweb:: debian/stamp-waf-install
+debian/stamp-waf-install:
+	$(DEB_MAKE_INVOKE) $(DEB_MAKE_INSTALL_TARGET)
+	touch $@
+clean::
+	rm -f debian/stamp-waf-install
+
+binary-install/osweb::
+	dh_pysupport -posweb
