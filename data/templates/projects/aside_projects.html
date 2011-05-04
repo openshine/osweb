@@ -2,17 +2,14 @@
 			<div class="posts">
 				{% for project in projects %}
 				<div class="post small_image" >
-					<h4>{{ project.name }}</h4>
-					<p><img src="{{ project.url_screenshot }}" alt="Descripción de la foto" /></p>
-					<p>{{ project.shortdesc }}</p>
+					<h4><a href="{% url project_detail_page project.slug_name %}">{{ project.name }}</a></h4>
+					{% if project.screenshot %}
+						<p><a href="{% url project_detail_page project.slug_name %}"><img src="{{ MEDIA_URL }}images/projects/{{ project.screenshot }}" alt="" /></a></p>
+					{% endif %}
+					<p>{{ project.shortdesc|safe }}</p>
 					
 					<footer>
-						<p class="f-l"><a href="#">Ver noticia</a></p>
-						<p class="socialLinks f-r">
-							<a href="#" class="twitter">Twitter</a>
-							<a href="#" class="linkedin">Linkedin</a>
-							<a href="#" class="identica">Identica</a>					
-						</p>
+						<p class="f-l"><a href="{% url project_detail_page project.slug_name %}">link</a></p>
 					</footer>
 				</div>
 				{% endfor %}
