@@ -13,7 +13,7 @@ out = 'build'
 def configure(conf):
     conf.check_tool('python')
     conf.check_tool('gnu_dirs')
-    conf.check_python_version((2,7,0))
+    conf.check_python_version((2,6,0))
     conf.define('PYEXECDIR', conf.env["PYTHONDIR"])
 
     conf.define('VERSION', VERSION)
