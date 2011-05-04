@@ -8,7 +8,7 @@ waf-configure-options = --prefix=/usr --sysconfdir=/etc --localstatedir=/var
 DEB_MAKE_CLEAN_TARGET = clean
 DEB_MAKE_CONFIGURE_TARGET = configure
 DEB_MAKE_INSTALL_TARGET = install
-DEB_MAKE_INVOKE = ./waf -v --destdir=$(CURDIR)/debian/osweb/
+DEB_MAKE_INVOKE = ./waf --destdir=$(CURDIR)/debian/osweb/
 
 clean::
 	rm -f .lock-wscript
