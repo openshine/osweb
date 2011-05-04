@@ -7,7 +7,7 @@ Standards-Version: 3.9.1
 Homepage: http://www.openshine.com
 
 Package: osweb
-Architecture: any
+Architecture: all 
 Depends: ${shlibs:Depends}, ${misc:Depends}, ${python:Depends}, python-django(>=1.2.3), python-support (>= 0.90)
 Description: OpenShine webpage package
  Here is the OpenSine main web
