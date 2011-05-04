@@ -3,30 +3,27 @@
 
 
 
-{% block lemaLogo%}Projects{% endblock %}
+{% block lemaLogo%}projects{% endblock %}
 
 {% block bottomHead%}
-     <h2 id="claim">Projects</h2>
+     <h2 id="claim">PROJECTS</h2>
      
 {% endblock %}
 
 {% block mainContent %}
 	<div id="mainContent" class="grid16 f-l big_image">
-			<h2 class="pageTitle">Projects</h2>
 			{% for project in projects %}
 				<article class="grid4 float">
 				
 					<header>
-						<h3><a href="{% url project_detail_page project.slugname %}">{{ project.name }}</a></h3>
+						<h3><a href="{% url project_detail_page project.slug_name %}">{{ project.name }}</a></h3>
 					</header>
-					<p><img src="{{ project.url_screenshot }}" alt="project screenshot"/></p>
-					<p>{{ project.shortdesc }}</p>
+					{% if  project.screenshot %}
+						<p><a href="{% url project_detail_page project.slug_name %}"><img src="{{ MEDIA_URL }}images/projects/{{ project.screenshot }}" alt="project screenshot"/></a></p>
+					{% endif %}
+					<p>{{ project.shortdesc|safe }}</p>
 					<footer>
-						<p class="socialLinks f-r">
-							<a href="#" class="twitter">Twitter</a>
-							<a href="#" class="linkedin">Linkedin</a>
-							<a href="#" class="identica">Identica</a>					
-						</p>
+						<p class="f-l"><a href="{% url project_detail_page project.slug_name %}">link</a></p>
 					</footer>
 				</article>
 			{% endfor %}
