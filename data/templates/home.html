@@ -16,7 +16,7 @@
 			
 			<article>
 				<header>
-					<h3><a href="{{news_element.link}}">{{ news_element.title }}</a></h3>
+					<h3><a href="{{news_element.link}}">{{ news_element.title|safe }}</a></h3>
 					<p class="meta">By <a href="#" title="openshine sl"><strong>Openshine</strong></a> | {{ news_element.date }}</p>
 				</header>
 				
