@@ -80,7 +80,7 @@ article header {font-size: x-small;}
 article header h3 {font-family: 'Lato', arial, serif; font-size: 3.2em; color:#282828; margin-bottom: 10px;}
 article header .meta {font-size: 1.1em; margin-bottom: 10px;}
 article p, article ul, article ol {margin-bottom: 20px;}
-article img {border: 1px solid #ccc; max-width: 100%; max-height:auto;}
+article img {border: 1px solid #ccc; max-width: 90%; max-height:auto;}
 article a {text-decoration: none;}
 article img.f-l {margin: 0 15px 10px 0;}
 article img.f-r {margin: 0 0 10px 15px;}
@@ -93,9 +93,12 @@ article footer .backTo a span {background: url(../images/css/css-sprite-sin-somb
 article.float { width: 375px; float: left; padding:20px; margin:20px;border: 1px solid #ededed;}
 article.float img {border: 1px solid #ededed; max-width: 350px; max-height:auto;}
 article.all1row { width: 900px; padding:20px; margin:20px;border: 1px solid #ededed;}
-article.all1row img {border: 1px solid #ededed; max-width: 800px; max-height:auto;}
-
+article.all1row img {border: 1px solid #ededed; max-width: 400px; max-height:auto;}
+article.company {with:100%}
 article.post img {border: 1px solid #ededed; max-width: 350px; max-height:auto;}
+article.company {width: 850px;}
+
+
 footer .socialLinks a {display: block; height: 21px; width: 21px; text-indent: -9999px; background: url(../images/css/css-sprite-sin-sombra.png) -134px -146px no-repeat; float: right; margin: 0 2px;}
 footer .socialLinks a.linkedin {background-position: -157px -146px;}
 footer .socialLinks a.twitter {background-position: -181px -146px;}
@@ -158,10 +161,10 @@ aside .tweet_txt  {min-height:50px; background-color: #f6f6f6; padding:5px;}
 
 
 
+.clear {clear:both;}
 
 /* images */
 
-.2rows img {max-width: 200px; max-height:auto;}
-.size-full img {max-width: 200px; max-height:auto;}
+
 
 */
