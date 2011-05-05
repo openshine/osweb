@@ -42,12 +42,12 @@ class ManageBlog():
         news_blog = feedparser.parse(settings.NEWS_BLOG_URL)
         for index in xrange(len(news_blog['entries'])):
             post = Post()
-            date_str = str(news_blog.entries[index].date)
+            date_str = news_blog.entries[index].date
             time_struct = time.strptime(date_str, "%a, %d %b %Y %H:%M:%S +0000")#str to time struct
             post.date = datetime.fromtimestamp(mktime(time_struct))
-            post.title = str(news_blog.entries[index].title)
-            post.link = str(news_blog.entries[index].link)
-            post.content = str(news_blog.entries[index].content[0].value)
+            post.title = news_blog.entries[index].title
+            post.link = news_blog.entries[index].link
+            post.content = news_blog.entries[index].content[0].value
             post.author = news_blog.entries[index].author
             post.blog_url = news_blog['feed']['link']
             posts.append(post)
@@ -63,12 +63,12 @@ class ManageBlog():
         for blog in more_blogs:
             for index in xrange(len(blog['entries'])):
                 post = Post()
-                date_str = str(blog.entries[index].date)
+                date_str = blog.entries[index].date
                 time_struct = time.strptime(date_str, "%a, %d %b %Y %H:%M:%S +0000")#str to time struct
                 post.date = datetime.fromtimestamp(mktime(time_struct))
-                post.title = str(blog.entries[index].title)
-                post.link = str(blog.entries[index].link)
-                post.content = str(blog.entries[index].content[0].value)
+                post.title = blog.entries[index].title
+                post.link = blog.entries[index].link
+                post.content = blog.entries[index].content[0].value
                 post.author = blog.entries[index].author
                 post.blog_url = blog['feed']['link']
                 more_blogs_posts.append(post)

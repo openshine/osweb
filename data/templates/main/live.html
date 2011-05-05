@@ -16,7 +16,7 @@
 			
 			<article>
 				<header>
-					<h3><a href="{{post.link}}">{{ post.title }}</a></h3>
+					<h3><a href="{{post.link}}">{{ post.title|safe }}</a></h3>
 					<p class="meta">By <a href="{{ post.blog_url}}" title="{{ post.blog_url}}"><strong>{{ post.author}}</strong></a> | {{ post.date }}</p>
 				</header>
 				
