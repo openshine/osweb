@@ -12,16 +12,15 @@
 
 {% block mainContent %}
 	<div id="mainContent" class="grid8 f-l">
-			<h2 class="pageTitle">We said</h2>
 			{% for post in posts %}
 			
 			<article>
 				<header>
 					<h3><a href="{{post.link}}">{{ post.title }}</a></h3>
-					<p class="meta">By <a href="#" title="openshine sl"><strong>Openshine</strong></a> | {{ post.date }}</p>
+					<p class="meta">By <a href="{{ post.blog_url}}" title="{{ post.blog_url}}"><strong>{{ post.author}}</strong></a> | {{ post.date }}</p>
 				</header>
 				
-				<div  class="post">{{ post.content|safe }}</div>
+				<div class="2rows">{{ post.content|safe }}</div>
 				<footer>
 					<!--  <p class="backTo f-l"><a href="#" title="Volver a noticias"><span></span> Volver a noticias</a></p>-->
 					<p class="socialLinks f-r">
@@ -49,11 +48,15 @@
 {% block aside %}
 		<aside>
 			{% include "main/aside_twitter.html" %}
-			
-			
+
 			    <!-- { % include "demo_aside.html" % }  -->
-			<h3 class="bb2">BLOG</h3>
-				<a>openshine blog</a>
+			<h3 class="bb2">BLOGS</h3>
+			<ul>
+				<li><a href="http://blogs.openshine.com/">Openshine Blog</a></li>
+				<li><a href="http://blogs.openshine.com/rmajadas">Just thinking about software</a></li>
+				<li><a href="http://blogs.openshine.com/cgtapia">César García Tapia</a></li>
+				<li><a href="http://blogs.openshine.com/pvieytes">Pablog</a></li>
+			</ul>
 			
 		</aside>
 		

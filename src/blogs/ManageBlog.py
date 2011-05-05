@@ -10,6 +10,8 @@ class Post():
     title = None
     link = None
     content = None
+    author = None
+    blog_url = None
     
     
     
@@ -46,6 +48,8 @@ class ManageBlog():
             post.title = str(news_blog.entries[index].title)
             post.link = str(news_blog.entries[index].link)
             post.content = str(news_blog.entries[index].content[0].value)
+            post.author = news_blog.entries[index].author
+            post.blog_url = news_blog['feed']['link']
             posts.append(post)
         cache.set('news_blog', posts, settings.BLOGS_CACHE_TIME)
     
@@ -65,6 +69,8 @@ class ManageBlog():
                 post.title = str(blog.entries[index].title)
                 post.link = str(blog.entries[index].link)
                 post.content = str(blog.entries[index].content[0].value)
+                post.author = blog.entries[index].author
+                post.blog_url = blog['feed']['link']
                 more_blogs_posts.append(post)
                 
         
