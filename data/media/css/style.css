@@ -80,7 +80,7 @@ article header {font-size: x-small;}
 article header h3 {font-family: 'Lato', arial, serif; font-size: 3.2em; color:#282828; margin-bottom: 10px;}
 article header .meta {font-size: 1.1em; margin-bottom: 10px;}
 article p, article ul, article ol {margin-bottom: 20px;}
-article img {border: 1px solid #ccc;}
+article img {border: 1px solid #ccc; }
 article a {text-decoration: none;}
 article img.f-l {margin: 0 15px 10px 0;}
 article img.f-r {margin: 0 0 10px 15px;}
@@ -139,7 +139,7 @@ aside .post p img {border: 1px solid #ededed; max-width: 200px; max-height:auto;
 aside .post h4 {margin-bottom: 10px; font-size: 1.65em; font-family: 'Lato', arial, serif;}
 aside .post footer {overflow: hidden; height: 1%;text-align: center; margin-bottom: 5px; }
 aside .post footer .f-l {padding-top: 6px;}
-aside .tweet_txt  {min-height:50px; background-color: #f6f6f6}
+aside .tweet_txt  {min-height:50px; background-color: #f6f6f6; padding:5px;}
 .pseudOl li {margin-bottom: 5px; line-height: 21px;}
 .pseudOl li span {background: url(../images/css/css-sprite-sin-sombra.png) -290px -168px no-repeat; display: block; width: 22px; height: 21px; float: left; margin-right: 5px; color:#fff; text-align: center;}
 
@@ -156,24 +156,12 @@ aside .tweet_txt  {min-height:50px; background-color: #f6f6f6}
 #tabla_mes .paginacion a#mes-anterior:hover {background-position: -224px -169px;}
 #tabla_mes .paginacion a#mes-siguiente:hover {background-position: -246px -169px;}
 
-.clear = {clear: both;}
+
+
 
 /* images */
-/* 
-.big_image img{
-	max-width: 400px; 
-	max-height:auto;
-}
 
-.small_image img{
-	max-width: 200px; 
-	max-height:auto;
-}
-
-
-.avatar_tweet_image img{
-	max-width: 20px; 
-	max-height:auto;
-}
+.2rows img {max-width: 200px; max-height:auto;}
+.size-full img {max-width: 200px; max-height:auto;}
 
 */
