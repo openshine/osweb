@@ -133,12 +133,13 @@ aside .bb2 {border-bottom: 2px solid #8CD25A; margin-bottom: 15px; padding-botto
 aside .posts {padding: 10px; border: 1px solid #ccc; border-width: 0 1px 1px; margin-bottom: 20px;}
 aside .post {border-bottom: 1px dotted #d9d9d9; margin-bottom: 15px;}
 aside .post.last-child {border-bottom: none; margin-bottom: 0;}
-aside .post p {margin-bottom: 10px;}
+aside .post p {margin-bottom: 10px; vertical-align: middle;}
 aside .post img {border: 1px solid #ededed; max-width: 200px; max-height:auto;}
 aside .tweeter_avatar img {border: 1px solid #ededed; max-width: 20px; max-height:auto;}
 aside .post h4 {margin-bottom: 10px; font-size: 1.65em; font-family: 'Lato', arial, serif;}
 aside .post footer {overflow: hidden; height: 1%;}
 aside .post footer .f-l {padding-top: 6px;}
+aside .tweet {vertical-align: middle;}
 
 .pseudOl li {margin-bottom: 5px; line-height: 21px;}
 .pseudOl li span {background: url(../images/css/css-sprite-sin-sombra.png) -290px -168px no-repeat; display: block; width: 22px; height: 21px; float: left; margin-right: 5px; color:#fff; text-align: center;}
@@ -157,6 +158,7 @@ aside .post footer .f-l {padding-top: 6px;}
 #tabla_mes .paginacion a#mes-siguiente:hover {background-position: -246px -169px;}
 
 
+.float-left{float: left}
 
 /* images */
 /* 
