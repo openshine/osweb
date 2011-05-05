@@ -80,7 +80,7 @@ article header {font-size: x-small;}
 article header h3 {font-family: 'Lato', arial, serif; font-size: 3.2em; color:#282828; margin-bottom: 10px;}
 article header .meta {font-size: 1.1em; margin-bottom: 10px;}
 article p, article ul, article ol {margin-bottom: 20px;}
-article img {border: 1px solid #ccc; }
+article img {border: 1px solid #ccc; max-width: 100%; max-height:auto;}
 article a {text-decoration: none;}
 article img.f-l {margin: 0 15px 10px 0;}
 article img.f-r {margin: 0 0 10px 15px;}
@@ -135,7 +135,7 @@ aside .post {border-bottom: 1px dotted #d9d9d9; margin-bottom: 15px;}
 aside .post.last-child {border-bottom: none; margin-bottom: 0;}
 aside .post p {margin-bottom: 10px; vertical-align: middle; vertical-align:text-middle;}
 aside .post img {border: 1px solid #ededed; max-width: 200px; max-height:auto; margin-right:5px;}
-aside .post p img {border: 1px solid #ededed; max-width: 200px; max-height:auto; float: left; vertical-align:text-middle;}
+aside .tweet p img {border: 1px solid #ededed; max-width: 200px; max-height:auto; float: left; vertical-align:text-middle;}
 aside .post h4 {margin-bottom: 10px; font-size: 1.65em; font-family: 'Lato', arial, serif;}
 aside .post footer {overflow: hidden; height: 1%;text-align: center; margin-bottom: 5px; }
 aside .post footer .f-l {padding-top: 6px;}

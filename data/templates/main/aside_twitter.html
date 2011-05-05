@@ -2,7 +2,7 @@
 			
 			<div class="posts">
 				{% for tweet in tweets %}
-				<div class="post" >	
+				<div class="post tweet" >	
 					<div class="tweet_txt">
 						<p><a href="http://twitter.com/#!/{{ tweet.username}}/status/{{ tweet.id }}"><img src="{{ tweet.user_avatar_url }}" /></a>
 						{{ tweet.html_text|safe }}</p>
