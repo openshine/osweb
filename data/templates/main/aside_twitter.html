@@ -3,9 +3,14 @@
 			<div class="posts">
 				{% for tweet in tweets %}
 				<div class="post" >	
-					<p><a href="{{ tweet.profile_url}}"><img src="{{ tweet.user_avatar_url }}" /></a>
-					{{ tweet.html_text|safe }}</p>
-					<p>date: {{tweet.date}}   <a href="http://twitter.com/intent/retweet?tweet_id={{ tweet.id }}">retweet</a></p>
+					<div class="tweet_txt">
+						<p><a href="http://twitter.com/#!/{{ tweet.username}}/status/{{ tweet.id }}"><img src="{{ tweet.user_avatar_url }}" /></a>
+						{{ tweet.html_text|safe }}</p>
+					</div>
+				    <footer>
+						{{tweet.date}}<!--<a href="http://twitter.com/intent/retweet?tweet_id={{ tweet.id }}">retweet</a>-->
+					</footer>
 				</div>
+				
 				{% endfor %}
 			</div>
