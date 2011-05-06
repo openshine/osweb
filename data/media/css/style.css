@@ -166,6 +166,11 @@ aside .tweet_txt  {min-height:50px; background-color: #f6f6f6; padding:5px;}
 
 .clear {clear:both;}
 
+
+
+#hiring {background-color: #87ca00; text-align:center;border-radius:15px;margin:45px;
+		}
+#hiring h3{color:#fff;padding-bottom:20px;padding-top:20px;}
 /* images */
 
 
