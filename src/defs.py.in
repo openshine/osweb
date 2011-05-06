@@ -35,7 +35,10 @@ MORE_BLOGS_URL = (
 BLOGS_CACHE_TIME = 60*60
 
 #NUM_HOME_NEWS : news number that will be displayed in home page
-NUM_HOME_NEWS = 3
+NUM_HOME_NEWS = 2
+
+#NUM_HOME_PROJECTS : projects number that will be displayes in home page 
+NUM_HOME_PROJECTS = 3
 
 #NUM_LIVE_POSTS : post number that will be displayed in live page
 NUM_LIVE_POSTS = 4

@@ -9,10 +9,10 @@ from osweb import settings
 def home_view(request):
     context_dict = {}
     news = ManageBlog.get_news_blog()
-    context_dict['news'] = news
+    context_dict['news'] = news[:settings.NUM_HOME_NEWS]
     
     projects = ManageProject.get_projects()
-    context_dict['projects'] = projects
+    context_dict['projects'] = projects[:settings.NUM_HOME_PROJECTS]
     context_dict['tab_home'] = True
     return render_to_response('home.html', context_dict, context_instance=RequestContext(request))
 
