@@ -33,6 +33,7 @@
      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
    })();
 </script>
+{% block extrahead %}{% endblock %}
 </head>
 <body>
 <div id="wrapper">
@@ -65,7 +66,7 @@
 		
 	</header>
 	
-	{% block content%}{% endblock%}
+	{% block content%}{% endblock %}
 	
 	
 	<footer id="foot">
