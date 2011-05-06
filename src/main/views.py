@@ -10,7 +10,7 @@ def home_view(request):
     context_dict = {}
     news = ManageBlog.get_news_blog()
     context_dict['news'] = news[:settings.NUM_HOME_NEWS]
-    
+    context_dict['SLIDE_TIMER'] = settings.SLIDE_TIMER
     projects = ManageProject.get_projects()
     context_dict['projects'] = projects[:settings.NUM_HOME_PROJECTS]
     context_dict['tab_home'] = True

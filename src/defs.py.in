@@ -48,6 +48,9 @@ TWEETS_CACHE_TIME = 60*60
 NUM_TWEETS = 5
 TWITTER_USER = "pablito80"
 
+#SLIDE_TIMER : Number of miliseconds per slide at home
+SLIDE_TIMER = 9000
+
 
 #PROJECTS_CACHE_TIME : The timeout, in seconds, to use for the projects cache
 PROJECTS_CACHE_TIME = 60*60     

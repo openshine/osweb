@@ -4,7 +4,7 @@
 {% block extrahead %}
 
 <script type="text/javascript">
-var time = 3000;
+var time = {{ SLIDE_TIMER }};
 var slide_index = 0;
 var slide_max = 3;
 
@@ -46,11 +46,12 @@ function move_slide(){
 {% block lemaLogo%}home{% endblock %}
 
 {% block bottomHead%}
+<p class="backTo"><a href="#" title="Back to Home"><span></span></a></p>
+<p class="backTo"><a href="#" title="Back to Home"><span></span></a></p>
+<p class="backTo"><a href="#" title="Back to Home"><span></span></a></p>
+<p class="backTo"><a href="#" title="Back to Home"><span></span></a></p>
 
-<div id="slider_nav">
 
-
-</div>
 
 
 <div id="slider_content">
