@@ -3,9 +3,7 @@
 
 {% block extrahead %}
 <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=false&amp;key=ABQIAAAA7OG0Yf5b5hLm1wXhgyyXmhRi5OxgNmtNv5ebrypmfI8VGYPUbBTAw7S5lyRn48N1YihNyC6Kca1BNA" type="text/javascript"></script>
-
-<script type="text/javascript" src="{{ MEDIA_URL }}js/jquery.googlemaps1.01.js">
-</script>
+<script type="text/javascript"charset="utf-8">google.load("maps","2.x"); google.load("jquery","1.3.1");</script>
 {% endblock %}
 
 {% block lemaLogo%}contact{% endblock %}
@@ -17,30 +15,32 @@
 
 {% block mainContent %}
 	<div id="mainContent" class="grid8 f-l">			
-			<article>
-				<header> </header>
-				 <div id="map_canvas"></div>
-				 <style media="screen"type="text/css">#map_canvas { height:500px; }</style>
-				 
-				 <script type="text/javascript"> 
-				   $(document).ready(function() { 
-				   $('#map_canvas').googleMaps({
-				   markers: {
-				   latitude: 	40.4290176,
-				   longitude:   -3.703188
-				   }
-				   }); 
-				   }); 
-				 </script>
-				 
-				<footer>
-					<p class="socialLinks f-r">
-						<a href="#" class="twitter">Twitter</a>
-						<a href="#" class="linkedin">Linkedin</a>
-						<a href="#" class="identica">Identica</a>					
-					</p>
-				</footer>
-			</article>
+	  <article>
+	    <header> </header>
+	    <div id="map_canvas"></div>
+	    <style media="screen"type="text/css">#map_canvas { height:500px; }</style>
+	    
+	    <script type="text/javascript"> 
+	      $(document).ready(function() { 
+	      var map = new GMap2(document.getElementById('map_canvas')); 
+	      var openshine_office = new GLatLng(40.4290176, -3.703188); 
+	      
+	      map.setCenter(openshine_office, 16);
+	      var os_point = new GLatLng(40.4290176, -3.703188); 
+	      marker = new GMarker(os_point);
+	      map.addOverlay(marker); 
+	      
+	      }); 
+	    </script>
+	    
+	    <footer>
+	      <p class="socialLinks f-r">
+		<a href="#" class="twitter">Twitter</a>
+		<a href="#" class="linkedin">Linkedin</a>
+		<a href="#" class="identica">Identica</a>					
+	      </p>
+	    </footer>
+	  </article>
 	</div><!--grid8-->		
 {% endblock %}
 					
