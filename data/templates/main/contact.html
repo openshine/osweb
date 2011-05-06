@@ -1,7 +1,12 @@
 {% extends "2rows.html" %}
 {% load i18n %}
 
+{% block extrahead %}
+<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=false&amp;key=ABQIAAAA7OG0Yf5b5hLm1wXhgyyXmhRi5OxgNmtNv5ebrypmfI8VGYPUbBTAw7S5lyRn48N1YihNyC6Kca1BNA" type="text/javascript"></script>
 
+<script type="text/javascript" src="{{ MEDIA_URL }}js/jquery.googlemaps1.01.js">
+</script>
+{% endblock %}
 
 {% block lemaLogo%}contact{% endblock %}
 
@@ -11,13 +16,26 @@
 {% endblock %}
 
 {% block mainContent %}
-	<div id="mainContent" class="grid8 f-l">
-			{% for post in posts %}
-			
+	<div id="mainContent" class="grid8 f-l">			
 			<article>
 				<header> </header>
-				
-				<div class="2rows">{{ post.content|safe }}</div>
+
+				 <div id="address">openshine</div>
+				 <script type="text/javascript"> 
+				   $(document).ready(function() { 
+				   $('#map_canvas').googleMaps({
+				   markers: {
+				   latitude: 	40.4290176,
+				   longitude:   -3.703188,
+				   info: {
+				   layer: '#address'
+				   }
+				   }
+				   }); 
+				   }); 
+				   
+				 </script>
+				 
 				<footer>
 					<p class="socialLinks f-r">
 						<a href="#" class="twitter">Twitter</a>
@@ -26,7 +44,6 @@
 					</p>
 				</footer>
 			</article>
-			{% endfor %}	
 	</div><!--grid8-->		
 {% endblock %}
 					
