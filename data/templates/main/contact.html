@@ -19,21 +19,18 @@
 	<div id="mainContent" class="grid8 f-l">			
 			<article>
 				<header> </header>
-
-				 <div id="address">openshine</div>
+				 <div id="map_canvas"></div>
+				 <style media="screen"type="text/css">#map_canvas { height:500px; }</style>
+				 
 				 <script type="text/javascript"> 
 				   $(document).ready(function() { 
 				   $('#map_canvas').googleMaps({
 				   markers: {
 				   latitude: 	40.4290176,
-				   longitude:   -3.703188,
-				   info: {
-				   layer: '#address'
-				   }
+				   longitude:   -3.703188
 				   }
 				   }); 
 				   }); 
-				   
 				 </script>
 				 
 				<footer>
