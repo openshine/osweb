@@ -1,42 +1,42 @@
-{% extends "1rows.html" %}
+{% extends "2rows.html" %}
 {% load i18n %}
 
+{% block extrahead %}
+<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=false&amp;key=ABQIAAAA7OG0Yf5b5hLm1wXhgyyXmhRi5OxgNmtNv5ebrypmfI8VGYPUbBTAw7S5lyRn48N1YihNyC6Kca1BNA" type="text/javascript"></script>
 
+<script type="text/javascript" src="{{ MEDIA_URL }}js/jquery.googlemaps1.01.js">
+</script>
+{% endblock %}
 
 {% block lemaLogo%}contact{% endblock %}
 
 {% block bottomHead%}
-     <h2 id="claim">contact</h2>
+     <h2 id="claim">Contact with us...</h2>
      
 {% endblock %}
 
 {% block mainContent %}
-	<div id="mainContent" class="grid16 f-l">
-			<h2 class="pageTitle">contact</h2>
-			
-			
+	<div id="mainContent" class="grid8 f-l">			
 			<article>
-				<header>
-					<h3>contact</h3>
-					<p class="meta">Por <a href="#" title="ver perfil de César García"><strong>Cesar García</strong></a> | 12 de abril de 2011, 13:54</p>
-				</header>
-				<p class="t-c" ><img src="{{ MEDIA_URL }}images/html/teclado_apple.jpg" alt="foto cargador para teclado inalámbrico de Apple"/></p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed faucibus erat in elit volutpat elementum. Maecenas erat erat, tincidunt quis iaculis non, sodales sed odio.</p>
-				<p>Proin aliquam blandit faucibus. <strong>Duis mattis velit at tellus convallis venenatis</strong>. Nullam nunc ante, feugiat vitae suscipit vel, rutrum nec tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi egestas facilisis nisl eu ornare. Curabitur dui est, <a href="#"><strong>commpellentesque</strong></a> aminae hendrerit non justo. Sed pellentesque felis eget mi volutpat posuere. <strong>Donec non odio erat</strong>. Fusce at velit ac arcu accumsan viverra eget quis libero.</p>
-				<p>Vestibulum dignissim volutpat justo, eget blandit odio fermentum feugiat. Nulla mattis dignissim augue, ac volutpat risus pretium id. Donec iaculis fermentum dolor sit amet rutrum.</p>
-				<img src="{{ MEDIA_URL }}images/html/raton_apple.jpg" alt="foto ratón de Apple" class="f-l" />
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed faucibus erat in elit volutpat elementum. Maecenas erat erat, tincidunt quis iaculis non, sodales sed odio.</p>
-				<p>Proin aliquam blandit faucibus. <strong>Duis mattis velit at tellus convallis venenatis</strong>. Nullam nunc ante, feugiat vitae suscipit vel, rutrum nec tellus. Class aptent taciti sociosqu ad litora</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed faucibus erat in elit volutpat elementum. Maecenas erat erat, tincidunt quis iaculis non, sodales sed odio.</p>
-				<h4>Un ladillo que pueder ir en el desarrollo del artículo</h4>
-				<ul>
-					<li>Se ha olvidado de poner listas, aquí van</li>
-					<li>aquí va otra</li>
-					<li>y aquí va la tercera</li>
-				</ul>
-				<p>Lorem ipsum dolor sit amet, <a href="#">consectetur adipiscing elit</a>. Sed faucibus erat in elit volutpat elementum. Maecenas erat erat, tincidunt quis iaculis non, sodales sed odio.</p>
+				<header> </header>
+
+				 <div id="address">openshine</div>
+				 <script type="text/javascript"> 
+				   $(document).ready(function() { 
+				   $('#map_canvas').googleMaps({
+				   markers: {
+				   latitude: 	40.4290176,
+				   longitude:   -3.703188,
+				   info: {
+				   layer: '#address'
+				   }
+				   }
+				   }); 
+				   }); 
+				   
+				 </script>
+				 
 				<footer>
-					<p class="backTo f-l"><a href="#" title="Volver a noticias"><span></span> Volver a noticias</a></p>
 					<p class="socialLinks f-r">
 						<a href="#" class="twitter">Twitter</a>
 						<a href="#" class="linkedin">Linkedin</a>
@@ -44,12 +44,6 @@
 					</p>
 				</footer>
 			</article>
-			
-			
-			
-			<!--   {  % include "demo_content.html" %  } -->
-			<!--   {  % include "demo_comments.html" %  } -->
-			
 	</div><!--grid8-->		
 {% endblock %}
 					
@@ -57,6 +51,14 @@
 		
 		
 		
+			
+{% block aside %}
+		<aside>
+		  <h3 class="asideTitle">Contact info</h3>
+		</aside>
+		
+{% endblock %}
+
 
 
 
