@@ -8,6 +8,6 @@ Homepage: http://www.openshine.com
 
 Package: osweb
 Architecture: all 
-Depends: ${shlibs:Depends}, ${misc:Depends}, ${python:Depends}, python-django(>=1.2.3), python-support (>= 0.90)
+Depends: ${shlibs:Depends}, ${misc:Depends}, ${python:Depends}, python-django(>=1.2.3), python-support (>= 0.90), python-simplejson, memcached, python-memcache
 Description: OpenShine webpage package
  Here is the OpenSine main web
