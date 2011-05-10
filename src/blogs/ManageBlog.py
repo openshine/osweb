@@ -32,7 +32,7 @@ class ManageBlog():
         return cache.get('all_blogs')
         
     @staticmethod    
-    def update_blogs():
+    def update_blogs_cache():
         ManageBlog.update_news_blog()
         ManageBlog.update_all_blogs()
         
