@@ -3,66 +3,31 @@
 
 {% block extrahead %}
 
+<script type="text/javascript" src="{{ MEDIA_URL }}js/easySlider1.7.js"></script>
 <script type="text/javascript">
-var time = {{ SLIDE_TIMER }};
-var slide_index = 0;
-var slide_max = 3;
-
-
-
-function move_slide(){
-	var i=0;
-	for (i=0;i<=slide_max;i++)
-	{
-		if(i==slide_index)
-		{
-			$(".slider_content" + i ).show();
-		}
-		else
-		{
-			$(".slider_content" + i ).hide();
-		}
-	}
-	slide_index ++;
-	if (slide_index > slide_max)
-	{
-		slide_index = 0;
-	}
-	var t=setTimeout("move_slide()",time);
- } 
-
+$(document).ready(function() {
+	$("#slider").easySlider({
+		auto: true,
+		continuous: true,
+		numeric: true
+	});
+});
 </script>
-
-
 </head>
 </script>
 
-
-
-
-
 {% endblock %}
 
-{% block lemaLogo%}home{% endblock %}
-
 {% block bottomHead%}
-<p class="backTo"><a href="#" title="Back to Home"><span></span></a></p>
-<p class="backTo"><a href="#" title="Back to Home"><span></span></a></p>
-<p class="backTo"><a href="#" title="Back to Home"><span></span></a></p>
-<p class="backTo"><a href="#" title="Back to Home"><span></span></a></p>
 
-
-
-
-<div id="slider_content">
-	<a href="company#experience" ><img src="{{ MEDIA_URL}}images/slider/experience.png" class="slider_content0"/></a> 
-	<a href="company#sharing" ><img src="{{ MEDIA_URL}}images/slider/sharing.png" class="slider_content1"/> </a> 
-	<a href="company#floss" ><img src="{{ MEDIA_URL}}images/slider/floss.png" class="slider_content2"/> </a> 
-	<a href="company#community" ><img src="{{ MEDIA_URL}}images/slider/community.png" class="slider_content3"/> </a> 
+<div id="slider">
+	<ul>
+	<li><a href="company#experience" ><img src="{{ MEDIA_URL}}images/slider/experience.png" class="slider_content0"/></a></li> 
+	<li><a href="company#sharing" ><img src="{{ MEDIA_URL}}images/slider/sharing.png" class="slider_content1"/> </a> </li>
+	<li><a href="company#floss" ><img src="{{ MEDIA_URL}}images/slider/floss.png" class="slider_content2"/> </a> </li>
+	<li><a href="company#community" ><img src="{{ MEDIA_URL}}images/slider/community.png" class="slider_content3"/> </a> </li>
+	</ul>
 </div>
-
-<script type="text/javascript">move_slide();</script>
-
 
 {% endblock %}
 

@@ -43,6 +43,19 @@ header#head nav li a {text-decoration: none; color:#fff;}
 header#head nav li.active a {color:#282828;}
 header#head nav li a:hover {color:#dfff6e;}
 
+/* SLIDER */
+#slider { display:block; clear:both; }
+#slider ul, #slider li { margin:0; padding:0; list-style:none; }
+#slider li { width:960px; height:278px; overflow:hidden; }
+
+ol#controls { float: right; margin-top:-310px; padding:0; height:18px; }
+ol#controls li { float:left; list-style:none; height: 18px; width: 18px; margin-right: 10px; padding: 6px 0 0; background: url(../images/css/css-sprite-sin-sombra.png) -93px -165px no-repeat; }
+ol#controls li.current { float:left; list-style:none; height: 18px; width: 18px; margin-right: 10px; padding: 6px 0 0; background: url(../images/css/css-sprite-sin-sombra.png) -113px -165px no-repeat;}
+ol#controls li:hover { float:left; list-style:none; height: 18px; width: 18px; margin-right: 10px; padding: 6px 0 0; background: url(../images/css/css-sprite-sin-sombra.png) -113px -165px no-repeat;}
+ol#controls li a{ none; width: 18px; height: 18px; content:""; }
+ol#controls li.current a{ width: 18px; height: 18px; content:""; }
+ol#controls li a:focus, #prevBtn a:focus, #nextBtn a:focus{outline:none;}
+
 /*	footer#foot
 ----------------- */
 footer#foot {color:#a3a3a3; font-size: 1.2em; margin-bottom: 40px}
