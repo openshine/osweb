@@ -2,12 +2,12 @@ Source: osweb
 Section: web
 Priority: extra
 Maintainer: Jenkins Builder <jenkins@openshine.com>
-Build-Depends: cdbs, debhelper (>= 7.0.50~), python-support (>= 0.90)
+Build-Depends: cdbs, debhelper (>= 7.0.50~), python-support (>= 0.90), python-django(>=1.2.3)
 Standards-Version: 3.9.1
 Homepage: http://www.openshine.com
 
 Package: osweb
 Architecture: all 
-Depends: ${shlibs:Depends}, ${misc:Depends}, ${python:Depends}, python-django(>=1.2.3), python-support (>= 0.90), python-simplejson, memcached, python-memcache
+Depends: ${shlibs:Depends}, ${misc:Depends}, ${python:Depends}, python-django(>=1.2.3), python-support (>= 0.90), python-simplejson, memcached, python-memcache, python-feedparser
 Description: OpenShine webpage package
  Here is the OpenSine main web
