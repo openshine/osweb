@@ -68,11 +68,11 @@ class ManageTwitter():
     @staticmethod
     def get_tweets():
         if cache.get('tweets') is None:
-            ManageTwitter.update_tweets_cahce()
+            ManageTwitter.update_tweets_cache()
         return cache.get('tweets')
     
     @staticmethod
-    def update_tweets_cahce():
+    def update_tweets_cache():
         tweets = ManageTwitter.read_tweets()
         cache.set('tweets', tweets, settings.TWEETS_CACHE_TIME)
 
