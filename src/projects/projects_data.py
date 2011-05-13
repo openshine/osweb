@@ -45,17 +45,14 @@ Nanny is a Free software project funded by <a href='http://www.juntadeandalucia.
      },
      
      {"name":"NannyCentral", 
-      "shortdesc":"Lorem ipsum ad his",
-     "description":"Lorem ipsum ad his scripta blandit partiendo, \
-     eum fastidii accumsan euripidis in, eum liber hendrerit an. \
-     Qui ut wisi vocibus suscipiantur, quo dicit ridens inciderint id. \
-     Quo mundi lobortis reformidans eu, legimus senserit definiebas an eos. \
-     Eu sit tincidunt incorrupte definitionem, vis mutat affert percipit \
-     cu, eirmod consectetuer signiferumque eu per. In usu latine equidem \
-     dolores. Quo no falli viris intellegam, ut fugit veritus placerat per.",
-     "homepage":"http://www.openshine.com",
-     "downloadpage":"http://www.openshine.com",
-     "screenshot":"default_screenshot.png",
+      "shortdesc":"NannyCentral is a collaborative website whose mission \
+is to create a blacklist of inadequate web pages.",
+     "description":"NannyCentral is a collaborative website whose mission \
+is to create a blacklist of inadequate web pages. And this blacklists are \
+fully integrated with <a href='/projects/nanny'>Nanny</a>",
+     "homepage":"http://www.nannycentral.org",
+     "downloadpage":"http://www.nannycentral.org",
+     "screenshot":"NannyCentral.png",
      "logo":""
      },           
      
