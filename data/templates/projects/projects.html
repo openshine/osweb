@@ -19,7 +19,7 @@
 						<h3><a href="{% url project_detail_page project.slug_name %}">{{ project.name }}</a></h3>
 					</header>
 					{% if  project.screenshot %}
-						<p><a href="{% url project_detail_page project.slug_name %}"><img src="{{ MEDIA_URL }}images/projects/{{ project.screenshot }}" alt="project screenshot"/></a></p>
+						<p><a href="{% url project_detail_page project.slug_name %}"><img class="mainprj" src="{{ MEDIA_URL }}images/projects/{{ project.screenshot }}" alt="project screenshot"/></a></p>
 					{% endif %}
 					<p>{{ project.shortdesc|safe }}</p>
 				</article>

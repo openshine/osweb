@@ -24,34 +24,23 @@ Nanny is a Free software project funded by <a href='http://www.juntadeandalucia.
      "logo":""
      },
      
-     {"name":"Escritorio Movistar",  
-     "shortdesc":"Lorem ipsum ad his",
-     "description":"Lorem ipsum ad his scripta blandit partiendo, \
-     eum fastidii accumsan euripidis in, eum liber hendrerit an. \
-     Qui ut wisi vocibus suscipiantur, quo dicit ridens inciderint id. \
-     Quo mundi lobortis reformidans eu, legimus senserit definiebas an eos. \
-     Eu sit tincidunt incorrupte definitionem, vis mutat affert percipit \
-     cu, eirmod consectetuer signiferumque eu per. In usu latine equidem \
-     dolores. Quo no falli viris intellegam, ut fugit veritus placerat per.",
-     "homepage":"http://www.openshine.com",
-     "downloadpage":"http://www.openshine.com",
-     "screenshot":"default_screenshot.png",
+     {"name":"Escritorio Movistar 8.5",  
+     "shortdesc":"Escritorio Movistar Linux is a free software that lets you manage your connections and access in terms of mobility data service.",
+
+     "description":"Escritorio Movistar Linux is a free software tool that lets you manage your connections and access in terms of mobility data services such as the Internet, corporate Intranets or e-mail. It supports the most common Linux distributions (Ubuntu, Fedora and OpenSuse) and  allow connections from multiple devices, such as a laptop or a notebook, using cards or USB sticks. ",
+     "homepage":"http://www.movilforum.com/web/espana/escritoriomovistar",
+     "downloadpage":"http://www.movilforum.com/web/espana/escritoriomovistar",
+     "screenshot":"EscritorioMovistar8.5.jpg",
      "logo":""
      },
                 
      
      {"name":"Mobile Manager",  
-     "shortdesc":"Lorem ipsum ad his",
-     "description":"Lorem ipsum ad his scripta blandit partiendo, \
-     eum fastidii accumsan euripidis in, eum liber hendrerit an. \
-     Qui ut wisi vocibus suscipiantur, quo dicit ridens inciderint id. \
-     Quo mundi lobortis reformidans eu, legimus senserit definiebas an eos. \
-     Eu sit tincidunt incorrupte definitionem, vis mutat affert percipit \
-     cu, eirmod consectetuer signiferumque eu per. In usu latine equidem \
-     dolores. Quo no falli viris intellegam, ut fugit veritus placerat per.",
-     "homepage":"http://www.openshine.com",
-     "downloadpage":"http://www.openshine.com",
-     "screenshot":"default_screenshot.png",
+      "shortdesc":"Mobile Manager is a D-Bus service to control and use mobile data devices in Linux-based platforms",
+      "description" : "Mobile Manager is a D-Bus service to control and use mobile data devices in Linux-based platforms. Mobile Manager provides a unified API to govern the following aspects of the GPRS/3G devices attached to the system: </br> <ul><li>Plug & Play device support.</li><li>PIN/PUK management.</li><li>Device information and status.</li><li>Connection establishment and traffic monitoring.</li><li>Sms support (send, receive)</li><li>Address Book support</li></ul>",
+     "homepage":"http://www.movilforum.com/web/espana/escritoriomovistar",
+     "downloadpage":"http://www.movilforum.com/web/espana/escritoriomovistar",
+     "screenshot":"MobileManager.png",
      "logo":""
      },
      
@@ -68,24 +57,15 @@ Nanny is a Free software project funded by <a href='http://www.juntadeandalucia.
      "downloadpage":"http://www.openshine.com",
      "screenshot":"default_screenshot.png",
      "logo":""
-     },
-                
+     },           
      
-     
-                
-     
-     {"name":"TGCM",  
-     "shortdesc":"Lorem ipsum ad his",
-     "description":"Lorem ipsum ad his scripta blandit partiendo, \
-     eum fastidii accumsan euripidis in, eum liber hendrerit an. \
-     Qui ut wisi vocibus suscipiantur, quo dicit ridens inciderint id. \
-     Quo mundi lobortis reformidans eu, legimus senserit definiebas an eos. \
-     Eu sit tincidunt incorrupte definitionem, vis mutat affert percipit \
-     cu, eirmod consectetuer signiferumque eu per. In usu latine equidem \
-     dolores. Quo no falli viris intellegam, ut fugit veritus placerat per.",
-     "homepage":"http://www.openshine.com",
-     "downloadpage":"http://www.openshine.com",
-     "screenshot":"default_screenshot.png",
+     {"name":"Escritorio Movistar 7.0",  
+     "shortdesc":"Escritorio Movistar Linux is a free software that lets you manage your connections and access in terms of mobility data service.",
+
+     "description":"Escritorio Movistar Linux is a free software tool that lets you manage your connections and access in terms of mobility data services such as the Internet, corporate Intranets or e-mail. It supports the most common Linux distributions (Ubuntu, Fedora and OpenSuse) and  allow connections from multiple devices, such as a laptop or a notebook, using cards or USB sticks. ",
+     "homepage":"http://www.movilforum.com/web/espana/escritoriomovistar",
+     "downloadpage":"http://www.movilforum.com/web/espana/escritoriomovistar",
+     "screenshot":"EscritorioMovistar70.png",
      "logo":""
      },
                 

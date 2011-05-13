@@ -95,6 +95,7 @@ article header .meta {font-size: 1.1em; margin-bottom: 10px;}
 article p, article ul, article ol {margin-bottom: 20px;}
 article img {border: 1px solid #ccc; max-width: 90%; max-height:auto;}
 article img.prj {max-width: 50% ; max-height:auto;}
+article img.mainprj { max-height: 200px}
 article a {text-decoration: none;}
 article img.f-l {margin: 0 15px 10px 0;}
 article img.f-r {margin: 0 0 10px 15px;}
