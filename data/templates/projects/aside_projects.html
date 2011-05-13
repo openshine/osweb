@@ -6,10 +6,9 @@
 					{% if project.screenshot %}
 						<p><a href="{% url project_detail_page project.slug_name %}"><img src="{{ MEDIA_URL }}images/projects/{{ project.screenshot }}" alt="" /></a></p>
 					{% endif %}
-					<p>{{ project.shortdesc|safe }}</p>
-					
+						
 					<footer>
-						<p class="f-l"><a href="{% url project_detail_page project.slug_name %}">link</a></p>
+						<!-- <p class="f-l"><a href="{% url project_detail_page project.slug_name %}">link</a></p> -->
 					</footer>
 				</div>
 				{% endfor %}
