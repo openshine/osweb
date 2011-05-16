@@ -17,16 +17,19 @@
 					<header>
 						<h3><a href="{% url project_detail_page project.slug_name %}">{{ project.name }}</a></h3>
 					</header>
+					<div class="project_info">
 					{% if project.screenshot %}
-						<p><a href="{{ MEDIA_URL }}images/projects/{{ project.screenshot }}"><img class="prj" src="{{ MEDIA_URL }}images/projects/{{ project.screenshot }}" alt="project screenshot"/></a></p>
+						<a href="{{ MEDIA_URL }}images/projects/{{ project.screenshot }}"><img class="prj" src="{{ MEDIA_URL }}images/projects/{{ project.screenshot }}" alt="project screenshot"/></a>
 					{% endif %}
+					<div class="project_details">
 					<p>{{ project.description|safe }}</p>
-					<p><a href="{{ project.homepage }}">homepage</a></p>
-					<p><a href="{{ project.downloadpage }}">downloadpage</a></p>					
+					<p><a href="{{ project.homepage }}">Project Home</a></p>
+					<p><a href="{{ project.downloadpage }}">Download Page</a></p>
+					</div>
+					</div>
+					<div class="clear"></div>
 					
-					{% with project.homepage as social_link %}
-						{% include "social_footer.html" %}
-					{% endwith %}
+					{% include "social_footer.html" %}
 				</article>
 
 			
