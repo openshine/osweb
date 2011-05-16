@@ -20,6 +20,7 @@ class Project():
         self.homepage = dict['homepage']
         self.downloadpage = dict['downloadpage']
         self.screenshot = dict['screenshot']
+        self.screenshot_small = dict['screenshot_small']
         self.logo = dict['logo']
     
     

@@ -7,17 +7,10 @@ body{
 	background-color: #ebebeb; 
 } 
 
-.big_image img{
-	max-width: 400px; 
-	max-height:auto;
-}
 
 
 
-.small_image img{
-	max-width: 100px; 
-	max-height:auto;
-}
+
 
 #wrapper{
 	border-style:solid;
