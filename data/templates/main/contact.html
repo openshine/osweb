@@ -16,30 +16,20 @@
 {% block mainContent %}
 	<div id="mainContent" class="grid8 f-l">			
 	  <article>
-	    <header> </header>
-	    <div id="map_canvas"></div>
-	    <style media="screen"type="text/css">#map_canvas { height:500px; }</style>
-	    
-	    <script type="text/javascript"> 
-	      $(document).ready(function() { 
-	      var map = new GMap2(document.getElementById('map_canvas')); 
-	      var openshine_office = new GLatLng(40.4290176, -3.703188); 
-	      
-	      map.setCenter(openshine_office, 16);
-	      var os_point = new GLatLng(40.4290176, -3.703188); 
-	      marker = new GMarker(os_point);
-	      map.addOverlay(marker); 
-	      
-	      }); 
-	    </script>
-	    
-	    <footer>
-	      <p class="socialLinks f-r">
-		<a href="#" class="twitter">Twitter</a>
-		<a href="#" class="linkedin">Linkedin</a>
-		<a href="#" class="identica">Identica</a>					
-	      </p>
-	    </footer>
+		<header> </header>
+		<div id="map_canvas"></div>
+		<style media="screen"type="text/css">#map_canvas { height:500px; }</style>
+		<script type="text/javascript">
+		  $(document).ready(function() {
+		    var map = new GMap2(document.getElementById('map_canvas'));
+                    var openshine_office = new GLatLng(40.4290176, -3.703188);
+
+		    map.setCenter(openshine_office, 16);
+		    var os_point = new GLatLng(40.4290176, -3.703188); 
+		    marker = new GMarker(os_point);
+		    map.addOverlay(marker);
+		  }); 
+           </script>
 	  </article>
 	</div><!--grid8-->		
 {% endblock %}
@@ -52,6 +42,18 @@
 {% block aside %}
 		<aside>
 		  <h3 class="asideTitle">Contact info</h3>
+		  <div class="posts">
+			<div class="post">
+			<h4>Address:</h4>
+			<p>C/ Carranza nº 7, 2º 1</p>
+			<p>28004 Madrid</p>
+			<p>Spain</p>
+			</div>
+			<div class="post">
+			<h4>Email:</h4>
+			<p><a href="mailto:info@openshine.com">info@openshine.com</a></p>
+			</div>
+		  </div>
 		</aside>
 		
 {% endblock %}
