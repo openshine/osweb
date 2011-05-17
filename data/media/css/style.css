@@ -91,7 +91,7 @@ aside .asideTitle {border: 1px solid #ccc; border-width: 0 1px 1px; padding: 10p
 /*	article ------- */
 article {color:#666; line-height: 1.5em;}
 article header {font-size: x-small;}
-article header h3 {font-family: 'Lato', arial, serif; font-size: 3.2em; color:#282828; margin-bottom: 10px;}
+article header h3 {font-family: 'Lato', arial, serif; font-size: 3.2em; color:#282828; margin-bottom: 20px;}
 article header .meta {font-size: 1.1em; margin-bottom: 10px;}
 article p, article ul, article ol {margin-bottom: 20px;}
 article img {border: 1px solid #ccc; max-width: 90%; max-height:auto;}
@@ -107,13 +107,13 @@ article footer {border-bottom: 1px dotted #d9d9d9; margin-bottom: 20px; overflow
 article footer p {margin-bottom: 10px;}
 article footer .backTo a span {background: url(../images/css/css-sprite-sin-sombra.png) -92px -146px no-repeat; display: block; width: 20px; height: 20px; float: left; margin-right: 5px;}
 article.float {width: 375px; float: left; padding:20px; margin:20px;border: 1px solid #ededed;}
+article .float_right {width: 475px; float: right;}
 article.float img {border: 1px solid #ededed; max-width: 350px; max-height:auto;}
 article.float_logo {width: 110px; float: left; padding:5px; margin:15px;border: 1px solid #ededed; align:center;}
 article.float_logo img {margin:3px; border: none; max-width: 105px; max-height:auto;/* for IE */ filter:alpha(opacity=70); /* CSS3 standard */ opacity:0.7;}
 article.float_logo img:hover {/* for IE */ filter:alpha(opacity=100); /* CSS3 standard */ opacity:1;}
 article.all1row { width: 900px; padding:20px; margin:20px;border: 1px solid #ededed;}
 article.all1row img {border: 1px solid #ededed; max-width: 400px; max-height:auto;}
-article.company {with:100%}
 article.post img {border: 1px solid #ededed; max-width: 350px; max-height:auto;}
 article.company {width: 850px;}
 
