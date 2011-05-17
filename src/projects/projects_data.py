@@ -5,7 +5,8 @@
 #description (html)
 #homepage
 #downloadpage
-#screenshot: file name. Image will be in media/images/projects 400x300 px
+#screenshot: file name. Image will be in media/images/projects 
+#screenshot_small: file name. Image will be in media/images/projects max widht 350px
 #logo:
 ProjectsData = (
     {"name":"Nanny", 
@@ -21,6 +22,7 @@ Nanny is a Free software project funded by <a href='http://www.juntadeandalucia.
      "homepage":"http://projects.gnome.org/nanny/",
      "downloadpage":"http://projects.gnome.org/nanny/download",
      "screenshot":"Nanny.png",
+     "screenshot_small":"Nanny_small.png",
      "logo":""
      },
      
@@ -31,6 +33,7 @@ Nanny is a Free software project funded by <a href='http://www.juntadeandalucia.
      "homepage":"http://www.movilforum.com/web/espana/escritoriomovistar",
      "downloadpage":"http://www.movilforum.com/web/espana/escritoriomovistar",
      "screenshot":"EscritorioMovistar8.5.jpg",
+     "screenshot_small":"EscritorioMovistar8.5_small.jpg",
      "logo":""
      },
                 
@@ -41,6 +44,7 @@ Nanny is a Free software project funded by <a href='http://www.juntadeandalucia.
      "homepage":"http://www.movilforum.com/web/espana/escritoriomovistar",
      "downloadpage":"http://www.movilforum.com/web/espana/escritoriomovistar",
      "screenshot":"MobileManager.png",
+     "screenshot_small":"MobileManager_small.png",
      "logo":""
      },
      
@@ -53,6 +57,7 @@ fully integrated with <a href='/projects/nanny'>Nanny</a>",
      "homepage":"http://www.nannycentral.org",
      "downloadpage":"http://www.nannycentral.org",
      "screenshot":"NannyCentral.png",
+     "screenshot_small":"NannyCentral_small.png",
      "logo":""
      },           
      
@@ -63,6 +68,7 @@ fully integrated with <a href='/projects/nanny'>Nanny</a>",
      "homepage":"http://www.movilforum.com/web/espana/escritoriomovistar",
      "downloadpage":"http://www.movilforum.com/web/espana/escritoriomovistar",
      "screenshot":"EscritorioMovistar70.png",
+     "screenshot_small":"EscritorioMovistar70_small.png",
      "logo":""
      },
                 
