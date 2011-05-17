@@ -10,6 +10,8 @@ from datetime import datetime
 
 
 class Tweet():
+    """Store the tweet info
+    """
     id = None
     username = None
     url = None
@@ -22,11 +24,15 @@ class Tweet():
     date = None
 
     def set_date(self, date_str):
+        """Convert string to datetime
+        """
         time_struct = time.strptime(date_str, "%a %b %d %H:%M:%S +0000 %Y")#Tue Apr 26 08:57:55 +0000 2011
         self.date = datetime.fromtimestamp(mktime(time_struct))
         
     
     def set_text(self, plain_text):
+        """convert plain text to html text with http, user and hashtag links
+        """
         
         re_http = re.compile(r"(http://[^ ]+)")
         self.html_text = re_http.sub(r'<a href="\1">\1</a>', plain_text)
@@ -60,12 +66,16 @@ class Tweet():
                             
                             
     def set_profile_url(self):
+        """Create the url profile
+        """
         if self.retweeted:
             self.profile_url = "http://www.twitter.com/%s" % self.retweet_user
         else:
             self.profile_url = "http://www.twitter.com/%s" % self.username
     
     def set_tweet_url(self):
+        """Create the url of the tweet
+        """
         self.tweet_url = "http://www.twitter.com/%s/status/%s" % (self.username, self.id)
     
 
