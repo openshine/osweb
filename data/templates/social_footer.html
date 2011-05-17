@@ -1,11 +1,22 @@
 
+{% block extrahead %}
+<script type="text/javascript" charset="utf-8"> 
+var newwindow;
+function poptastic(url)
+{
+        newwindow=window.open(url,'name','height=350,width=600');
+        if (window.focus) {newwindow.focus()}
+}
+</script>
+{% endblock %}
+
+
+
 <footer>
-<!-- {{social_link}} -->
-<!-- {{social_text}} -->
+
 	<p class="socialLinks f-r">
-		<a target = _blank title="Share on twitter" href="http://twitter.com/intent/tweet?text={{social_text}}%20{{ social_link }}&via=openshine" class="twitter">Twitter</a>
-		<a target = _blank title="Share on linkedin" href="http://www.linkedin.com/shareArticle?mini=true&url={{ social_link }}&title={{ social_text }}" class="linkedin" class="linkedin">Linkedin</a>
-		<a target = _blank title="Share on indentica" href="http://identi.ca/index.php?action=newnotice&status_textarea=:{{social_text}}%20{{ social_link }}" class="identica">Identica</a>				
+		<a title="Share on twitter" href="javascript:poptastic('http://twitter.com/share?text={{social_text}}%20&?count=horizontal&counturl={{ social_link }}&original_referer={{ social_link }}&via=openshine');" class="twitter">Twitter</a>
+		<a title="Share on LinkedIn" href="javascript:poptastic('http://www.linkedin.com/shareArticle?mini=true&url={{ social_link }}&title={{ social_text }}');" class="linkedin">Linkedin</a>
+		<a title="Share on identi.ca" href="javascript:poptastic('http://identi.ca/index.php?action=newnotice&status_textarea=:{{social_text}}%20{{ social_link }}');" class="identica">Identica</a>
 	</p>
 </footer>
-
