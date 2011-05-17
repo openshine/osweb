@@ -7,8 +7,8 @@
 						<p><a href="http://twitter.com/#!/{{ tweet.username}}/status/{{ tweet.id }}"><img src="{{ tweet.user_avatar_url }}" /></a>
 						{{ tweet.html_text|safe }}</p>
 					</div>
-				    <footer>
-						{{tweet.date}}<!--<a href="http://twitter.com/intent/retweet?tweet_id={{ tweet.id }}">retweet</a>-->
+				    <footer class="tweet">
+						{{tweet.date}}
 					</footer>
 				</div>
 				
