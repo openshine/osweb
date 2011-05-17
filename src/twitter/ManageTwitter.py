@@ -7,6 +7,8 @@ import time
 from time import mktime
 from datetime import datetime
 
+
+
 class Tweet():
     id = None
     username = None
@@ -26,31 +28,36 @@ class Tweet():
     
     def set_text(self, plain_text):
         
-        http_regex = re.compile(r"(http://[^ ]+)")
-        self.html_text = http_regex.sub(r'<a href="\1">\1</a>', plain_text)
+        re_http = re.compile(r"(http://[^ ]+)")
+        self.html_text = re_http.sub(r'<a href="\1">\1</a>', plain_text)
                 
-        https_regex = re.compile(r"(https://[^ ]+)")
-        self.html_text = https_regex.sub(r'<a href="\1">\1</a>', self.html_text)
+        re_https = re.compile(r"(https://[^ ]+)")
+        self.html_text = re_https.sub(r'<a href="\1">\1</a>', self.html_text)
         
-        hash_regex = re.compile(r'#[0-9a-zA-Z+_]*',re.IGNORECASE)
-        user_regex = re.compile(r'@[0-9a-zA-Z+_]*',re.IGNORECASE)        
-
-        for tt in user_regex.finditer(self.html_text):
-            url_tweet = tt.group(0).replace('@','')
-            self.html_text = self.html_text.replace(tt.group(0),
-                    '<a href="http://twitter.com/'+
-                    url_tweet+'" title="'+
-                    tt.group(0)+'">'+
-                    tt.group(0)+'</a>')
+        
+        re_user = re.compile(r'@[0-9a-zA-Z+_]*',re.IGNORECASE)        
+        for iterator in re_user.finditer(self.html_text):
+            a_username = iterator.group(0)
+            username = a_username.replace('@','')
+            link = '<a href="http://twitter.com/' + username + '">' + a_username + '</a>'
+            self.html_text = self.html_text.replace(a_username, link)
+                    
  
-        for th in hash_regex.finditer(self.html_text):
-                url_hash = th.group(0).replace('#','%23')
-                if len ( th.group(0) ) > 2:
-                    self.html_text = self.html_text.replace(th.group(0),
-                            '<a href="http://search.twitter.com/search?q='+
-                            url_hash+'" title="'+
-                            th.group(0)+'">'+
-                            th.group(0)+'</a>');
+        re_hash = re.compile(r'#[0-9a-zA-Z+_]*',re.IGNORECASE)
+        for iterator in re_hash.finditer(self.html_text):
+            h_tag = iterator.group(0)
+            link_tag = h_tag.replace('#','%23')
+            link = '<a href="http://search.twitter.com/search?q=' + link_tag + '">' + h_tag + '</a>'
+            self.html_text = self.html_text.replace(h_tag + " ", link + " ")
+            #check last tag
+            offset = len(self.html_text) - len(h_tag)
+            index = self.html_text.find(h_tag, offset)
+            if index >= 0:
+                self.html_text = self.html_text[:index] + " " + link
+            
+            
+            
+                            
                             
     def set_profile_url(self):
         if self.retweeted:
