@@ -6,8 +6,7 @@
 {% block lemaLogo%}live!{% endblock %}
 
 {% block bottomHead%}
-     <h2 id="claim">OPENSHINE LIVE!</h2>
-     
+     <h2 id="claim">OPENSHINE LIVE!<a href="http://blogs.openshine.com/planet/feed/"><div id="live_feed"></div></a></h2>
 {% endblock %}
 
 {% block mainContent %}
@@ -46,8 +45,8 @@
 				{% for post in posts %}
 					<li><a href="{{ post.link }}">{{ post.title }}</a></li>
 				{% endfor %}
+				<li>&nbsp;</li>
 			</ul>
-			
 			<h3 class="bb2">BLOGS</h3>
 			<ul>
 				<li><a href="http://blogs.openshine.com/">Openshine Blog</a></li>

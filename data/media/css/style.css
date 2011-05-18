@@ -19,6 +19,7 @@ header#head .backTo a span {background: url(../images/css/css-sprite-sin-sombra.
 header#head .backTo a:hover span {background-position: -112px -147px;}
 header#head h1 a {background: url(../images/css/css-sprite-sin-sombra.png) 0 0 no-repeat; display: block; text-indent: -99999px; width: 380px; height: 83px;}
 h2#claim {font-family: 'Arvo', arial, serif; font-size: 4.8em; text-shadow: #0d240f 0 0 1px; color:#fff; clear: both; padding: 5px 10px;}
+#live_feed {width:30px; height:30px; background:url(../images/css/rss.png) no-repeat; float:right; margin-right:450px; margin-top:15px;}
 header#head #lemaLogo {color:#8cd25a; font-size: 1.6em; font-weight: bold; position: absolute; top: 80px; left: 206px;}
 #socialIcons {position: absolute; top: 48px; right: 20px; width: 250px;}
 #socialIcons li {float: right; display: block; height: 30px; width: 30px;  margin: 0 2px;}
@@ -151,6 +152,7 @@ footer .socialLinks a.identica:hover {background-position: -134px -168px;}
 ------------------------- */
 aside .bb1 {border-bottom: 1px solid #ccc; margin-bottom: 15px; padding-bottom: 10px;}
 aside .bb2 {border-bottom: 2px solid #8CD25A; margin-bottom: 15px; padding-bottom: 10px;}
+/*aside ul {margin-bottom: 10px;*/
 
 /* aside post ----------- */
 aside .posts {padding: 10px; border: 1px solid #ccc; border-width: 0 1px 1px; margin-bottom: 20px;}
