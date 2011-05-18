@@ -28,16 +28,14 @@
 					</div>
 					</div>
 					<div class="clear"></div>
+					{% with link as social_link %}
+					{% with project.name as social_text %}
+						{% include "social_footer.html" %}
+					{% endwith %}
+					{% endwith %}
 					
-					{% include "social_footer.html" %}
 				</article>
 
-			
-			
-			
-			<!--   {  % include "demo_content.html" %  } -->
-			<!--   {  % include "demo_comments.html" %  } -->
-			
-	</div><!--grid8-->		
+	</div>		
 {% endblock %}
 
