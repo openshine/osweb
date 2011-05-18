@@ -116,7 +116,8 @@ article.all1row { width: 900px; padding:20px; margin:20px;border: 1px solid #ede
 article.all1row img {border: 1px solid #ededed; max-width: 400px; max-height:auto;}
 article.post img {border: 1px solid #ededed; max-width: 350px; max-height:auto;}
 article.company {width: 850px;}
-
+article ul.project_links { margin:0; padding:0; list-style:none; }
+article ul.project_links li { float:left; margin-left: 15px; }
 
 footer .socialLinks a {display: block; height: 21px; width: 21px; text-indent: -9999px; background: url(../images/css/css-sprite-sin-sombra.png) -134px -146px no-repeat; float: right; margin: 0 2px;}
 footer .socialLinks a.linkedin {background-position: -157px -146px;}
