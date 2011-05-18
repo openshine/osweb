@@ -27,9 +27,7 @@ SECRET_KEY = 'd1367p85%@qgdx@$aodd5lz6-!m9ku%j*17&%&b&o77a5hh12b'
 NEWS_BLOG_URL = "http://blogs.openshine.com/feed/"
 
 MORE_BLOGS_URL = (
-    "http://blogs.openshine.com/pvieytes/feed/",              
-    "http://blogs.openshine.com/cgtapia/feed/",              
-    "http://blogs.openshine.com/rmajadas/feed/",     
+    "http://blogs.openshine.com/planet/feed/", 
 )
 
 
