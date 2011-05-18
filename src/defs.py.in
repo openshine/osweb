@@ -31,6 +31,8 @@ MORE_BLOGS_URL = (
     "http://blogs.openshine.com/cgtapia/feed/",              
     "http://blogs.openshine.com/rmajadas/feed/",     
 )
+
+
 #BLOGS_CACHE_TIME : The timeout, in seconds, to use for the blogs cache
 BLOGS_CACHE_TIME = 60*60
 
@@ -41,7 +43,7 @@ NUM_HOME_NEWS = 2
 NUM_HOME_PROJECTS = 3
 
 #NUM_LIVE_POSTS : post number that will be displayed in live page
-NUM_LIVE_POSTS = 4
+NUM_LIVE_POSTS = 2
 
 #TWEETS_CACHE_TIME : The timeout, in seconds, to use for the projects cache
 TWEETS_CACHE_TIME = 60*60
