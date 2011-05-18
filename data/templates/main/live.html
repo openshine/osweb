@@ -12,7 +12,7 @@
 
 {% block mainContent %}
 	<div id="mainContent" class="grid8 f-l">
-			{% for post in posts %}
+			{% for post in posts|slice:slice_str %}
 			
 			<article>
 				<header>
@@ -31,23 +31,23 @@
 			{% endfor %}
 			
 			
-			
-			<!--   {  % include "demo_content.html" %  } -->
-			<!--   {  % include "demo_comments.html" %  } -->
-			
-	</div><!--grid8-->		
+	</div>
 {% endblock %}
 					
-		
-		
-		
-		
+			
 			
 {% block aside %}
 		<aside>
 			{% include "main/aside_twitter.html" %}
 
-			    <!-- { % include "demo_aside.html" % }  -->
+			
+			<h3 class="bb2">RECENT POSTS</h3>
+			<ul>
+				{% for post in posts %}
+					<li><a href="{{ post.link }}">{{ post.title }}</a></li>
+				{% endfor %}
+			</ul>
+			
 			<h3 class="bb2">BLOGS</h3>
 			<ul>
 				<li><a href="http://blogs.openshine.com/">Openshine Blog</a></li>
