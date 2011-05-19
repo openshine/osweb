@@ -41,7 +41,10 @@ NUM_HOME_NEWS = 2
 NUM_HOME_PROJECTS = 3
 
 #NUM_LIVE_POSTS : post number that will be displayed in live page
-NUM_LIVE_POSTS = 2
+NUM_LIVE_POSTS = 8
+
+#NUM_LIVE_RECENT_POSTS : recent post number that will be displayed in live page
+NUM_LIVE_RECENT_POSTS = 8
 
 #TWEETS_CACHE_TIME : The timeout, in seconds, to use for the projects cache
 TWEETS_CACHE_TIME = 60*60

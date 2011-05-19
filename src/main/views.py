@@ -30,8 +30,9 @@ def live_view(request):
     
     posts = ManageBlog.get_all_blogs()
     context_dict['posts'] = posts
-    context_dict['slice_str'] = "0:%s" % settings.NUM_LIVE_POSTS
-    print context_dict['slice_str']
+    context_dict['slice_num_post'] = "0:%s" % settings.NUM_LIVE_POSTS
+    context_dict['slice_recent_post'] = "0:%s" % settings.NUM_LIVE_RECENT_POSTS
+    #context_dict['slice_characters_per_post'] = "0:%s" % 500
     return render_to_response('main/live.html', context_dict, context_instance=RequestContext(request))
 
 
