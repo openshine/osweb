@@ -5,13 +5,16 @@
 
 {% block lemaLogo%}live!{% endblock %}
 
+
+
+
 {% block bottomHead%}
      <h2 id="claim">OPENSHINE LIVE!<a href="http://blogs.openshine.com/planet/feed/"><div id="live_feed"></div></a></h2>
 {% endblock %}
 
 {% block mainContent %}
 	<div id="mainContent" class="grid8 f-l">
-			{% for post in posts|slice:slice_str %}
+			{% for post in posts|slice:slice_num_post %}
 			
 			<article>
 				<header>
@@ -19,7 +22,10 @@
 					<p class="meta">By <a href="{{ post.blog_url}}" title="{{ post.blog_url}}"><strong>{{ post.author}}</strong></a> | {{ post.date }}</p>
 				</header>
 				
-				<div class="2rows">{{ post.content|safe }}</div>
+				<div class="2rows">
+					{{ post.content|safe }}
+					<p><a href="{{post.link}}">read more</a></p>
+				</div>
 				
 				{% with post.link as social_link %}
 				{% with post.title as social_text %}
@@ -42,7 +48,7 @@
 			
 			<h3 class="bb2">RECENT POSTS</h3>
 			<ul>
-				{% for post in posts %}
+				{% for post in posts|slice:slice_recent_post %}
 					<li><a href="{{ post.link }}">{{ post.title }}</a></li>
 				{% endfor %}
 				<li>&nbsp;</li>

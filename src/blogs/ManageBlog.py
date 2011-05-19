@@ -14,8 +14,20 @@ class Post():
     blog_url = None
     
     
-    
-
+    def set_content(self, content, cut_out=True):
+        """Add only two html paragraph (<p>) to content
+        """
+        sub_str = '</p>'
+        index = content.find(sub_str)
+        index = content.find(sub_str, index+len(sub_str))
+        if index > -1:
+            self.content = content[:index+len(sub_str)]
+        else:
+            index = content.find(sub_str)
+            if index > -1:
+                self.content = content[:index+len(sub_str)]
+            else:
+                self.content = content[:500]
 
 class ManageBlog():
     
@@ -68,7 +80,7 @@ class ManageBlog():
                 post.date = datetime.fromtimestamp(mktime(time_struct))
                 post.title = blog.entries[index].title
                 post.link = blog.entries[index].link
-                post.content = blog.entries[index].content[0].value
+                post.set_content(blog.entries[index].content[0].value, cut_out=True)
                 post.author = blog.entries[index].author
                 post.blog_url = blog['feed']['link']
                 more_blogs_posts.append(post)
