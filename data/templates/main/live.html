@@ -24,14 +24,14 @@
 				
 				<div class="2rows">
 					{{ post.content|safe }}
-					<p><a href="{{post.link}}">read more</a></p>
-				</div>
+					<p class="readmore"><a href="{{post.link}}"><span></span>Read more...</a></p>
 				
 				{% with post.link as social_link %}
 				{% with post.title as social_text %}
 					{% include "social_footer.html" %}
 				{% endwith %}
 				{% endwith %}
+				</div>
 			</article>
 			{% endfor %}
 			
