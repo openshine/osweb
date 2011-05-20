@@ -108,6 +108,7 @@ article img.f-r {margin: 0 0 10px 15px;}
 article ul {list-style: disc; margin: 0 0 20px 15px;}
 article ol {list-style: decimal; margin: 0 0 20px 20px;}
 article h4 {font-weight: bold; margin-bottom: 20px; font-size: 1.1em;}
+article .readmore a span {background: url(../images/css/css-sprite-sin-sombra.png) -245px -146px no-repeat; display: block; width: 23px; height: 23px; float: left; margin-top: -3px; margin-right:5px;}
 article footer {border-bottom: 1px dotted #d9d9d9; margin-bottom: 20px; overflow: hidden; padding-top: 5px;  height: 1%;}
 article footer p {margin-bottom: 10px;}
 article footer .backTo a span {background: url(../images/css/css-sprite-sin-sombra.png) -92px -146px no-repeat; display: block; width: 20px; height: 20px; float: left; margin-right: 5px;}

@@ -18,12 +18,12 @@
 				
 					<header>
 						<h3><a href="{% url project_detail_page project.slug_name %}">{{ project.name }}</a></h3>
-						<footer></footer>
 					</header>
 					{% if  project.screenshot %}
 						<p><a href="{% url project_detail_page project.slug_name %}"><img class="mainprj" src="{{ MEDIA_URL }}images/projects/{{ project.screenshot_small }}" alt="project screenshot"/></a></p>
 					{% endif %}
 					<p>{{ project.shortdesc|safe }}</p>
+					<p class="readmore"><a href="{% url project_detail_page project.slug_name %}" title="Read more"><span></span>Read more...</a></p>
 				</article>
 			{% endfor %}
 			
