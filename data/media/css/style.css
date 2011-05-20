@@ -162,7 +162,7 @@ aside .posts {padding: 10px; border: 1px solid #ccc; border-width: 0 1px 1px; ma
 aside .post {border-bottom: 1px dotted #d9d9d9; margin-bottom: 15px;}
 aside .post.last-child {border-bottom: none; margin-bottom: 0;}
 aside .post p {margin-bottom: 10px; vertical-align: middle; vertical-align:text-middle;}
-aside .post img {border: 1px solid #ededed; max-width: 200px; max-height:auto; margin-right:5px;}
+aside .post img {border: 1px solid #ededed; max-width: 280px; max-height:auto; margin-right:5px;}
 aside .tweet p img {border: 1px solid #ededed; max-width: 200px; max-height:auto; float: left; vertical-align:text-middle;}
 aside .post h4 {margin-bottom: 10px; font-size: 1.65em; font-family: 'Lato', arial, serif;}
 aside .post footer {overflow: hidden; height: 1%;text-align: center; margin-bottom: 5px; }
