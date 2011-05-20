@@ -96,6 +96,7 @@ aside .asideTitle {border: 1px solid #ccc; border-width: 0 1px 1px; padding: 10p
 article {color:#666; line-height: 1.5em;}
 article header {font-size: x-small;}
 article header h3 {font-family: 'Lato', arial, serif; font-size: 3.2em; color:#282828; margin-bottom: 20px;}
+article header h3 a {color:#282828;}
 article header .meta {font-size: 1.1em; margin-bottom: 10px;}
 article p, article ul, article ol {margin-bottom: 20px;}
 article img {border: 1px solid #ccc; max-width: 90%; max-height:auto;}
