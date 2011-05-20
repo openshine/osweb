@@ -162,7 +162,7 @@ footer .socialLinks a.identica:hover {background-position: -134px -168px;}
 ------------------------- */
 aside .bb1 {border-bottom: 1px solid #ccc; margin-bottom: 15px; padding-bottom: 10px;}
 aside .bb2 {border-bottom: 2px solid #8CD25A; margin-bottom: 15px; padding-bottom: 10px;}
-/*aside ul {margin-bottom: 10px;*/
+aside ul.live_list li {margin-bottom: 10px;}
 
 /* aside post ----------- */
 aside .posts {padding: 10px; border: 1px solid #ccc; border-width: 0 1px 1px; margin-bottom: 20px;}
@@ -170,10 +170,10 @@ aside .post {border-bottom: 1px dotted #d9d9d9; margin-bottom: 15px;}
 aside .post.last-child {border-bottom: none; margin-bottom: 0;}
 aside .post p {margin-bottom: 10px; vertical-align: middle; vertical-align:text-middle;}
 aside .post img {border: 1px solid #ededed; max-width: 280px; max-height:auto; margin-right:5px;}
-aside .tweet p img {border: 1px solid #ededed; max-width: 200px; max-height:auto; float: left; vertical-align:text-middle;}
 aside .post h4 {margin-bottom: 10px; font-size: 1.65em; font-family: 'Lato', arial, serif;}
 aside .post footer {overflow: hidden; height: 1%;text-align: center; margin-bottom: 5px; }
 aside .post footer .f-l {padding-top: 6px;}
+aside .tweet p img {border: 1px solid #ededed; max-width: 200px; max-height:auto; float: left; vertical-align:text-middle;}
 aside .tweet_txt  {min-height:50px; background-color: #f6f6f6; padding:5px;}
 aside .tweet footer {text-align: left;}
 .pseudOl li {margin-bottom: 5px; line-height: 21px;}
