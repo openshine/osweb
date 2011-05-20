@@ -6,23 +6,24 @@
 {% block lemaLogo%}projects{% endblock %}
 
 {% block bottomHead%}
-     <h2 id="claim">PROJECTS</h2>
+     <h2 id="claim">WE OPEN THE SOURCE</h2>
      
 {% endblock %}
 
 {% block mainContent %}
 	<div id="mainContent" class="grid16 f-l big_image">
+			<h2 class="pageTitle">PROJECTS</h2>
 			{% for project in projects %}
 				<article class="grid4 float">
 				
 					<header>
 						<h3><a href="{% url project_detail_page project.slug_name %}">{{ project.name }}</a></h3>
-						<footer></footer>
 					</header>
 					{% if  project.screenshot %}
 						<p><a href="{% url project_detail_page project.slug_name %}"><img class="mainprj" src="{{ MEDIA_URL }}images/projects/{{ project.screenshot_small }}" alt="project screenshot"/></a></p>
 					{% endif %}
 					<p>{{ project.shortdesc|safe }}</p>
+					<p class="readmore"><a href="{% url project_detail_page project.slug_name %}" title="Read more"><span></span>Read more...</a></p>
 				</article>
 			{% endfor %}
 			
