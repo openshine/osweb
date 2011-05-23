@@ -57,7 +57,7 @@ fully integrated with <a href='/projects/nanny'>Nanny</a>",
      "homepage":"http://www.nannycentral.org",
      "downloadpage":"http://www.nannycentral.org",
      "screenshot":"NannyCentral.png",
-     "screenshot_small":"NannyCentral.png",
+     "screenshot_small":"NannyCentral_small.png",
      "logo":""
      },           
      
