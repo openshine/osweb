@@ -11,14 +11,7 @@
 ProjectsData = (
     {"name":"Nanny", 
      "shortdesc":"Nanny is an easy way to control what your kids are doing in the computer",
-     "description":"Nanny is an easy way to control what your kids \
-are doing in the computer. You can limit how much time a day each one of \
-them is browsing the web, chatting or doing email. You can also decide at \
-which times of the day the can do this things. Gnome Nanny filters what web \
-pages are seen by each user, so you can block all undesirable webs and have \
-your kids enjoy the internet with ease of mind, no more worries!</br></br> \
-Nanny is a Free software project funded by <a href='http://www.juntadeandalucia.es'>Junta de Andalucia</a>",
-
+     "description" : "Nanny is an easy way to control what your kids are doing on the computer. You can limit how much browsing, chatting or emailing does each one of them on a daily basis. You can also decide the weekly timetable for their allowed computer use. Gnome Nanny filters what web pages can be seen by each user, so you can block all undesirable webs and have a helping hand with your kids to enjoy the internet safely !</br></br>Nanny is a Free Open Source software project promoted and funded by <a href='http://www.juntadeandalucia.es'>Junta de Andalucia</a>",
      "homepage":"http://projects.gnome.org/nanny/",
      "downloadpage":"http://projects.gnome.org/nanny/download",
      "screenshot":"Nanny.png",
@@ -51,9 +44,7 @@ Nanny is a Free software project funded by <a href='http://www.juntadeandalucia.
      {"name":"NannyCentral", 
       "shortdesc":"NannyCentral is a collaborative website whose mission \
 is to create a blacklist of inadequate web pages.",
-     "description":"NannyCentral is a collaborative website whose mission \
-is to create a blacklist of inadequate web pages. And this blacklists are \
-fully integrated with <a href='/projects/nanny'>Nanny</a>",
+     "description":"NannyCentral is a collaborative website whose mission is to create and mantain a blacklist of web pages unsuitable for the under-age . And those blacklists are fully integrated with <a href='/projects/nanny'>Nanny</a>.</br></br>NannyCentral is a Free Open Source software project promoted and funded by <a href='http://www.juntadeandalucia.es'>Junta de Andalucia</a>",
      "homepage":"http://www.nannycentral.org",
      "downloadpage":"http://www.nannycentral.org",
      "screenshot":"NannyCentral.png",
