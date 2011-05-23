@@ -129,6 +129,8 @@ article.all1row img {border: 1px solid #ededed; max-width: 400px; max-height:aut
 article.post img {border: 1px solid #ededed; max-width: 350px; max-height:auto;}
 article.company {width: 850px;}
 article.company h4{font-family: 'Lato', arial, serif; font-size: 22px; font-style:italic; font-weight:normal;line-height:110%;}
+article .big_image img {border: 0px;}
+article .big_image img.aligncenter {clear: both;display: block;margin-left: auto;margin-right: auto;}
 
 footer .socialLinks a {display: block; height: 21px; width: 21px; text-indent: -9999px; background: url(../images/css/css-sprite-sin-sombra.png) -134px -146px no-repeat; float: right; margin: 0 2px;}
 footer .socialLinks a.linkedin {background-position: -157px -146px;}
