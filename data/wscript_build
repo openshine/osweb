@@ -29,6 +29,14 @@ bld.install_as(os.path.join('${SYSCONFDIR}',
                chmod = 0640
                )
 
+#Store cron.d conf
+bld.install_as(os.path.join('${SYSCONFDIR}',
+                            'cron.d',
+                            'osweb'),
+               'conf/cron.conf',
+               chmod = 0640
+               )
+
 #Store media and template files in ${DATADIR}/${PACKAGE}
 for static_dir in ["media", "templates"] :
    static_files_dir = os.path.join(current_dir, static_dir)
