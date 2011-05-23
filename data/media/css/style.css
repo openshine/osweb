@@ -160,6 +160,7 @@ footer .socialLinks a.identica:hover {background-position: -134px -168px;}
 
 /*	aside 
 ------------------------- */
+aside a {color:#282828;}
 aside .bb1 {border-bottom: 1px solid #ccc; margin-bottom: 15px; padding-bottom: 10px;}
 aside .bb2 {border-bottom: 2px solid #8CD25A; margin-bottom: 15px; padding-bottom: 10px;}
 aside ul.live_list li {margin-bottom: 10px;}
