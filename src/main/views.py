@@ -41,7 +41,7 @@ def company_view(request):
     projects = ManageProject.get_projects()
     context_dict['projects'] = projects
     context_dict['tab_company'] = True
-    return render_to_response('company/company_index.html', context_dict, context_instance=RequestContext(request))
+    return render_to_response('main/company.html', context_dict, context_instance=RequestContext(request))
 
 
 
