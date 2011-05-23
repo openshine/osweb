@@ -37,7 +37,8 @@ header#head #lemaLogo {color:#8cd25a; font-size: 1.6em; font-weight: bold; posit
 #socialIcons .twitter:hover {background-position: -231px -115px;}
 #socialIcons .contact:hover {background-position: -265px -115px;}
 #socialIcons .identica:hover {background-position: -197px -115px;}
-#socialIcons .rss {background-position: -59px -85px;}
+#socialIcons .github {background-position: -57px -84px;}
+#socialIcons .github:hover {background-position: -57px -114px;}
 
 
 /*	nav --------- */
