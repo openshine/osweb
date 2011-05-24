@@ -42,14 +42,14 @@ ProjectsData = (
      "logo":""
      },
      
-     {"name":"Escritorio Movistar 8.5",  
+     {"name":"Escritorio Movistar",  
      "shortdesc":"Escritorio Movistar Linux is a free software that lets you manage your connections and access in terms of mobility data service.",
 
-     "description":"Escritorio Movistar Linux is a free software tool that lets you manage your connections and access in terms of mobility data services such as the Internet, corporate Intranets or e-mail. It supports the most common Linux distributions (Ubuntu, Fedora and OpenSuse) and  allow connections from multiple devices, such as a laptop or a notebook, using cards or USB sticks. ",
+     "description":"<p>Escritorio Movistar Linux is a free software tool that lets you manage your connections and access in terms of mobility data services such as the Internet, corporate Intranets or e-mail. It supports the most common Linux distributions (Ubuntu, Fedora and OpenSuse) and  allow connections from multiple devices, such as a laptop or a notebook, using cards or USB sticks.</p><p>OpenShine developed the GNU/Linux version of the Escritorio Movistar from the 6.0 to the 8.5 version, along 5 years.</p>",
      "homepage":"http://www.movilforum.com/web/espana/escritoriomovistar",
      "downloadpage":"http://www.movilforum.com/web/espana/escritoriomovistar",
-     "screenshot":"EscritorioMovistar8.5.jpg",
-     "screenshot_small":"EscritorioMovistar8.5_small.jpg",
+     "screenshot":"EscritorioMovistar.png",
+     "screenshot_small":"EscritorioMovistar_small.png",
      "logo":""
      },
                 
@@ -75,16 +75,4 @@ is to create a blacklist of inadequate web pages.",
      "logo":""
      },           
      
-     {"name":"Escritorio Movistar 7.0",  
-     "shortdesc":"Escritorio Movistar Linux is a free software that lets you manage your connections and access in terms of mobility data service.",
-
-     "description":"Escritorio Movistar Linux is a free software tool that lets you manage your connections and access in terms of mobility data services such as the Internet, corporate Intranets or e-mail. It supports the most common Linux distributions (Ubuntu, Fedora and OpenSuse) and  allow connections from multiple devices, such as a laptop or a notebook, using cards or USB sticks. ",
-     "homepage":"http://www.movilforum.com/web/espana/escritoriomovistar",
-     "downloadpage":"http://www.movilforum.com/web/espana/escritoriomovistar",
-     "screenshot":"EscritorioMovistar70.png",
-     "screenshot_small":"EscritorioMovistar70_small.png",
-     "logo":""
-     },
-                
-                
 )
