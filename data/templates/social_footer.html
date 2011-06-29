@@ -9,7 +9,6 @@ function poptastic(url)
 }
 </script>
 
-<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
 {% endblock %}
 
 <footer>
@@ -17,6 +16,5 @@ function poptastic(url)
 		<a title="Share on twitter" href="javascript:poptastic('http://twitter.com/share?text={{social_text}}%20&?count=horizontal&counturl={{ social_link }}&original_referer={{ social_link }}&via=openshine');" class="twitter">Twitter</a>
 		<a title="Share on LinkedIn" href="javascript:poptastic('http://www.linkedin.com/shareArticle?mini=true&url={{ social_link }}&title={{ social_text }}');" class="linkedin">Linkedin</a>
 		<a title="Share on identi.ca" href="javascript:poptastic('http://identi.ca/index.php?action=newnotice&status_textarea=:{{social_text}}%20{{ social_link }}');" class="identica">Identica</a>
-		<g:plusone size="small" count="false"></g:plusone>
 	</p>
 </footer>
