@@ -4,7 +4,7 @@ import os
 import glob
 import fnmatch
 
-VERSION = '1.0'
+VERSION = '1.0.0'
 APPNAME = 'osweb'
 
 top = '.'
