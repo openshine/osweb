@@ -1,0 +1,12 @@
+Version 1.0.1
+===============================
+
+New Features
+-------------------------------
+  * Remove debian directory
+  * append revision number to VERSION
+  * Joined the Escritorio Movistar 7.0 and 8.5 versions
+  * add 404 and 500 error pages
+  * add license to readme
+  * set / as wsgi root
+
