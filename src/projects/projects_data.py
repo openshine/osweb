@@ -32,6 +32,15 @@
 #screenshot_small: file name. Image will be in media/images/projects max widht 350px
 #logo:
 ProjectsData = (
+    {"name":"Kucumberl", 
+     "shortdesc":"A pure-erlang, open-source, implementation of Cucumber. This tool is designed to accept tests written in BDD style.",
+     "description" : "Kucumberl is a pure erlang and open-source implementation of <a href='http://cukes.info'>Cucumberl</a>. This tool is for running automated acceptance tests written in a behavior driven development (BDD) style.",
+     "homepage":"http://github.com/openshine/kucumberl",
+     "downloadpage":"http://github.com/openshine/kucumberl",
+     "screenshot":"kucumberl.png",
+     "screenshot_small":"kucumberl_small.png",
+     "logo":""
+     },
     {"name":"Nanny", 
      "shortdesc":"Nanny is an easy way to control what your kids are doing in the computer",
      "description" : "Nanny is an easy way to control what your kids are doing on the computer. You can limit how much browsing, chatting or emailing does each one of them on a daily basis. You can also decide the weekly timetable for their allowed computer use. Gnome Nanny filters what web pages can be seen by each user, so you can block all undesirable webs and have a helping hand with your kids to enjoy the internet safely !</br></br>Nanny is a Free Open Source software project promoted and funded by <a href='http://www.juntadeandalucia.es'>Junta de Andalucia</a>",
