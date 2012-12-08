@@ -75,7 +75,10 @@ class ManageBlog():
         news_blog = feedparser.parse(settings.NEWS_BLOG_URL)
         for index in xrange(len(news_blog['entries'])):
             post = Post()
-            date_str = news_blog.entries[index].date
+            try:
+                date_str = news_blog.entries[index].date
+            except:
+                date_str = news_blog.entries[index].published
             time_struct = time.strptime(date_str, "%a, %d %b %Y %H:%M:%S +0000")#str to time struct
             post.date = datetime.fromtimestamp(mktime(time_struct))
             post.title = news_blog.entries[index].title
