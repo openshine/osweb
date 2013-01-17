@@ -32,6 +32,18 @@
 #screenshot_small: file name. Image will be in media/images/projects max widht 350px
 #logo:
 ProjectsData = (
+
+
+  {"name":"Klogger", 
+     "shortdesc":"Klogger is a logger erlang application.",
+     "description" : "Klogger is a erlang app to create loggers with console and file backend. Klogger can create more than one logger with diferents backends and log levels.",
+     "homepage":"http://github.com/openshine/klogger",
+     "downloadpage":"http://github.com/openshine/klogger",
+     "screenshot":"klogger.png",
+     "screenshot_small":"klogger_small.png",
+     "logo":""
+     },
+
   {"name":"Igel", 
      "shortdesc":"Igel is a websocket multiclient written in erlang.",
      "description" : "Igel is a websocket multiclient written in erlang.",
