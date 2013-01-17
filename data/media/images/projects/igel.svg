@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="600"
+   height="250"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="igel.svg"
+   inkscape:export-filename="/home/pablo/src/openshine/osweb-prj/osweb/data/media/images/projects/igel_small.png"
+   inkscape:export-xdpi="31.768562"
+   inkscape:export-ydpi="31.768562">
+  <defs
+     id="defs4">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient5390">
+      <stop
+         style="stop-color:#49ac00;stop-opacity:1;"
+         offset="0"
+         id="stop5392" />
+      <stop
+         style="stop-color:#49ac00;stop-opacity:0;"
+         offset="1"
+         id="stop5394" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3938">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop3940" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="1"
+         id="stop3942" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5390"
+       id="linearGradient5396"
+       x1="588.91895"
+       y1="476.27417"
+       x2="-234.35539"
+       y2="-289.42145"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.030228,0,0,1.0600619,-8.0587011,-6.0072941)" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.979899"
+     inkscape:cx="155.04366"
+     inkscape:cy="140.43794"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1025"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     showguides="true"
+     inkscape:guide-bbox="true" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="BackGround">
+    <path
+       style="fill:url(#linearGradient5396);fill-opacity:1;stroke:#000000;stroke-width:1.04503846px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 0,-0.01276 0,250 l 599.52554,0 0,-250.01276 z"
+       id="path3936"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+  </g>
+  <g
+     inkscape:label="Text"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-802.36218)"
+     style="display:inline">
+    <text
+       xml:space="preserve"
+       style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Lato;-inkscape-font-specification:Lato"
+       x="36.365494"
+       y="63.12178"
+       id="text2994"
+       sodipodi:linespacing="125%"
+       transform="translate(0,802.36218)"><tspan
+         sodipodi:role="line"
+         id="tspan2996"
+         x="36.365494"
+         y="63.12178" /></text>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3828"
+       style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Lato;-inkscape-font-specification:Lato"
+       transform="translate(0,802.36218)"><flowRegion
+         id="flowRegion3830"><rect
+           id="rect3832"
+           width="62.629459"
+           height="22.223356"
+           x="30.304577"
+           y="49.989796" /></flowRegion><flowPara
+         id="flowPara3834">Gig</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3848"
+       style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Lato;-inkscape-font-specification:Lato"
+       transform="translate(0,802.36218)"><flowRegion
+         id="flowRegion3850"><rect
+           id="rect3852"
+           width="64.649765"
+           height="22.223356"
+           x="115.15739"
+           y="190.401" /></flowRegion><flowPara
+         id="flowPara3854">ThenTT</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3915"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Lato;-inkscape-font-specification:Lato Bold"
+       transform="matrix(2.0342105,0,0,2.6477189,-177.4098,749.95196)"><flowRegion
+         id="flowRegion3917"><rect
+           id="rect3919"
+           width="208.09143"
+           height="63.639618"
+           x="190.91884"
+           y="37.867966"
+           style="font-size:40px;font-weight:bold;-inkscape-font-specification:Lato Bold" /></flowRegion><flowPara
+         id="flowPara3921">Igel</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3042"
+       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:Sans;font-style:normal;font-weight:normal;font-size:12px;line-height:125%;letter-spacing:0px;word-spacing:0px"><flowRegion
+         id="flowRegion3044"><rect
+           id="rect3046"
+           width="154.55334"
+           height="80.307129"
+           x="-184.85791"
+           y="-25.266567" /></flowRegion><flowPara
+         id="flowPara3048"></flowPara></flowRoot>  </g>
+</svg>
