@@ -32,7 +32,28 @@
 #screenshot_small: file name. Image will be in media/images/projects max widht 350px
 #logo:
 ProjectsData = (
-    {"name":"Kucumberl", 
+
+
+  {"name":"Klogger", 
+     "shortdesc":"Klogger is a logger erlang application.",
+     "description" : "Klogger is a erlang app to create loggers with console and file backend. Klogger can create more than one logger with diferents backends and log levels.",
+     "homepage":"http://github.com/openshine/klogger",
+     "downloadpage":"http://github.com/openshine/klogger",
+     "screenshot":"klogger.png",
+     "screenshot_small":"klogger_small.png",
+     "logo":""
+     },
+
+  {"name":"Igel", 
+     "shortdesc":"Igel is a websocket multiclient written in erlang.",
+     "description" : "Igel is a websocket multiclient written in erlang.",
+     "homepage":"http://github.com/openshine/igel",
+     "downloadpage":"http://github.com/openshine/igel",
+     "screenshot":"igel.png",
+     "screenshot_small":"igel_small.png",
+     "logo":""
+     },
+  {"name":"Kucumberl", 
      "shortdesc":"A pure-erlang, open-source, implementation of Cucumber. This tool is designed to accept tests written in BDD style.",
      "description" : "Kucumberl is a pure erlang and open-source implementation of <a href='http://cukes.info'>Cucumberl</a>. This tool is for running automated acceptance tests written in a behavior driven development (BDD) style.",
      "homepage":"http://github.com/openshine/kucumberl",
