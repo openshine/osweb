@@ -48,6 +48,30 @@ class Project():
     
 class ManageProject():
     
+    
+    @staticmethod
+    def get_frontpage_projects():
+        """Return a list of Project instances.
+        """
+        projects = []
+        for prj_dict in ProjectsData:
+            project = Project(prj_dict)
+            if prj_dict['frontpage']:
+                projects.append(project)
+        return projects
+    
+    @staticmethod
+    def get_no_frontpage_projects():
+        """Return a list of Project instances.
+        """
+        projects = []
+        for prj_dict in ProjectsData:
+            project = Project(prj_dict)
+            if  prj_dict['frontpage'] == False:
+                projects.append(project)
+        return projects
+    
+    
     @staticmethod
     def get_projects():
         """Return a list of Project instances.
@@ -55,9 +79,9 @@ class ManageProject():
         projects = []
         for prj_dict in ProjectsData:
             project = Project(prj_dict)
-            projects.append(project)
+            projects.append(project)            
         return projects
-
+    
     @staticmethod
     def get_project(slugname):
         """Return a Project instances.

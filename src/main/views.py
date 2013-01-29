@@ -26,13 +26,15 @@ from osweb.twitter import ManageTwitter
 from osweb.projects import ManageProject
 from osweb import settings
 
+import random
 
 def home_view(request):
     context_dict = {}
     news = ManageBlog.get_news_blog()
     context_dict['news'] = news[:settings.NUM_HOME_NEWS]
     context_dict['SLIDE_TIMER'] = settings.SLIDE_TIMER
-    projects = ManageProject.get_projects()
+    projects = ManageProject.get_frontpage_projects()
+    random.shuffle(projects)
     context_dict['projects'] = projects[:settings.NUM_HOME_PROJECTS]
     context_dict['tab_home'] = True
     return render_to_response('home.html', context_dict, context_instance=RequestContext(request))
