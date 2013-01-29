@@ -16,9 +16,9 @@
    version="1.1"
    inkscape:version="0.48.3.1 r9886"
    sodipodi:docname="klogger.svg"
-   inkscape:export-filename="/home/pablo/src/openshine/osweb-prj/osweb/data/media/images/projects/klogger.png"
-   inkscape:export-xdpi="74.626152"
-   inkscape:export-ydpi="74.626152">
+   inkscape:export-filename="/home/pablo/src/openshine/osweb-prj/osweb/data/media/images/projects/klogger_small.png"
+   inkscape:export-xdpi="52.448097"
+   inkscape:export-ydpi="52.448097">
   <defs
      id="defs4">
     <linearGradient
@@ -62,9 +62,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.979899"
-     inkscape:cx="155.04366"
-     inkscape:cy="140.43794"
+     inkscape:zoom="1.4"
+     inkscape:cx="418.34444"
+     inkscape:cy="82.336584"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -144,7 +144,7 @@
        xml:space="preserve"
        id="flowRoot3915"
        style="font-size:40px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Lato;-inkscape-font-specification:Lato Bold"
-       transform="matrix(2.0342105,0,0,2.6477189,-245.5951,752.47734)"><flowRegion
+       transform="matrix(2.0342105,0,0,2.6477189,-231.5951,730.47734)"><flowRegion
          id="flowRegion3917"><rect
            id="rect3919"
            width="208.09143"
@@ -162,5 +162,79 @@
            height="80.307129"
            x="-184.85791"
            y="-25.266567" /></flowRegion><flowPara
-         id="flowPara3048" /></flowRoot>  </g>
+         id="flowPara3048" /></flowRoot>    <rect
+       style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:2.8;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3017"
+       width="93.944183"
+       height="150.00764"
+       x="25.75889"
+       y="49.484722"
+       ry="9.475522"
+       transform="translate(0,802.36218)" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 35.633807,865.90184 70.339543,0.0195"
+       id="path3787"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       d="m 35.633809,880.81531 70.339531,0.0195"
+       id="path3787-1"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       d="m 35.633814,910.64224 70.339526,0.0195"
+       id="path3787-5"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       d="m 35.633808,925.5557 70.339532,0.0195"
+       id="path3787-5-1"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       d="m 35.633814,895.72878 70.339526,0.0195"
+       id="path3787-5-8"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       d="m 35.633816,940.46917 70.339524,0.0195"
+       id="path3787-5-4"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       d="m 35.633807,955.38263 70.339543,0.0195"
+       id="path3787-5-42"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       d="m 35.633807,985.20957 70.339543,0.0195"
+       id="path3787-5-44"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       d="m 35.633812,970.2961 70.339528,0.0195"
+       id="path3787-5-7"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:bold;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.70000005;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
+       x="174.71428"
+       y="998.93359"
+       id="text3867"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3869"
+         x="174.71428"
+         y="998.93359">Erlang logger</tspan></text>
+  </g>
 </svg>

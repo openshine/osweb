@@ -16,9 +16,9 @@
    version="1.1"
    inkscape:version="0.48.3.1 r9886"
    sodipodi:docname="igel.svg"
-   inkscape:export-filename="/home/pablo/src/openshine/osweb-prj/osweb/data/media/images/projects/igel_small.png"
-   inkscape:export-xdpi="31.768562"
-   inkscape:export-ydpi="31.768562">
+   inkscape:export-filename="/home/pablo/src/openshine/osweb-prj/osweb/data/media/images/projects/igel.png"
+   inkscape:export-xdpi="104.89619"
+   inkscape:export-ydpi="104.89619">
   <defs
      id="defs4">
     <linearGradient
@@ -63,7 +63,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.979899"
-     inkscape:cx="155.04366"
+     inkscape:cx="318.43767"
      inkscape:cy="140.43794"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -144,7 +144,7 @@
        xml:space="preserve"
        id="flowRoot3915"
        style="font-size:40px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Lato;-inkscape-font-specification:Lato Bold"
-       transform="matrix(2.0342105,0,0,2.6477189,-177.4098,749.95196)"><flowRegion
+       transform="matrix(2.0342105,0,0,2.6477189,-184.98594,703.48494)"><flowRegion
          id="flowRegion3917"><rect
            id="rect3919"
            width="208.09143"
@@ -162,5 +162,36 @@
            height="80.307129"
            x="-184.85791"
            y="-25.266567" /></flowRegion><flowPara
-         id="flowPara3048"></flowPara></flowRoot>  </g>
+         id="flowPara3048" /></flowRoot>    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.35073459px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 231.10219,948.31647 c -45.22418,3.87225 -51.68127,37.54402 -28.56661,41.92132 -6.50054,22.37601 61.61465,36.63011 84.77833,12.12171 24.15443,17.1231 95.64947,-34.19221 58.97622,-43.43641 19.93333,-12.405 -37.75835,-33.54171 -58.97622,-26.26398 -17.54311,-9.31345 -72.60212,-5.50914 -56.21172,15.65736 z"
+       id="path3862"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccc" />
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-weight:bold;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-opacity:1;font-family:Sans;-inkscape-font-specification:Sans Bold"
+       x="101.52032"
+       y="983.67188"
+       id="text3873"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3875"
+         x="101.52032"
+         y="983.67188">Erlang <tspan
+   style="fill:#000000"
+   id="tspan3907">Websocket</tspan> Multiclient</tspan></text>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3915-3"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Lato;-inkscape-font-specification:Lato Bold"
+       transform="matrix(2.0342105,0,0,2.6477189,-184.10048,704.60387)"><flowRegion
+         id="flowRegion3917-8"><rect
+           id="rect3919-1"
+           width="208.09143"
+           height="63.639618"
+           x="190.91884"
+           y="37.867966"
+           style="font-size:40px;font-weight:bold;-inkscape-font-specification:Lato Bold" /></flowRegion><flowPara
+         id="flowPara3921-3">Igel</flowPara></flowRoot>  </g>
 </svg>
