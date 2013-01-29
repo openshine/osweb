@@ -32,14 +32,16 @@
 #screenshot_small: file name. Image will be in media/images/projects max widht 350px
 #logo:
 ProjectsData = (
-    {"name":"Kucumberl", 
+
+  {"name":"Kucumberl", 
      "shortdesc":"A pure-erlang, open-source, implementation of Cucumber. This tool is designed to accept tests written in BDD style.",
      "description" : "Kucumberl is a pure erlang and open-source implementation of <a href='http://cukes.info'>Cucumberl</a>. This tool is for running automated acceptance tests written in a behavior driven development (BDD) style.",
      "homepage":"http://github.com/openshine/kucumberl",
      "downloadpage":"http://github.com/openshine/kucumberl",
      "screenshot":"kucumberl.png",
      "screenshot_small":"kucumberl_small.png",
-     "logo":""
+     "logo":"",
+     "frontpage": True,
      },
     {"name":"Nanny", 
      "shortdesc":"Nanny is an easy way to control what your kids are doing in the computer",
@@ -48,7 +50,8 @@ ProjectsData = (
      "downloadpage":"http://projects.gnome.org/nanny/download",
      "screenshot":"Nanny.png",
      "screenshot_small":"Nanny_small.png",
-     "logo":""
+     "logo":"",
+     "frontpage": True,
      },
      
      {"name":"Escritorio Movistar",  
@@ -59,7 +62,8 @@ ProjectsData = (
      "downloadpage":"http://www.movilforum.com/web/espana/escritoriomovistar",
      "screenshot":"EscritorioMovistar.png",
      "screenshot_small":"EscritorioMovistar_small.png",
-     "logo":""
+     "logo":"",
+     "frontpage": True,
      },
                 
      
@@ -70,7 +74,8 @@ ProjectsData = (
      "downloadpage":"http://www.movilforum.com/web/espana/escritoriomovistar",
      "screenshot":"MobileManager.png",
      "screenshot_small":"MobileManager_small.png",
-     "logo":""
+     "logo":"",
+     "frontpage": True,
      },
      
      {"name":"NannyCentral", 
@@ -81,7 +86,29 @@ is to create a blacklist of inadequate web pages.",
      "downloadpage":"http://www.nannycentral.org",
      "screenshot":"NannyCentral.png",
      "screenshot_small":"NannyCentral_small.png",
-     "logo":""
+     "logo":"",
+     "frontpage": True,
      },           
-     
+ 
+   {"name":"Klogger", 
+     "shortdesc":"Klogger is a logger erlang application.",
+     "description" : "Klogger is a erlang app to create loggers with console and file backend. Klogger can create more than one logger with diferents backends and log levels.",
+     "homepage":"http://github.com/openshine/klogger",
+     "downloadpage":"http://github.com/openshine/klogger",
+     "screenshot":"klogger.png",
+     "screenshot_small":"klogger_small.png",
+     "logo":"",
+     "frontpage": False,
+     },
+
+  {"name":"Igel", 
+     "shortdesc":"Igel is a websocket multiclient written in erlang.",
+     "description" : "Igel is a websocket multiclient written in erlang.",
+     "homepage":"http://github.com/openshine/igel",
+     "downloadpage":"http://github.com/openshine/igel",
+     "screenshot":"igel.png",
+     "screenshot_small":"igel_small.png",
+     "logo":"",
+     "frontpage": False,
+     },    
 )
