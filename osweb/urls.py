@@ -48,7 +48,7 @@ urlpatterns = patterns('',
 #If not in DJAPP engine add static media folder as static server
 if not 'DJAPPS_SERVER' in dir(settings):
     urlpatterns += patterns('',
-                            (r'^m/@package@/(?P<path>.*)$', 
+                            (r'^m/(?P<path>.*)$', 
                              'django.views.static.serve', {'document_root': settings.MEDIA_ROOT, 
                                                            'show_indexes': True}),
                             )
@@ -62,7 +62,7 @@ if not 'DJAPPS_SERVER' in dir(settings):
                                      'admin', 
                                      'media') + os.sep
     urlpatterns += patterns('',
-                            (r'^sm/@package@/admin_media/(?P<path>.*)$', 
+                            (r'^sm/admin_media/(?P<path>.*)$', 
                              'django.views.static.serve', {'document_root': django_admin_path, 
                                                            'show_indexes': True}),
                             )
