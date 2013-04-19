@@ -21,7 +21,7 @@
 
 import os
 
-SYSCONF_DIR=os.path.join('@sysconfdir@', '@package@')
+SYSCONF_DIR = os.path.join('@sysconfdir@', '@package@')
 
 #DJANGO DEFINITIONS
 #-----------------------------------------------------

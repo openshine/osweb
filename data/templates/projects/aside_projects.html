@@ -1,10 +1,10 @@
-			<a href="{% url projects_page%}"><h3 class="asideTitle">PROJECTS</h3></a>
+			<a href="{% url "projects_page" %}"><h3 class="asideTitle">PROJECTS</h3></a>
 			<div class="posts">
 				{% for project in projects %}
 				<div class="post" >
-					<h4><a href="{% url project_detail_page project.slug_name %}">{{ project.name }}</a></h4>
+					<h4><a href="{% url "project_detail_page" project.slug_name %}">{{ project.name }}</a></h4>
 					{% if project.screenshot %}
-						<p><a href="{% url project_detail_page project.slug_name %}"><img src="{{ MEDIA_URL }}images/projects/{{ project.screenshot_small }}" alt="" /></a></p>
+						<p><a href="{% url "project_detail_page" project.slug_name %}"><img src="{{ MEDIA_URL }}images/projects/{{ project.screenshot_small }}" alt="" /></a></p>
 					{% endif %}
 				</div>
 				{% endfor %}

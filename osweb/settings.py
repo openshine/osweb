@@ -25,10 +25,7 @@ import os
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join('@localstatedir@',
-                             'lib',
-                             '@package@',
-                             'db','%s.db' % '@package@'),
+        'NAME': 'osweb.db',
         'USER': '',                  
         'PASSWORD': '',
         'HOST': '',
@@ -36,9 +33,9 @@ DATABASES = {
     }
 }
 
-MEDIA_ROOT = os.path.join('@datadir@', '@package@', 'media')
-MEDIA_URL = '/m/@package@/'
-ADMIN_MEDIA_PREFIX = '/sm/@package@/admin_media/'
+MEDIA_ROOT =  'data/media'
+MEDIA_URL = '/m/'
+ADMIN_MEDIA_PREFIX = '/sm/admin_media/'
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
@@ -55,10 +52,10 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
 )
 
-ROOT_URLCONF = '%s.urls' % '@package@'
+ROOT_URLCONF = 'osweb.urls'
 
 TEMPLATE_DIRS = (
-    os.path.join('@datadir@', '@package@', 'templates'),
+    os.path.join('data', 'templates'),
 )
 
 INSTALLED_APPS = (
@@ -77,4 +74,3 @@ INSTALLED_APPS = (
 
 #Import all application definitions
 from defs import *
-

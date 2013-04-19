@@ -40,7 +40,7 @@
 <div id="wrapper">
 	<header id="head">
 		<div class="topHead">
-			<h1><a href="{% url home_page %}" title="Back to Home">Open Shine</a></h1>
+			<h1><a href="{% url "home_page" %}" title="Back to Home">Open Shine</a></h1>
 			<p id="lemaLogo">{% block lemaLogo%}{% endblock %}</p>
 			<div id="socialIcons">
 				<ul class="clearfix d-b">
@@ -56,11 +56,11 @@
 		<div class="bottomHead">
 			<nav>
 				<ul>	
-					<li {% if tab_home %}class="active"{% endif %}><a href="{% url home_page %}" title="">Home</a></li>
-					<li {% if tab_company %}class="active"{% endif %}><a href="{% url company_page %}" title="">Company</a></li>
-					<li {% if tab_projects %}class="active"{% endif %}><a href="{% url projects_page %}" title="">Projects</a></li>
-					<li {% if tab_live %}class="active"{% endif %}><a href="{% url live_page %}" title="">live!</a></li>
-					<li {% if tab_contact %}class="active"{% endif %}><a href="{% url contact_page %}" title="">Contact</a></li>
+					<li {% if tab_home %}class="active"{% endif %}><a href="{% url "home_page" %}" title="">Home</a></li>
+					<li {% if tab_company %}class="active"{% endif %}><a href="{% url "company_page" %}" title="">Company</a></li>
+					<li {% if tab_projects %}class="active"{% endif %}><a href="{% url "projects_page" %}" title="">Projects</a></li>
+					<li {% if tab_live %}class="active"{% endif %}><a href="{% url "live_page" %}" title="">live!</a></li>
+					<li {% if tab_contact %}class="active"{% endif %}><a href="{% url "contact_page" %}" title="">Contact</a></li>
 				</ul>
 			</nav>
 			<!--  <p class="backTo"><a href="#" title="Back to Home"><span></span>Back to news</a></p> -->
@@ -83,11 +83,11 @@
 		<div class="f-r">
 			<nav>
 				<ul>
-					<li {% if tab_home %}class="active"{% endif %}><a href="{% url home_page %}" title="">Home</a></li>
-					<li {% if tab_company %}class="active"{% endif %}><a href="{% url company_page %}" title="">Company</a></li>
-					<li {% if tab_projects %}class="active"{% endif %}><a href="{% url projects_page %}" title="">Projects</a></li>
-					<li {% if tab_live %}class="active"{% endif %}><a href="{% url live_page %}" title="">live!</a></li>
-					<li {% if tab_contact %}class="active"{% endif %}><a href="{% url contact_page %}" title="">Contact</a></li>
+					<li {% if tab_home %}class="active"{% endif %}><a href="{% url "home_page" %}" title="">Home</a></li>
+					<li {% if tab_company %}class="active"{% endif %}><a href="{% url "company_page" %}" title="">Company</a></li>
+					<li {% if tab_projects %}class="active"{% endif %}><a href="{% url "projects_page" %}" title="">Projects</a></li>
+					<li {% if tab_live %}class="active"{% endif %}><a href="{% url "live_page" %}" title="">live!</a></li>
+					<li {% if tab_contact %}class="active"{% endif %}><a href="{% url "contact_page" %}" title="">Contact</a></li>
 				</ul>
 			</nav>
 		</div>
