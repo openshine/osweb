@@ -32,13 +32,13 @@
 {% block lemaLogo%}projects{% endblock %}
 
 {% block bottomHead%}
-     <div class="backTo"><a href="{% url projects_page %}"><span></span>Back to Projects</a></div>
+     <div class="backTo"><a href="{% url "projects_page" %}"><span></span>Back to Projects</a></div>
      <h2 id="claim"></h2>
 {% endblock %}
 
 {% block mainContent %}
 	<div id="mainContent" class="grid16 f-l">
-		<h2 class="pageTitle"><a href="{% url projects_page %}">PROJECTS</a></h2>
+		<h2 class="pageTitle"><a href="{% url "projects_page" %}">PROJECTS</a></h2>
 		<article class="grid16">	
 			<header>
 				<h3>{{ project.name }}</h3>

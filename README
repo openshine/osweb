@@ -2,19 +2,9 @@ All source code are licensed under GPL3 license.
 
 All artwork (images, logos...) rights are reserved to Openshine SL
 
-
-
-How to install
-=============
-./waf configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var
-./waf build
-sudo ./waf install
-
-to uninstall
-------------
-sudo ./waf uninstall
+check requirements.txt
 
 How to run
 ==========
-osweb-manage runserver
+./manage runserver
 
