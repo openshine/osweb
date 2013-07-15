@@ -4,7 +4,7 @@
 				<div class="post" >
 					<h4><a href="{% url "project_detail_page" project.slug_name %}">{{ project.name }}</a></h4>
 					{% if project.screenshot %}
-						<p><a href="{% url "project_detail_page" project.slug_name %}"><img src="{{ MEDIA_URL }}images/projects/{{ project.screenshot_small }}" alt="" /></a></p>
+						<p><a href="{% url "project_detail_page" project.slug_name %}"><img src="{{ STATIC_URL }}images/projects/{{ project.screenshot_small }}" alt="" /></a></p>
 					{% endif %}
 				</div>
 				{% endfor %}

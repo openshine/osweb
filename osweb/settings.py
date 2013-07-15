@@ -22,20 +22,34 @@
 # Django settings for osweb project.
 import os
 
+PROJECT_DIR = os.path.dirname(__file__)
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': 'osweb.db',
-        'USER': '',                  
+        'USER': '',
         'PASSWORD': '',
         'HOST': '',
         'PORT': '',
     }
 }
 
-MEDIA_ROOT =  'data/media'
-MEDIA_URL = '/m/'
-ADMIN_MEDIA_PREFIX = '/sm/admin_media/'
+MEDIA_ROOT = ''
+MEDIA_URL = ''
+
+STATIC_ROOT = ''
+STATIC_URL = '/static/'
+
+STATICFILES_DIRS = (
+    os.path.join(PROJECT_DIR, 'static'),
+)
+
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+#    'django.contrib.staticfiles.finders.DefaultStorageFinder',
+)
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
@@ -55,7 +69,7 @@ MIDDLEWARE_CLASSES = (
 ROOT_URLCONF = 'osweb.urls'
 
 TEMPLATE_DIRS = (
-    os.path.join('data', 'templates'),
+    os.path.join(PROJECT_DIR, 'templates'),
 )
 
 INSTALLED_APPS = (
@@ -68,8 +82,8 @@ INSTALLED_APPS = (
     # 'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
-    'osweb',
-    
+    'django.contrib.staticfiles',
+    'osweb'
 )
 
 #Import all application definitions
