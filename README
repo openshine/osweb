@@ -2,7 +2,15 @@ All source code are licensed under GPL3 license.
 
 All artwork (images, logos...) rights are reserved to Openshine SL
 
-check requirements.txt
+How to install
+==============
+
+* check requirements.txt
+
+* You must create several environment variables:
+    * `$OSWEB_SECRET_KEY`: The django `SECRET_KEY` setting key will be filled with it.
+    * `$DJANGO_SETTINGS_MODULE` set it to `os_dashboard.settings.local` or `os_dashboard.settings.production`, depending on your environment.
+    * `$DATABASE_URL` to point the sqlite database file. Ex: sqlite:////home/yourname/os_dashboard/db.db (yeah, four slashes)
 
 How to run
 ==========

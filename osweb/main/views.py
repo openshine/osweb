@@ -18,14 +18,14 @@
 #You should have received a copy of the GNU General Public License
 #along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+import random
 
 from django.shortcuts import render_to_response
 from django.template import RequestContext
+from django.conf import settings
+
 from osweb.blogs import ManageBlog
 from osweb.projects import ManageProject
-from osweb import settings
-
-import random
 
 def home_view(request):
     context_dict = {}

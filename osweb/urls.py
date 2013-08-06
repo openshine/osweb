@@ -18,9 +18,9 @@
 #You should have received a copy of the GNU General Public License
 #along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+from django.conf.urls import include, patterns, url
 
-from django.conf.urls.defaults import *
-from osweb import settings
+from django.conf import settings
 
 from osweb.main.views import home_view
 from osweb.main.views import company_view
@@ -36,16 +36,17 @@ urlpatterns = patterns('',
     url(r'^company/', company_view, name='company_page'),   
     url(r'^jobs/', jobs_view, name='jobs_page'),
     url(r'^contact/', contact_view, name='contact_page'),
-    (r'^projects/', include('osweb.projects.urls')),
+    url(r'^projects/', include('osweb.projects.urls')),
 
 )
 
 
 #If not in DJAPP engine add static media folder as static server
 if not 'DJAPPS_SERVER' in dir(settings):
+    print settings
     urlpatterns += patterns('',
                             (r'^m/(?P<path>.*)$', 
-                             'django.views.static.serve', {'document_root': settings.MEDIA_ROOT, 
+                             'django.views.static.serve', {'document_root': settings.STATIC_ROOT, 
                                                            'show_indexes': True}),
                             )
     

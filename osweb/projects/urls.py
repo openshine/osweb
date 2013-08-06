@@ -18,9 +18,7 @@
 #You should have received a copy of the GNU General Public License
 #along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-
-from django.conf.urls.defaults import *
-
+from django.conf.urls import patterns, url
 from osweb.projects.views import projects_view, project_detail
 
 urlpatterns = patterns('',

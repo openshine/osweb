@@ -20,7 +20,7 @@
 
 
 from django.core.cache import cache
-from osweb import settings
+from django.conf import settings
 import time
 import feedparser
 from time import mktime
